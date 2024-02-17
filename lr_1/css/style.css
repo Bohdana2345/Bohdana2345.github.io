@@ -1,17 +1,14 @@
-
-*{ 
-    margin: 0;
+*{ margin: 0;
     padding-bottom: 30px;
     text-decoration: none;
     box-sizing: border-box;
     }
 
-.home{
+.home {
     background: #d887b0;
-
 }
 
-.navbar{
+.navbar {
     position: fixed;
     background-color: #df9fbf;;
     width: 100%;
@@ -19,26 +16,26 @@
     top: 0;
     z-index: 100;
     line-height: 20px;
-    
-    }
+ }
 
-.inner-width{
+.inner-width {
     max-width: 1780px;
     margin: auto;
     padding: 16px 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
-.logo{
+.logo {
 font-size: 50px;
 font-weight: 100;
-font-family: 'Great Vibes', sans-serif;
+font-family: 'Libre Baskerville', serif;
 color: #222222;
 cursor: pointer;
- }
+}
 
-.navbar-menu a{
+.navbar-menu a {
 font-size: 20px;
 font-weight: 500;
 font-family: 'Raleway', sans-serif;
@@ -48,35 +45,34 @@ letter-spacing: 2px;
 margin-left: 35px;
 padding-bottom: 0.5px;
 display: inline-block;
-
 }
-
-.navbar-menu a::after{
+.navbar-menu a::after {
 content: '';
 display: block;
 width: 0;
 height: 1.8px;
 background-color: #de6900;
 transition: width .3s;
- }
+}
 
-.navbar-menu a:hover::after{
-
+.navbar-menu a:hover::after {
 width: 100%;
 }
 
-#home{
+#home {
  display: grid;
  grid-template-columns: 1fr 1fr;
  color: #222222;
  padding: 0 100px;
 }
-.content1{
+
+.content1 {
 display: flex;
 flex-direction: column;
 padding-top: 170px;
 }
-.title h1, .title1 h1, .title2 h1{
+
+.title h1, .title1 h1, .title2 h1 {
 font-size: 45px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: 900;
@@ -85,22 +81,25 @@ letter-spacing: 3px;
 margin-bottom: 40px;
 }
 
-.image{
+.image {
     background-image: url(../photos/turkish-delight-6757762_1280.jpg);
     background-position: center;
     background-size: cover;
     width: 670px;
     height: 470px;
-    }
-.content2{
+}
+
+.content2 {
     display: flex;
     flex-direction: column;
     padding-top: 190px;
     padding-left: 100px;
-    }
-.content2 .image{
+ }
+
+.content2 .image {
      background-image: url(https://kartinki.pics/uploads/posts/2021-08/1629986877_4-kartinkin-com-p-korolevskii-rakhat-lukum-yeda-krasivo-foto-7.jpg);
-    } 
+} 
+
 .title p, .title1 p, .title1 ul {
     margin-bottom: 0;
     margin-top: 43px;
@@ -109,7 +108,7 @@ margin-bottom: 40px;
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 25px;
-    }
+}
 
 .about {
   padding-right: 300px;
@@ -127,7 +126,7 @@ margin-bottom: 40px;
     margin-top: 10px;
     background-color: #cdb6de;
     text-align: center;
-  }
+}
 
 table {
     position: relative;
@@ -137,39 +136,35 @@ table {
     width: 100%; 
 }
  
-
 th, td {
     border: 1px solid #48344a; 
     padding: 10px; 
     font-family: 'Raleway', sans-serif;
-    
-
 }
-.col{
+
+.col {
     text-align: center;
     font-size: 28px;
     font-weight: 800;
- }
+}
 
- .col1{
+ .col1 {
     text-align: left;
     font-size: 28px;
     font-weight: 800;
-
-
  }
- .val{
+
+ .val {
     text-align: justify;
     font-size: 25px;
  }
- .menpic{
-    
-        width: 300px;
-        height: 300px;
-        
- }
- .valpic{
 
+ .menpic {
+        width: 300px;
+        height: 300px;     
+ }
+
+ .valpic {
     text-align: center;
 
  }
