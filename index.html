@@ -4,110 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lr_2/zavd_resume/css/sit.css"> 
+    <link rel="stylesheet" href="kep/lr_2/zavd_resume/css/sit.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Resume</title>
 </head>
 <body>
-    <!-- Main -->
-    <header>
-        <h1>Bohdana Skochynska's Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="#work">Working Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
+    <!--Main-->
+    <div class = "main">
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="#work">working experience</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#courses">courses</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#projects">portfolio</a></li>
+                </ul>
+             </div>
         </nav>
-    </header>
-    
-    <!-- Main content -->
-    <section class="maincontent">
-        <!-- About user -->
-        <article class="about_user">
-            <h2 class="about_position">Front-End Developer</h2>
-            <h1 class="about_name">Bohdana Skochynska</h1>
-            <p class="about_discription">
-                Dedicated to staying up-to-date with the latest technologies and trends in front-end development to deliver cutting-edge solutions.
-            </p>
-        </article>
-        
-        <!-- Working Experience -->
-        <section id="work">
-            <h2>Working Experience</h2>
-            <!-- Company 1 -->
-            <article>
-                <h3>Front-End Developer <time class="date">November 2020 - up to now</time></h3>
-                <hgroup>
-                    <h4 class="orange1">Freelance</h4>
-                    <h5 class="position">Website Development & Web application development</h5>
-                </hgroup>
-                <ul class="work_list">
-                    <li class="worklist_item">Creating static and dynamic websites for clients based on their requirements and designs.</li>
-                    <li class="worklist_item">Creation of interactive web applications and web services.</li>
-                    <li class="worklist_item">Providing advice to clients on web development.</li>
-                </ul>
-            </article>
-            <!-- Company 2 -->
-            <article>
-                <h3>Manager <time class="date">March 2015 - October 2019</time></h3>
-                <hgroup>
-                    <h4 class="orange1">EPAM, Toronto</h4>
-                    <h5 class="position">Team Leadership & Project Management</h5>
-                </hgroup>
-                <ul class="work_list">
-                    <li class="worklist_item">Providing leadership and guidance to teams of software developers, engineers, designers, and other IT professionals.</li>
-                    <li class="worklist_item">Planning, organizing, and overseeing projects from initiation to completion.</li>
-                </ul>
-            </article>
-            <!-- Company 3 -->
-            <article>
-                <h3>Full-Stack Developer <time class="date">June 2014 - February 2015</time></h3>
-                <hgroup>
-                    <h4 class="orange1">SoftServe, Lviv</h4>
-                    <h5 class="position">Database Management & Problem Solving</h5>
-                </hgroup>
-                <ul class="work_list">
-                    <li class="worklist_item">Designing database schemas to meet the requirements of web applications.</li>
-                    <li class="worklist_item">Optimizing code and improving application performance.</li>
-                </ul>
-            </article>
-        </section>
-        
-        <!-- Education -->
-        <section id="education">
-            <h2>Education and qualifications</h2>
-            <article>
-                <h3>Junior bachelor <time class="date">September 2011 - June 2015</time></h3>
-                <hgroup>
-                    <h4 class="orange1">A separate structural division of the Vocational College of Electronic Devices of the Ivano-Frankivsk University of Oil and Gas.</h4>
-                    <h5 class="specialization">Software Engineering</h5>
-                </hgroup>
-            </article>
-        </section>
-        
-        <!-- Courses -->
-        <section id="courses">
-            <h2>Courses</h2>
-            <article>
-                <h3>English for IT <time class="date">April 2017 - October 2018</time></h3>
-                <hgroup>
-                    <h4 class="orange1">Language School "Speak Up" (Kyiv)</h4>
-                    <h5 class="position">English Course</h5>
-                </hgroup>
-            </article>
-            <!-- Add other courses similarly -->
-        </section>
-    </section>
-    
+         <!--Main content-->
+        <div class ="maincontent">
+            <!--about user-->
+            <div class="about_user">
+                <h2 class="about_position">Front-End Developer</h2>
+                <h1 class="about_name">Bohdana Skochynska</h1>
+                <p class="about_discription">
+                    Dedicated to staying up-to-date with the latest technologies and trends in front-end development to deliver cutting-edge solutions.
+                </p>
+              </div>
+                <!--Work-->
+                <div class="work" id="work">
+                    <hr>
+                    <h3 class="title">Working Experience</h3>
+                        <!--Company 1-->
+                        <div>
+                            <hr>
+                            <h4 class="position">Front-End Developer<span class="date">November 2020 - up to now</span></h4>
+                            <h3 class="orange1">Freelance</h3>
+                            <ul class="work_list">
+                                <li class="worklist_item">Website Development: Creating static and dynamic websites for clients based on their requirements and designs.</li>
+                                <li class="worklist_item">Web application development: Creation of interactive web applications and web services.</li>
+                                <li class="worklist_item">Creation of user interfaces (UI) and web design.</li>
+                                <li class="worklist_item">Providing advice to clients on web development.</li>
+                            </ul>
+                        </div>
+                        <!--Company 2-->
+                        <div>
+                            <h4 class="position">Manager<span class="date">March 2015 - October 2019</span></h4>
+                            <h3 class="orange1">EPAM, Toronto</h3>
+                            <ul class="work_list">
+                                <li class="worklist_item">Team Leadership: Providing leadership and guidance to teams of software developers, engineers, designers, and other IT professionals.</li>
+                                <li class="worklist_item">Project Management: Planning, organizing, and overseeing projects from initiation to completion. </li>
+                                <li class="worklist_item">Client Communication: Acting as a liaison between the company and its clients or stakeholders. </li>
+                            </ul>
+                        </div>
+                        <!--Company 3-->
+                        <div>
+                            <h4 class="position">Full-Stack Developer<span class="date">June 2014 - February 2015</span></h4>
+                            <h3 class="orange1">SoftServe, Lviv</h3>
+                            <ul class="work_list">
+                                <li class="worklist_item">Database Management: Designing database schemas to meet the requirements of web applications.</li>
+                                <li class="worklist_item">Problem Solving and Optimization:Optimizing code and improving application performance.</li>
+                                <li class="worklist_item">Develop user-facing features using HTML, CSS, and JavaScript.</li>
+                            </ul>
+                        </div>
+                </div>
+                <!--Education-->
+                <div class="education" id="education">
+                    <h3 class="title">Education and qualifications</h3>
+                    <hr>
+                    <h4 class="position">Junior bachelor<span class="date">September 2011 - June 2015</span></h4>
+                    <h3 class="orange1">A separate structural division of the Vocational College of <br> Electronic Devices of the Ivano-Frankivsk University of Oil and Gas.</h3>
+                    <h2 class="specialization">Software Engineering</h2>    
+                </div>
+                <!--Courses-->
+                <div class="courses" id="courses">
+                    <h3 class="title">Courses</h3>
+                    <hr>
+                    <h4 class="position">English for IT<span class="date">April 2017 - October 2018</span></h4>
+                    <h3 class="orange1">Language School "Speak Up" (Kyiv)</h3>
+                    <h4 class="position">Cisco: Building Distributed Networks<span class="date">May 2016 - December 2016</span></h4>
+                    <h3 class="orange1">Training Center "Network Technologies" (Kyiv)</h3>
+                    <h4 class="position">Java Programming<span class="date">June 2014 - February 2015</span></h4>
+                    <h3 class="orange1">JavaRush(online)</h3>  
+                    <h4 class="position">C++ Programming<span class="date">January 2013 - August 2013</span></h4>
+                    <h3 class="orange1">Regional IT Center (Ivano-Frankivsk)</h3>  
+                </div>
+                <!--Skills-->
+                <div class="skills" id="skills">
+                    <h3 class="title">Skills</h3>
+                    <hr>
+                    <h3 class="skills_title">Tech Skills</h3>
+                    <ul class="list">
+                        <li class="skills-item"><span class="skills_text1">HTML5</span></li>
+                        <li class="skills-item"><span class="skills_text1">CSS3</span></li>
+                        <li class="skills-item"><span class="skills_text1">GIT</span></li>
+                        <li class="skills-item"><span class="skills_text1">WebPack</span></li>
+                        <li class="skills-item"><span class="skills_text1">JavaScript</span></li>
+                        <!-- Вкладений список -->
+                        <li class="skills-item">
+                            <span class="skills_text1">Frameworks</span>
+                            <ul class="nested_list">
+                                <li class = "nested_list_item"><span class="skills_text2">React.js</span></li>
+                                <li class = "nested_list_item"><span class="skills_text2">Angular</span></li>
+                                <li class = "nested_list_item"><span class="skills_text2">Node.js</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3 class="skills_title">Soft Skills</h3>
+                    <ul class="list">
+                        <li class="skills-item"><span class="skills_text1">Scrum</span></li>
+                        <li class="skills-item"><span class="skills_text1">Agile</span></li>
+                        <li class="skills-item"><span class="skills_text1">GTD</span></li>
+                        <li class="skills-item"><span class="skills_text1">Teamwork</span></li>
+                        <!-- Вкладений список -->
+                        <li class="skills-item">
+                            <span class="skills_text1">Communication</span>
+                            <ul class="nested_list">
+                                <li class = "nested_list_item"><span class="skills_text2">Verbal</span></li>
+                                <li class = "nested_list_item"><span class="skills_text2">Written</span></li>
+                                <li class = "nested_list_item"><span class="skills_text2">Interpersonal</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Projects-->
+                <div class="projects" id="projects">
+                    <h3 class="title">Projects</h3>
+                    <hr>
+                    <ol class="project_list">
+                        <li class="project_item">
+                            <span class="project"><a href="https://i-love-financing-carss.webflow.io/" class="project_link">https://i-love-financing-carss.webflow.io/</a>
+                            .........................
+                            <span class="project_bracket">[</span> HTML5, CSS3 <span class="project_bracket">]</span></span>
+                        </li>
+                        <li class="project_item">
+                            <span class="project"><a href="https://www.partytrick.com/how-it-works" class="project_link">https://www.partytrick.com</a>
+                            ........................................................
+                            <span class="project_bracket">[</span> JavaScript <span class="project_bracket">]</span></span>
+                        </li>
+                        <li class="project_item">
+                            <span class="project"><a href="https://reformalliance.com/successes/#" class="project_link">https://reformalliance.com</a>
+                            ..........................................................
+                            <span class="project_bracket">[</span> React.js, Node.js <span class="project_bracket">]</span></span>
+                        </li>
+                    </ol>
+                </div>
+            <!--Portfolio-->
+            <div class="portfolio" id="portfolio">
+                <h3 class="title">Portfolio</h3>
+                <hr>
+                <ol class="portfolio_list">
+                    <li class="portfolio_item">
+                        <span class="portfolio"><a href="lr_1/index.html" class="portfolio_link">lr_1/index.html</a>
+                        ...............................................................................................................
+                        <span class="portfolio_bracket">[</span> LR_1 <span class="portfolio_bracket">]</span></span>
+                    </li>
+                    <li class="portfolio_item">
+                        <span class="portfolio"><a href="lr_2/base_structure_html/index3.html" class="portfolio_link">lr_2/base_structure_html/index3.html</a>
+                        ........................................................
+                        <span class="portfolio_bracket">[</span> LR_2 <span class="portfolio_bracket">]</span></span>
+                    </li>
+                    <li class="portfolio_item">
+                        <span class="portfolio"><a href="lr_3/index.html" class="portfolio_link">lr_3/index.html</a>
+                        ...............................................................................................................
+                        <span class="portfolio_bracket">[</span> LR_3 <span class="portfolio_bracket">]</span></span>
+                    </li>
+                </ol>
+            </div>
+
+            
+            </div>
+            
+
         <!--Sidebar-->
         <div class = "sidebar">
-            <div class="avatar"><img src="lr_2/zavd_resume/photos/photo.jpg" alt="user photo" class="photo"></div>
+            <div class="avatar"><img src="kep/lr_2/zavd_resume/photos/photo.jpg" alt="user photo" class="photo"></div>
             <!--Personal info-->
             <div class="personal_info">
                 <h3 class="sidebar_title">Personal information</h3>
