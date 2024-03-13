@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif; /*описати призначення властивості у проєкті*/
+}
+
+img {
+	display: block; /*описати призначення властивості у проєкті*/
+	width: 100%;
+}
+
+.page-wrapper {
+	max-width: 860px; /*описати призначення властивості у проєкті*/
+	width: 100%; /*описати призначення властивості у проєкті*/
+	margin: 0px 500px;/*виправила*/
+	padding: 30px 10px 20px; /*описати призначення властивості у проєкті*/
+	background-color: #008499;
+}
+
+.content-wrap {
+	padding: 0 20px 20px;
+	background-color: #fff;
+}
+
+header {
+	height: 138px;
+	background-image: url('/assets/images/header.png');/*виправила*/
+	background-repeat: no-repeat; /*описати призначення властивості у проєкті*/
+	background-size: contain; /*описати призначення властивості у проєкті*/
+	background-position: center; /*описати призначення властивості у проєкті*/
+}
+
+main {
+	padding: 20px 30px; /*описати призначення властивості у проєкті*/
+	font-weight: 500;
+	font-size: 1.2rem; /*описати призначення властивості у проєкті*/
+}
+
+.mb-15 {
+	margin-bottom: 10px;/*виправила*/
+    
+    
+}
+
+.mb-20 {
+	
+    padding-bottom: 20px;/*виправила*/
+    
+}
+
+.d-block {
+	
+    display: block;/*виправила*/
+    
+    
+}
+
+.t-center {
+	text-align: center;/*виправила*/
+}
+
+.list { 
+	padding-left: 60px; /*описати призначення властивості у проєкті*/
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.services-list-item {
+	width: calc(50% - 150px); /*описати призначення властивості у проєкті*/  /*виправила*/
+}
+
+.services-list-item__title {
+	padding: 15px 0; /*описати призначення властивості у проєкті*/
+    font-weight: bold;/*виправила*/
+	letter-spacing: 1px;
+}
+
+.btn {
+	height: 50px;
+	text-align: center;/*виправила*/
+	line-height: 50px;
+	background-color: #f53947;
+	color: #fff;
+	cursor: pointer;
+}
+
+.text-section a[href^='tel:'] {  
+   text-decoration: none;/*виправила*/
+   color: black;/*виправила*/
+	
+}
+
+.link-btn {
+
+    text-decoration: none;/*виправила*/
+}
+
+footer {
+	padding: 25px 0;
+	background-color: #008499;/*виправила*/
+	color: #fff;
+    
+}
+
+.social-links {
+	font-size: 2rem;
+    
+}
+
+.social-links a {
+    text-decoration: none;/*виправила*/
+    color:#fff/*виправила*/
+}
+
+
+.social-links a:not(:last-child) /*описати даний селектор у проєкті*/ {
+    margin-right: 10px;/*виправила*/
+}
+
+footer p:nth-child(3) { /*описати даний селектор у проєкті*/ 
+	font-weight: bold;/*виправила*/
+}
+
+footer p:last-child a /*описати даний селектор у проєкті*/ {
+	color: #fff;/*виправила*/
+	font-weight: bold;/*виправила*/
+}
