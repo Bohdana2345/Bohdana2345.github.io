@@ -215,7 +215,7 @@ margin-bottom: 10px;
     display: inline-block; 
 }
 
-.personal_info_link, .personal_info_t   {
+.personal_info_link, .personal_info_t, .address   {
     color:#d3d3d3;
     font-style: normal;
     font-weight: 400;
