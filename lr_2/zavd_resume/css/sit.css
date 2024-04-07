@@ -3,7 +3,7 @@ body    {
     background-color: #FFFFFF;
 }
 
-main   {
+.main   {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
