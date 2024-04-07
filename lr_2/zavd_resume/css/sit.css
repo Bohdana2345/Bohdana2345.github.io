@@ -363,6 +363,8 @@ color: #595959;
 
 .maincontent {
 position: relative;
+box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+padding: 100px 50px;
 }
 
 .navbar-menu ul {
