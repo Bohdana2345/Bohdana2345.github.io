@@ -379,11 +379,11 @@ padding: 100px 50px;
 
 .portfolio_link {
     display: block;
-    width: 300px;
+    width: 100px;
     height: 50px;
     border-radius: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     text-decoration: none;
     color: #FFFFFF; 
     font-style: normal;
@@ -395,8 +395,8 @@ padding: 100px 50px;
 }
 
 .portfolio_link:hover {
-    color: #1E2939 !important; 
-    background-color: #FFFFFF !important;
-    border: 1px solid #1E2939 !important;
+    color: #1E2939; 
+    background-color: #FFFFFF;
+    border: 1px solid #1E2939;
 }
 
