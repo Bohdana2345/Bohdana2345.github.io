@@ -55,7 +55,7 @@ body    {
     margin-bottom: 10px;
 }
 
-.project_item, .portfolio_item   {
+.project_item   {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -64,7 +64,7 @@ body    {
 }
 
 .project,.portfolio,
-.project_link,  .portfolio_link  {
+.project_link,   {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -379,7 +379,7 @@ padding: 100px 50px;
 
 .portfolio_link{
 	display:block;
-	width: 100px;
+	width: auto;
 	height: 50px;
 	border: 1px solid  #1E2939;
 	border-radius: 10px;
@@ -389,7 +389,8 @@ padding: 100px 50px;
 	color: #595959;
 	font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 15px;
+	margin: 10px 0;
 	
 }
 	
