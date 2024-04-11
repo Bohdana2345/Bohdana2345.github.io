@@ -383,7 +383,7 @@ padding: 100px 50px;
     height: 50px;
     border-radius: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 1.2;
     text-decoration: none;
     color: #FFFFFF; 
     font-style: normal;
@@ -399,4 +399,3 @@ padding: 100px 50px;
     background-color: #FFFFFF;
     border: 1px solid #1E2939;
 }
-
