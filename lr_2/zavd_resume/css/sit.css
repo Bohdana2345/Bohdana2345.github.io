@@ -377,12 +377,12 @@ padding: 100px 50px;
     margin-right: 20px;
 }
 
-portfolio_link{
+.portfolio_link{
 	display:block;
 	width: auto;
 	height: 50px;
 	border: 1px solid  #1E2939;
-	border-radius: 1opx;
+	border-radius: 10px;
 	text-align: center;
 	line-height: 50px;
 	text-decoration: none;
