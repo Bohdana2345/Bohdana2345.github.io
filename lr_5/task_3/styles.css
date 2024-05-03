@@ -91,7 +91,7 @@ tr {
 
 
 .sign-up {
-    height: 100px;
+    height: 120px;
      
 }
 
@@ -103,7 +103,7 @@ text-align: center;
 line-height: 50px;
 text-transform: uppercase;
 color: white;
-margin-top: 0;
+margin-top: 20px;
 margin-bottom: 20px;
 }
 .button1 {
