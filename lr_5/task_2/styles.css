@@ -1,0 +1,91 @@
+table {
+    border-collapse: collapse;
+    border: 1.5px solid black;
+    font-size: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.cell:nth-child(odd) {
+    background-color: #e6ffd3;
+}
+
+.cell:nth-child(even) {
+    background-color: #d5ffb9;
+}
+
+.cell {
+    border: 1.5px solid rgb(56, 21, 21);
+    box-sizing: border-box;
+    padding: 0 1px;
+    width: 80px;
+}
+
+.table1-last{
+    width: 200px;
+}
+
+.header {
+    text-align: center;
+    background-color: #5bb43f;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.table-content {
+    width: 600px;
+    
+}
+
+.cell1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0 1px;
+    float: left;
+    font-size: 15px;
+    width: 80px; 
+    box-sizing: border-box;
+}
+
+.table2-last{
+    width: 200px; 
+    border-right: 1.9px solid black;
+    box-sizing: border-box;
+}
+.header1 {
+    text-align: center;
+    background-color: #5bb43f;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    float: left;
+    border-bottom: 0.5px solid black;
+    box-sizing: border-box;
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+}
+
+.cell1:nth-child(odd) {
+    background-color: #d5ffb9;
+}
+
+.cell1:nth-child(even) {
+    
+    background-color: #e6ffd3;
+}
+
+.row-point {
+    clear: left;
+    border-left: 1.5px solid black;
+    box-sizing: border-box;
+}
+
+.table2-bottom{
+    border-bottom: 1.5px solid black;
+}
+
+
+
+
