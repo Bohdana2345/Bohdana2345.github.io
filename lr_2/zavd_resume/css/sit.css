@@ -392,6 +392,7 @@ padding: 100px 50px;
     background-color: #1E2939; 
     margin: 10px 0;
     transition: color 0.3s, background-color 0.3s; 
+    padding: 0 10px;
 }
 
 .portfolio_link:hover {
