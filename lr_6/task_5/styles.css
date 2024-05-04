@@ -77,7 +77,7 @@ html {
   }
 
 .logo{
-    background-image: url("../photos/burger.jpg");
+    background-image: url("/photos/burger.jpg");
     background-size: cover;/* автоматичне масштабування фону, щоб заповнити всю площу контейнера*/
     width: 25%;
     height: 450px;
