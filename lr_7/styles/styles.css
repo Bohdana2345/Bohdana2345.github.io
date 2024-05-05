@@ -6,7 +6,7 @@
 h1  {
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 100px; 
+    margin-bottom: 60px; 
 }
 
 .category, .name, .on-sale-soon-text, .sale-button-text, .price {
@@ -162,7 +162,7 @@ h1  {
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
-    top: 118px;
+    top: 117px;
     color: rgb(186, 183, 183);
     font-size: 20px;
     cursor: pointer;
