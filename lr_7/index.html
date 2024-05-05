@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <script>
+        function showMessage() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'flex';
+        }
+
+        function closeMessage() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+
+ <div class="overlay" id="overlay">
+    <div class="message-box">
+        <span class="close" onclick="closeMessage()">&times;</span>
+        <p>Товар успішно додано у корзину</p>
+    </div>
+</div>
+
+    <h1>обов'язково додайте своє замовлення</h1>
+    <div class="wrap">
+        <div class="swipe swipe-left">&lt</div>
+        <div class="swipe swipe-right">&gt</div>
+        <div class="label new">новинка</div>
+        <div class="label top-sale-1">хіт<br>продажів</div>
+        <div class="label top-sale-2">хіт<br>продажів</div>
+
+    <div class="card">
+        <a href="https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[56]" class="category">для риболовлі</a>
+        <hr>
+        <div class="photo-block">
+            <a href="#" class="photo-on-sale-soon"><img src="photos/for_fishing.jpg" alt="quadcopter_for_fishing" class="photo"></a>
+        </div>
+        <a href="#" class="name name-on-sale-soon">LiDiRC L15FW</a>
+        <div><span class="price price-on-sale-soon">0 грн</span></div>
+        <div class="on-sale-soon">
+            <span class="on-sale-soon-text">незабаром у<br> продажі</span>   
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[192]" class="category">для військових</a>
+        <hr>
+        <div class="photo-block">
+            <a href="https://dron-shop.com.ua/quadcopters/cfly/c-fly-2t"><img src="photos/for_military.png" alt="quadcopter_for_military" class="photo"></a>
+        </div>
+        <a href="https://dron-shop.com.ua/quadcopters/cfly/c-fly-2t" class="name">C-FLY 2T</a>
+        <div><span class="old-price">200 000 грн</span> <span class="price">89 000 грн</span></div>
+        <button class="sale-button" onclick="showMessage()"><span class="sale-button-text">у корзину</span></button>
+    </div>
+
+    <div class="card">
+        <a href="https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[55]" class="category">для аерофотозйомки</a>
+        <hr>
+        <div class="photo-block">
+            <a href="https://dron-shop.com.ua/quadcopters/zlrc/sg907-pro-max"><img src="photos/for_air_shooting.png" alt="quadcopter_for_air_shooting" class="photo"></a>
+        </div>
+        <a href="https://dron-shop.com.ua/quadcopters/zlrc/sg907-pro-max" class="name">ZLRC SG907 Pro Max</a>
+        <div><span class="price">7 595 грн</span></div>
+        <button class="sale-button" onclick="showMessage()"><span class="sale-button-text">у корзину</span></button> 
+    </div>
+
+    <div class="card">
+        <a  href="https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[59]"class="category">для домогосподарства</a>
+        <hr>
+        <div class="photo-block">
+            <a href="https://dron-shop.com.ua/quadcopters/zlrc/xmrc-m10-ultra-splus"><img src="photos/for_agriculture.png" alt="quadcopter_for_agriculture" class="photo"></a>
+        </div>
+        <a href="https://dron-shop.com.ua/quadcopters/zlrc/xmrc-m10-ultra-splus" class="name">XMRC M10 ULTRA S+</a>
+        <div><span class="price">13 500 грн</span></div>
+        <button class="sale-button" onclick="showMessage()"><span class="sale-button-text">у корзину</span></button> 
+    </div>
+</div>
+    </div>
+    
+</body>
+</html>
