@@ -26,7 +26,7 @@ tr:first-child td {
     color: white;
 }
 
-.company{
+.company  {
     width: 150px; 
     padding: 10px;
     background-color: #93cceb;
@@ -36,17 +36,17 @@ tr:first-child td {
     float:left;
     border: .5px solid white; 
 }
-.cell{
+
+.cell {
     float: left; 
     padding: 10px; 
     text-align: center; 
     border: .5px solid white; 
     background-color: #cae3f3;
-    width: 60px;
-    
+    width: 60px; 
 }
 
-.row{
+.row {
     clear: left; 
 }
 
