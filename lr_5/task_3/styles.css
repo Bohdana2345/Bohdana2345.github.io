@@ -47,20 +47,19 @@ td {
     font-size: 18px;
     
 }
+
 .option-bold {
-    
     font-weight: bold;
 }
 
-.header1, .header2, .header3 {
+.header1, .header2, .header3  {
     height: 150px;
     color: white;
     font-size: 35px;
     font-weight: 800;
- 
 }
 
-.header1{
+.header1 {
     border-bottom:10px solid #0f876b;
     border-left: 4px solid #1a9175;
     border-right: 4px solid #1a9175;
@@ -68,7 +67,8 @@ td {
     background-color: #16a086;
 
 }
-.header2 {
+
+.header2  {
     border-bottom:10px solid#d17d05;
     border-left: 4px solid #d19e3b;
     border-right: 4px solid #d19e3b;
@@ -76,7 +76,8 @@ td {
     background-color: #f39c11;
 
 }
-.header3 {
+
+.header3  {
     border-bottom:10px solid #9f2e20;
     border-left: 4px solid #b23630;
     border-right: 4px solid #b23630;
@@ -91,8 +92,7 @@ tr {
 
 
 .sign-up {
-    height: 120px;
-     
+    height: 120px;   
 }
 
 .button {
@@ -106,12 +106,15 @@ color: white;
 margin-top: 20px;
 margin-bottom: 20px;
 }
+
 .button1 {
     background-color: #16a086;
 }
+
 .button2 {
     background-color: #f39c11;
 }
+
 .button3 {
     background-color: #c1392b;
 }
