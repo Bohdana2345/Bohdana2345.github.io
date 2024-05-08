@@ -16,7 +16,6 @@ html {
     background-color: white;
     width: 75%;
     height: 450px;
-    float: right;
     display: flex;
     justify-content: center;
     position: relative;
@@ -70,7 +69,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);/*переміщає псевдоелемент назад на 50% від його ширини і висоти, а потім повертає його на 45 градусів.*/
+    transform: translate(-50%, -50%) rotate(45deg);/*переміщає псевдоелемент на 50% від його ширини і висоти(тобто вирівнює по центр. осі), а потім повертає його на 45 градусів проти год.стрілки.*/
     width: 10px;
     height: 10px;
     background: #ccc;
