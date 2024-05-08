@@ -8,10 +8,6 @@ html {
     height: calc(100% - 60px); 
   }
 
-.wrap{
-   clear: fixed;
-}
-
 .menu {
     background-color: white;
     width: 75%;
