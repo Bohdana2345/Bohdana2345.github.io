@@ -1,0 +1,122 @@
+ .example2 div{
+    font-family: Oswald;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0;
+
+}
+
+.example3 div{
+    font-family: Oswald;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+
+.section{
+    float:right;
+    width: 25%;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+
+ .s1, .s3 {background: #ddd; }
+.s2, .s4  {background:#ccc;}
+    
+#header,
+#footer
+{
+   clear: right;
+   width: 100%;
+   height: 100px;
+   background-color: #eee ;
+   margin: 10px 0;}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.container2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.example2{
+    margin-bottom: 100px;
+}
+
+.section1{
+    
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+
+.wrapper{
+    float:left;
+    width: 80%;
+    padding: 0;
+}
+.sb1, .sb2 {background: #ccc;}
+.sb1{float:left; width:25%;}
+.sb2{float:right;width:20%;}
+
+
+#header1,
+#footer1
+{
+   clear: both;
+   width: 100%;
+   background-color: #eee ;
+   
+}
+
+.main{
+    background-color: #ddd;
+    width: 75%;
+    float: right;
+}
+
+.section2{
+    
+    height: 200px;
+    margin-bottom: 10px;
+    float: left;
+    width: 33.333333%;
+
+}
+
+.b2{ background-color: #ddd;}
+
+.b1, .b3{ background-color: #ccc;}
+
+.b4{ background-color: #c8d5f0;
+    width: 240px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    clear: both;
+   
+ }
+
+#header2,
+#footer2
+{
+   clear: both;
+   width: 100%;
+   background-color: #eee ;
+   
+}
+
+
+
+
+
