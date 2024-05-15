@@ -1,0 +1,142 @@
+*   {
+    margin: 0 auto;
+}
+
+.table-container table {
+    float: left;
+    width: calc((100% - 180px) / 3);
+    height: 700px;
+}
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse; 
+    font-family: 'Core Sans D 55 Bold', sans-serif;   
+}
+
+.table1 {
+    margin-left: 60px;
+    margin-right: 30px;
+    border-top: 4px solid #8bc0b2; 
+    border-bottom: 10px solid #0f876b; 
+    border-left: 4px solid #8bc0b2; 
+    border-right: 4px solid #8bc0b2; 
+}
+.table2 {
+    margin-right: 30px;
+    border-top: 4px solid #dbc09a; 
+    border-bottom: 10px solid #d17d05; 
+    border-left: 4px solid #dbc09a; 
+    border-right: 4px solid #dbc09a;  
+}
+.table3 {
+    margin-right: 60px;
+    border-top: 4px solid #b5a69f; 
+    border-bottom: 10px solid #9f2e20; 
+    border-left: 4px solid #b5a69f; 
+    border-right: 4px solid #b5a69f;  
+}
+
+td {
+    text-align: center; 
+}
+
+.option {
+    padding-top: 20px;
+    color: gray;
+    font-size: 18px;
+    
+}
+.option-bold {
+    
+    font-weight: bold;
+}
+
+.header1, .header2, .header3 {
+    height: 150px;
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+ 
+}
+
+.header1{
+    border-bottom:10px solid #0f876b;
+    border-left: 4px solid #1a9175;
+    border-right: 4px solid #1a9175;
+    border-top: 4px solid #1a9175;
+    background-color: #16a086;
+
+}
+.header2 {
+    border-bottom:10px solid#d17d05;
+    border-left: 4px solid #d19e3b;
+    border-right: 4px solid #d19e3b;
+    border-top: 4px solid #d19e3b;
+    background-color: #f39c11;
+
+}
+.header3 {
+    border-bottom:10px solid #9f2e20;
+    border-left: 4px solid #b23630;
+    border-right: 4px solid #b23630;
+    border-top: 4px solid #b23630;
+    background-color: #c1392b;
+
+}
+
+tr {
+    background-color: rgb(255, 255, 255); 
+}
+
+
+.sign-up {
+    height: 100px;
+     
+}
+
+.button {
+display: block;
+width: 40%;
+height: 50px;
+text-align: center;
+line-height: 50px;
+text-transform: uppercase;
+color: white;
+margin-top: 0;
+margin-bottom: 20px;
+}
+.button1 {
+    background-color: #16a086;
+}
+.button2 {
+    background-color: #f39c11;
+}
+.button3 {
+    background-color: #c1392b;
+}
+
+.line {
+    padding: 0 15px; 
+    border: none; 
+}
+
+.line hr {
+    border: none; 
+    border-top: 2px dashed lightgray; 
+    margin-top: 10px;
+}
+
+.line-container{
+
+    height: 30px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-weight: 300;
+}
+
