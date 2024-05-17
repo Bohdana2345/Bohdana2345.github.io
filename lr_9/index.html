@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+		<link href="styles/styles.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="brand">Project Name</div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="header">
+            <div class="container">
+                <h1>Landing Page Template</h1>
+                <a href="#" class="button">Go back to the lesson</a>
+            </div>
+        </div>
+        
+        <div class="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="service">
+                    <i class="fa fa-tachometer fa-3x" aria-hidden="true"></i>
+                    <p>poutyr ut, nbrtewhy vel venenatis vipae justo ulyham diytum fepis eu pede mollis pretium maisa.</p>
+                </div>
+                <div class="service">
+                    <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+                    <p>poutyr ut, nbrtewhy vel venenatis vipae justo ulyham diytum fepis eu pede mollis pretium maisa.</p>
+                </div>
+                <div class="service">
+                    <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>
+                    <p>poutyr ut, nbrtewhy vel venenatis vipae justo ulyham diytum fepis eu pede mollis pretium maisa.
+            </div>
+        </div>
+        
+        <div class="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <div class="post">
+                    <img src="img/img1.jpg" alt="">
+                    <h3>Socis natoque magnis dis valem parturient...</h3>
+                    <p class="date">01.01.2017</p>
+                    <p>Pegan coerrfg lytrer egtt dorol, ghjhgf maisa. Cum socies nategee pefveibus re magfis dis parrurient mrtgh, nagfgur rieflus mus donec quam ferfs ulfghcies nec pellentesque eu.</p>
+                </div>
+                <div class="post">
+                    <img src="img/img2.jpg" alt="">
+                    <h3>Socis narewe magnos dis valem pawdfghgf...</h3>
+                    <p class="date">31.12.2016</p>
+                    <p>Pegan coerrfg lytrer egtt dorol, ghjhgf maisa. Cum socies nategee pefveibus re magfis dis parrurient mrtgh, nagfgur rieflus mus donec quam ferfs ulfghcies nec pellentesque eu.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="photo">
+                    <img src="img/house-1.jpg" alt="" /></a>
+                </div>
+
+                <div class="photo">
+                    <img src="img/house-2.jpg" alt="" /></a>
+                </div>
+
+                <div class="photo">
+                    <img src="img/house-3.jpg" alt="" /></a>
+                </div>
+
+                <div class="photo">
+                    <img src="img/house-4.jpg" alt="" /></a>
+                </div>
+
+                <div class="photo">
+                    <img src="img/house-5.jpg" alt="" /></a>
+                </div>
+
+                <div class="photo">
+                    <img src="img/house-6.jpg" alt="" /></a>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeMessage()">&times;</span>
+                <div class="slider">
+                    <div><img src="img/house-1.jpg" alt=""></div>
+                    <div><img src="img/house-2.jpg" alt=""></div>
+                    <div><img src="img/house-3.jpg" alt=""></div>
+                    <div><img src="img/house-4.jpg" alt=""></div>
+                    <div><img src="img/house-5.jpg" alt=""></div>
+                    <div><img src="img/house-6.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="brand">Project Name</div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">© 2017 All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.photo').on('click', function() {
+                $('#modal').css('display', 'block');
+                $('.slider').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: true
+                });
+            });
+            $('.close').on('click', function() {
+                $('#modal').css('display', 'none');
+                $('.slider').slick('unslick');
+            });
+            $(window).on('click', function(event) {
+                if ($(event.target).is('#modal')) {
+                    $('#modal').css('display', 'none');
+                    $('.slider').slick('unslick');
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
