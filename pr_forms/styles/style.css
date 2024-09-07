@@ -44,6 +44,7 @@ h2  {
     padding: 20px;
     display: flex;
     position: relative;  
+    margin-bottom: 30px;
 }
 
 .elipse1 {
@@ -83,7 +84,7 @@ h2  {
     background-image: url('../images/astronaut_picture_box.png');
     background-size: cover; 
     background-position: center; 
-    width: 60%;
+    width: 65%;
     position: relative;
     border-radius: 20px 20px 20px 20px;   
 }
