@@ -1,0 +1,353 @@
+body {
+    display: flex;
+    align-items: center;    
+    flex-direction: column; 
+    font-family: Inter;
+    background-color: #0A0D17;
+    position: relative;
+}
+
+.header {
+    width: 29%;
+    height: 130px;
+    margin: 60px 0;
+    opacity: 0px;
+    text-align: center;  
+}
+
+h1 {
+    font-size: 81.85px;
+    font-weight: 800;
+    margin: 1px 0;
+    color:#FFFFFF; 
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #ececec, #a076ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2  { 
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 1px;
+}
+
+.wrapper {
+    width: 46%;
+    height: 576px;
+    gap: 30px;
+    border-radius: 20px;
+    background-color: #17162a;
+    padding: 20px;
+    display: flex;
+    position: relative;  
+}
+
+.elipse1 {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    right: 505px;
+    top: 261px;
+    background: #763AF5;
+    opacity: 0.8;
+    filter: blur(110px);
+}
+
+.elipse3 {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 355px;
+    top: 210px;
+    background: #A604F2;
+    opacity: 0.6;
+    filter: blur(150px);
+}
+
+.elipse2  {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 555px;
+    top: 728px;
+    background: #763AF5;
+    opacity: 0.7;
+    filter: blur(150px);
+}
+
+.picture-box {
+    background-image: url('../images/astronaut_picture_box.png');
+    background-size: cover; 
+    background-position: center; 
+    width: 60%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;   
+}
+
+.form-container {
+    background-color: #17162a; 
+    width: 46%;
+    padding: 35px;
+}
+
+.picture-box-text > p, .form-container > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    opacity: 70%;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.picture-box-text > p {
+    margin: 5px 25px;
+}
+
+.picture-box-text {
+    position: absolute;
+    bottom: 20px;  
+}
+
+h3 {   
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 36.31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color:#FFFFFF;
+    margin-bottom: 1px;
+}
+
+.form-container > p {
+    margin-top: 6px;
+    margin-bottom:40px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.icon {
+    background: url('/images/button_icon.png') no-repeat;
+    width: 54px; 
+    height: 23px; 
+    display: inline-block; 
+}
+
+form {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); 
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+textarea {
+    height: 100px;
+    font-family: inherit;
+    resize: none; 
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #A604F2;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 6px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #7b1fa2, #d81b60);
+}
+
+button img {
+    height: 18px; 
+}
+
+@media (max-width: 600px) {
+    .header {
+        width: 90%;
+        height: auto;
+        margin: 30px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 0px; 
+    }
+
+    .form-container {
+        width: 100%;
+        padding-left: 0;
+      
+        
+    }
+    .form-container .form-row{
+        
+        margin-right: 28px;
+        
+    }
+   
+    .picture-box {
+        width: 100%;
+        height: 300px;
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .elipse1, .elipse2, .elipse3{
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1153px) {
+    .header {
+        width: 80%;
+        height: auto;
+        margin: 40px 0;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        width: 80%;
+        height: auto;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 50%;
+        padding: 25px;
+    }
+
+    .picture-box {
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    input, textarea {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    button {
+        width: 100%; 
+        font-size: 15px;
+        box-sizing: border-box; 
+    }
+    
+    .elipse1, .elipse2, .elipse3{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1154px) {
+    .header {
+        width: 50%;
+        height: auto;
+        margin: 60px 0;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .wrapper {
+        width: 50%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 46%;
+        padding: 30px;
+    }
+
+    .picture-box {
+        width: 54%;
+        height: 600px;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .form-row {
+        flex-direction: row;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+
