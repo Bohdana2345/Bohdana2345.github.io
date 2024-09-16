@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pokemon Magazine</title>
+</head>
+
+<body>
+    <div class="flipbook">
+      <div class="hard">Blood of Zeus Gallery <small>~ Gods&Heroes</small></div>
+      <div class="hard"></div>
+      <div>
+        <small>Lets Look At Some Amazing Olympian Gods ❤️</small>
+        <small>Huge Crush on 'Em All</small>
+      </div>
+      <div>
+        <img src="images/apollo.jpg" alt="" onclick="changeImage(this, 'images/apollo2.jpg')" onmouseover="changeBackground('#fceb58')" onmouseout="resetBackground()"/>
+        <small> Apollo </small>
+      </div>
+      <div>
+        <img src="images/persephone.jpg" alt="" onmouseover="changeBackground('#ffaade')" onmouseout="resetBackground()"/>
+        <small> Persephone </small>
+      </div>
+      <div>
+        <img src="images/ares.jpg" alt="" onmouseover="changeBackground('#3d3b3f')" onmouseout="resetBackground()"/>
+        <small> Ares </small>
+      </div>
+      <div>
+        <img src="images/artemis.jpg" alt="" onmouseover="changeBackground('#e0a6f7')" onmouseout="resetBackground()"/>
+        <small> Artemis </small>
+      </div>
+      <div>
+          <img src="images/zeus.jpg" alt="" onmouseover="changeBackground('#5362df')" onmouseout="resetBackground()"/>
+          <small> Zeus </small>
+        </div>
+        <div>
+          <img src="images/hera.jpg" alt="" onmouseover="changeBackground('#711397')" onmouseout="resetBackground()"/>
+          <small> Hera </small>
+        </div>
+      <div>
+        <img src="images/athena.jpg" alt="" onclick="toggleImage(this, 'images/athena.jpg', 'images/athena1.jpg')" onmouseover="changeBackground('#2a8e44')" onmouseout="resetBackground()"/>
+        <small> Athena </small>
+      </div>
+      <div class="hard"></div>
+      <div class="hard">Thank You <small>~ HankTheTank</small></div>
+    </div>
+  
+    <script src="jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+      $(".flipbook").turn();
+  
+      function changeBackground(color) {
+          document.body.style.background = `${color} url('images/bg.gif') no-repeat center center`;
+      }
+  
+      function resetBackground() {
+          // Повертаємо початковий фон
+          document.body.style.background = `url("images/bg.gif") no-repeat center center`;
+          document.body.style.backgroundSize = "cover";
+      }
+
+      function toggleImage(imgElement, originalSrc, newSrc) {
+      if (originalSrcs[imgElement.src] === undefined) {
+        // Зберігаємо оригінальний src, якщо це перше натискання
+        originalSrcs[imgElement.src] = originalSrc;
+      }
+
+      // Перевіряємо, чи потрібно переключити на нове зображення або повернути старе
+      if (imgElement.src === originalSrc) {
+        imgElement.src = newSrc;
+      } else {
+        imgElement.src = originalSrcs[imgElement.src];
+        delete originalSrcs[imgElement.src];  // Очищаємо збережений оригінал
+      }
+    }
+    </script>
+  </body>
+
+</html>
