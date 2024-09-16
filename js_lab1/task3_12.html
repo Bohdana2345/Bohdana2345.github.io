@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця множення</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Таблиця множення</h1>
+    <table id="Table"></table>
+
+    <script>
+        function generateTable() {
+            let tableHTML = '<tr><th></th>'; 
+            for (let i = 1; i <= 9; i++) {
+                tableHTML += `<th>${i}</th>`;//стовпці
+            }
+            tableHTML += '</tr>'; //порожній стовпець на початку для вирівнювання
+
+            for (let i = 1; i <= 9; i++) {
+                tableHTML += `<tr><th>${i}</th>`; //рядки
+                for (let j = 1; j <= 9; j++) {
+                    tableHTML += `<td>${i * j}</td>`;//значення
+                }
+                tableHTML += '</tr>';//порожній рядок на початку для вирівнювання
+            }
+            return tableHTML;
+        }
+
+        document.getElementById('Table').innerHTML = generateTable();
+    </script>
+</body>
+</html>
