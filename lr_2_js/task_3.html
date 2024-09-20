@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПІ-21-03 Скочинська</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: rgb(222, 190, 237);
+    }
+
+    .wrapper {
+        background: rgb(144, 72, 144);
+        height: 600px;
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .image-block {
+        width: 40%;
+        height: 550px; 
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+    <div class="image-block">
+        <img class="image" alt="Dionysus" src="images/dionysus.jpg" no-repeat onmouseover="image_hover(this, 'images/dionysus_hover.jpg')" onmouseout="image_hover(this, 'images/dionysus.jpg')"></img>
+    </div>
+
+    <div class="image-block">
+        <img class="image" alt="Apollo" src="images/apollo.jpg" no-repeat onmouseover="image_hover(this, 'images/apollo_hover.jpg')" onmouseout="image_hover(this, 'images/apollo.jpg')"></img>
+    </div>
+
+    <div class="image-block">
+        <img class="image" alt="Zeus" src="images/zeus.jpg" no-repeat onmouseover="image_hover(this, 'images/zeus_hover.jpg')" onmouseout="image_hover(this, 'images/zeus.jpg')"></img>
+    </div>
+
+    <div class="image-block">
+        <img class="image" alt="Ares" src="images/ares.jpg" no-repeat onmouseover="image_hover(this, 'images/ares_hover.jpg')" onmouseout="image_hover(this, 'images/ares.jpg')"></img>
+    </div>
+
+    <div class="image-block">
+        <img class="image" alt="Poseidon" src="images/poseidon.jpg" no-repeat onmouseover="image_hover(this, 'images/poseidon_hover.jpg')" onmouseout="image_hover(this, 'images/poseidon.jpg')"></img>
+    </div>
+
+    </div>
+    <script>
+         function image_hover(img, newSrc) {
+        img.src = newSrc;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПІ-21-03 Скочинська</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    button{
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+    
+</style>
+<body>
+    <button onclick="Dialog_box()">Press me</button>
+</body>
+<script>
+        function Dialog_box(){
+                if (confirm("If you want to go to another page select 'Ok'. If you want to close current page press 'Cancel'.") )
+                {
+                    window.open('task_3.html');
+                }
+                else
+                {
+                    window.close();
+                }
+
+        }
+</script>
+</html>

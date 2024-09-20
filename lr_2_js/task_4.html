@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПІ-21-03 Скочинська</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('images/rew.gif');
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+
+    .showSlider {
+        height: 700px;
+        width: 100%;
+        display: none;
+    }
+     
+    .showSlider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+    }
+
+    .container {
+        height: 700px;
+        width: 40%;
+        position: relative; 
+    }
+
+    .left, .right {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .right {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .left:hover, .right:hover {
+        background-color: rgba(8, 21, 81, 0.8);
+    }
+
+    .contentBook {
+        color: rgba(8, 21, 81, 0.8);
+        font-size: 40px;
+        font-weight: 900 ;
+        padding: 8px 12px;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        text-align: center;
+        background-color: aliceblue;
+        box-sizing: border-box;
+    }
+
+    .fade {
+        -webkit-animation-name: fade; /*для старих версій браузерів на базі WebKit !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+        }
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+}
+
+    @media (max-width: 780px) {
+
+        .container {
+            width: 70%; 
+            height: 90%; 
+            margin-bottom: 50px;
+        }
+        
+        .contentBook {
+            font-size: 30px; 
+        }
+
+        .left, .right {
+            font-size: 16px; 
+            padding: 10px; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        
+        body {
+        display: block;
+        background-image: url('images/rew.gif');
+        background-repeat: no-repeat; 
+        background-size: cover; 
+            }
+
+        .container {
+            width: 95%; 
+            height: 80%; 
+            
+        }
+
+        .contentBook {
+            font-size: 24px; 
+        }
+
+        .left, .right {
+            font-size: 14px; 
+            padding: 8px; 
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="showSlider fade">
+            <img src="images/slider-img1.jpg" alt= "Entering Library"/>
+            <div class="contentBook">Plush kitten</div>
+        </div>
+
+        <div class="showSlider fade">
+            <img src="images/slider-img2.jpg" alt = "Select Book"/>
+            <div class="contentBook">Morning kittens</div>
+        </div>
+
+        <div class="showSlider fade">
+            <img src="images/slider-img3.jpg" alt="Registering ID"/>
+            <div class="contentBook">Fairy kitten</div>
+        </div>
+
+        <div class="showSlider fade">
+            <img src="images/slider-img4.jpg" alt= "Returning Book"/>
+            <div class="contentBook">Curious kittens</div>
+        </div>
+
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a> <!--значення n буде або 1 (для наступного слайду), або -1 (для попереднього). !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! -->
+
+    </div>
+</body>
+<script>
+        var slide_index = 1; /*номер активного слайду !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        slidesDisplay(slide_index); /*відображає перший слайд !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        function nextSlide(n) {  /*для переходу до наступного або попереднього слайду; значення n буде або 1 (для наступного слайду), або -1 (для попереднього). !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+            slidesDisplay(slide_index += n); /*викликає функцію slidesDisplay, передаючи їй нове значення slide_index. Вираз slide_index += n збільшує або зменшує slide_index на n, в залежності від того, користувач натиснув на кнопку "наступний" чи "попередній" !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        }
+        function currentSlide(n) {
+            slidesDisplay(slide_index = n); /*слайдер переходить на слайд з номером n. !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        }
+        function slidesDisplay(n) { /*відповідає за відображення певного слайду та приховування інших !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        var i;
+        var slides = document.getElementsByClassName("showSlider");/*отримує всі елементи з класом showSlider і зберігає їх у масиві slides. Цей масив міститиме всі слайди, що відображаються у слайдері.!!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!!*/
+        if (n > slides.length) { slide_index = 1 } /*перевіряє, чи перевищує n кількість слайдів. Якщо так, slide_index скидається на 1, щоб перейти на перший слайд !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        if (n < 1) { slide_index = slides.length } /*перевіряє, чи n менше 1. Якщо так, slide_index встановлюється на останній слайд !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+        for (i = 0; i < slides.length; i++) { 
+            slides[i].style.display = "none"; /*приховує всі слайди, встановлюючи їх стиль display в none !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!!*/
+        }
+        slides[slide_index - 1].style.display = "block"; /*відображає активний слайд, встановлюючи його стиль display в block. Використання slide_index - 1 оскільки масиви починаються з 0, а slide_index починається з 1. !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!! */
+    }
+</script>
+</html>

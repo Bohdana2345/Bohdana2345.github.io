@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПІ-21-03 Скочинська</title>
+</head>
+<style>
+
+body {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        height: 90vh;           
+        
+    }
+
+    .field {
+        margin: 20px 0;
+    }
+
+    form{
+        display: inline-block;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 20px;  
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: center;
+    }
+
+</style>
+<body>
+    <form>
+        <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name, please">
+        </div>
+
+        <div class="field">
+        <label>What do you prefer?</label>
+        <br>
+        <label>
+            <input type="radio" name="preference" value="chocolate">
+            Chocolate
+        </label>
+
+        <label>
+            <input type="radio" name="preference" value="ice-cream">
+            Ice-cream
+        </label>
+         </div>
+
+        <div class="field button-container">
+        <button class="button" onclick="alert('Thank you for participating in the survey!')">Press me</button>
+        </div>
+    </form>
+
+    <script>
+        const Name = document.getElementById('name');
+        let firstInput = true; 
+        Name.addEventListener('input', function() {
+            if (firstInput && Name.value.length === 1) {  
+                console.log('Enter your name in this field please');
+                firstInput = false;  
+            }
+        }
+    ) 
+        const radios = document.querySelectorAll('input[name="preference"]');//всі елементи input з name="preference" !!!!ЦЕ НЕ КОМЕНТАР ЧАТА GPT!!!!
+        let selectedValue = null;
+        radios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.checked) {
+                    console.log(`You chose ${this.value}`);
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
