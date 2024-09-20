@@ -11,6 +11,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        margin: 0; 
         overflow: hidden;
         background-image: url('images/rew.gif');
         background-repeat: no-repeat; 
@@ -18,7 +19,7 @@
     }
 
     .showSlider {
-        height: 700px;
+        height: 100%;
         width: 100%;
         display: none;
     }
@@ -30,7 +31,7 @@
     }
 
     .container {
-        height: 700px;
+        height: 80%;
         width: 40%;
         position: relative; 
     }
@@ -94,7 +95,25 @@
         }
 }
 
-   @media (max-width: 480px) {
+    @media (max-width: 780px) {
+
+        .container {
+            width: 70%; 
+            height: 90%; 
+            margin-bottom: 50px;
+        }
+        
+        .contentBook {
+            font-size: 30px; 
+        }
+
+        .left, .right {
+            font-size: 16px; 
+            padding: 10px; 
+        }
+    }
+
+    @media (max-width: 480px) {
         
         body {
         display: block;
