@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" id="link">Click me</a>
+    <script>
+        function process_info()
+        {
+            let info = prompt("Заповніть рядок довільною інформацією:");
+
+            if (info !== null) {
+                let choice = prompt("Ви бажаєте вивести інформацію у діалоговому вікні (введіть 'діалог') чи вікні браузера (введіть 'браузер')?");
+                
+                if (choice === 'діалог') {
+                   
+                    alert("Ваша інформація: " + info);
+                } else if (choice === 'браузер') {
+                    
+                    document.body.innerHTML += "<p>Ваша інформація: " + info + "</p>";
+                } else {
+                   
+                    alert("Некоректний вибір. Спробуйте знову.");
+                }
+            }
+        }
+
+        document.getElementById('link').onmouseover = process_info;
+      
+    </script>
+</body>
+</html>
