@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+body {
+    background: linear-gradient(to bottom right, #2c3e50, #3498db);
+    font-family: 'Dosis', sans-serif;
+}
+
+form {
+    background-color: #f7f7f7;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    margin-bottom: 50px; 
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.btn-container {
+    text-align: center; 
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+.survey-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea {
+    border: 2px solid #34495e;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #ecf0f1;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.row.mb-3 {
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.row .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.text-center {
+    color: #f7f7f7;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+input.form-control {
+    border: 2px solid #34495e;
+    background-color: #ecf0f1;
+}
+
+
+input.form-control:focus {
+    border-color: #3498db;
+}
+
+
+@media (max-width: 768px) {
+    .survey-form {
+        padding: 15px;
+    }
+
+    .row .col-md-6 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

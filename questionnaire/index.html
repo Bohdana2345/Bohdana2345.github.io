@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування після конференції</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">опитування після участі в конференції</h2>
+    <form class="survey-form">
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">Ім'я</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="firstName" placeholder="Введіть ваше ім'я" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="middleName" class="form-label">По-батькові</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="middleName" placeholder="Введіть ваше по-батькові" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Прізвище</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="lastName" placeholder="Введіть ваше прізвище" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="email" class="form-label">Електронна адреса</label>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Введіть вашу електронну адресу" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Номер телефону</label>
+            </div>
+            <div class="col-md-6">
+                <input type="tel" class="form-control" id="phone" placeholder="Введіть ваш номер телефону" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="age" class="form-label">Вік</label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="age" placeholder="Введіть ваш вік" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="gender" class="form-label">Стать</label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="gender" required>
+                    <option value="" selected disabled>Оберіть стать</option>
+                    <option value="male">Чоловік</option>
+                    <option value="female">Жінка</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="conferenceDate" class="form-label">Дата конференції</label>
+            </div>
+            <div class="col-md-6">
+                <input type="date" class="form-control" id="conferenceDate" placeholder="Введіть дату конференції" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="rating" class="form-label">Оцініть конференцію (від 1 до 5)</label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="rating" required>
+                    <option value="" selected disabled>Оберіть оцінку</option>
+                    <option value="1">1 - Дуже погано</option>
+                    <option value="2">2 - Погано</option>
+                    <option value="3">3 - Задовільно</option>
+                    <option value="4">4 - Добре</option>
+                    <option value="5">5 - Відмінно</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="recommend" class="form-label">Чи рекомендували б ви цю конференцію іншим?</label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="recommend" required>
+                    <option value="" selected disabled>Ваша відповідь</option>
+                    <option value="yes">Так</option>
+                    <option value="no">Ні</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="return" class="form-label">Чи відвідали б ви конференцію вдруге?</label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="return" required>
+                    <option value="" selected disabled>Ваша відповідь</option>
+                    <option value="yes">Так</option>
+                    <option value="no">Ні</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="liked" class="form-label">Що найбільше сподобалося під час конференції?</label>
+            </div>
+            <div class="col-md-6">
+                <textarea class="form-control" id="liked" rows="3" placeholder="Опишіть, що вам найбільше сподобалося" required></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="improve" class="form-label">Що не сподобалося/що б ви хотіли покращити?</label>
+            </div>
+            <div class="col-md-6">
+                <textarea class="form-control" id="improve" rows="3" placeholder="Опишіть, що потребує покращення" required></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="feedback" class="form-label">Ваші коментарі щодо конференції</label>
+            </div>
+            <div class="col-md-6">
+                <textarea class="form-control" id="feedback" rows="3" placeholder="Введіть свої коментарі" required></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Надіслати анкету</button>
+            </div>
+        </div>
+    </form>
+    <div class="container mt-5 form-container">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
