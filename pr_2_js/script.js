@@ -43,11 +43,16 @@ function getTotalSpentByCustomer(orders){
     // console.log(`Загальна сума витрат клієнта ${name}: ${found_customer.total}`);( ЦЕ НЕ КОМЕНТАР ЧАТА ДЖПТ)
     let name = prompt("Введіть ім'я клієнта:");
     let found_orders = orders.filter(order=> order.customer[0].name===name);
+    if (found_orders.length === 0) {
+        console.log("Клієнта не знайдено!");
+    }
+    else{
     let sum = found_orders.reduce((accumulator, currentValue) => accumulator + currentValue.total, 0); // accumulator - зберігає результат, вкінці 0, за замовч. це з першого елемента ( ЦЕ НЕ КОМЕНТАР ЧАТА ДЖПТ)
     console.log(`Загальна сума витрат клієнта: ${sum}`);
+    }
 }
 
-// getTotalSpentByCustomer(orders)
+getTotalSpentByCustomer(orders)
 
 let products = [
     {productId: 1, name: "Підсвічник", price: 600},
@@ -71,45 +76,28 @@ function getTotalSales(products,purchases){
         let keys = [];
         let values = [];
         let result = {};
-    for (let i = 0; i < products.length; i++) {
-        keys.push(products[i].name);  
-    }
-
-    for (let j of purchases) {
-        let current_product_id = j.productId;
+        
+    for (let i of purchases) {
+        let current_product_id = i.productId;
         let product = products.find(product=> product.productId===current_product_id);
-        console.log(product.name);
         let found_purchases = purchases.filter(purchase=> purchase.productId===current_product_id);
-        console.log(found_purchases);
         let total_amount = found_purchases.reduce((accumulator, currentValue) => accumulator + currentValue.quantity * product.price, 0);
-        console.log(`Товар: ${product.name}; Прибуток, отриманий від продажу товару:${total_amount}`); 
-        values.push(total_amount);  
-               
+        values.push(total_amount); 
+        keys.push(product.name);           
     }
 
-    console.log(values);
-    console.log(keys);
-
-
-    for (let i = 0; i < keys.length; i++) {
-        result[keys[i]] = values[i]; 
+    for (let j = 0; j < keys.length; j++) {
+        result[keys[j]] = values[j]; 
     }
+
+    for (let item of products) {
+        if (!keys.includes(item.name)) {
+            result[item.name] = 0; 
+        }
+    }
+
     console.log(result);
-    
-    // let values = ["Bohdana", 25, "bohdanaskochynska@gmail.com"];
-    // for (let i = 0; i < products.length; i++) {
-    //     result.push(products[i].name);  
-    // }
-    // console.log(result);
-    
-    // let product = products.find(product=> product.productId===product_id);
-    // let found_purchases = purchases.filter(purchase=> purchase.productId===product_id);
-    // let total_amount = found_purchases.reduce((accumulator, currentValue) => accumulator + currentValue.quantity * product.price, 0);
-    // console.log(`Товар: ${product.name}; Прибуток, отриманий від продажу товару:${total_amount}`); 
-    // for (let i in products){
-
     }
-
 
 getTotalSales(products,purchases);
 
