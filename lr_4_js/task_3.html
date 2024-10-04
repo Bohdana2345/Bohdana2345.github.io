@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .input-section, .next-task, p{
+        margin: 5px 60px;
+    }
+    
+</style>
+<body>
+    <p id="score"></p>
+    <button type="button" class="next-task" onclick="Multiplication_calculator2('next')">наступне завдання</button>
+    <div class="input-section">
+    <label id="task"></label>
+    
+    <div>
+    <input type="radio" id="answer1" name="number" value="first_number">
+    <label for="answer1" class="option"></label>
+    </div>
+
+    <div>
+    <input type="radio" id="answer2" name="number" value="second_number">
+    <label for="answer2" class="option"></label>
+    </div>
+
+    <div>
+    <input type="radio" id="answer3" name="number" value="third_number">
+    <label for="answer3" class="option"></label>
+    </div>
+
+    <div>
+    <input type="radio" id="answer4" name="number" value="fourth_number">
+    <label for="answer4" class="option"></label>
+    </div>
+    <!-- <button type="button" onclick="Multiplication_calculator('check')">перевірити</button> -->
+    </div>
+    <p id="check"></p>
+    <script src="script.js"></script>
+    
+</body>
+</html>
