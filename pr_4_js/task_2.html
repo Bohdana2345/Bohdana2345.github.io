@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="setTimer()" id="btn">Запустити годинник</button>
+    <input type="text" id="time_display" size="10">
+
+    <script>
+        let alertTimeout;
+        let timerRunning = false;
+
+        function updateTime() {
+            let time = new Date();
+            let hours = time.getHours(); 
+            let minutes = time.getMinutes(); 
+            let seconds = time.getSeconds(); 
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            document.getElementById('time_display').value = hours + ":" + minutes + ":" + seconds;
+            if (timerRunning){
+                setTimeout(updateTime, 1000);
+            }
+        }
+
+        function showOneMinuteAlert() {
+            alert('Пройшла ще одна хвилина!');
+            alertTimeout = setTimeout(showOneMinuteAlert, 60000);
+        }
+
+        function setTimer() {
+            const button = document.getElementById('btn');
+            if (!timerRunning)  {
+                timerRunning = true;
+                button.textContent = "Зупинити годинник";
+                updateTime(); 
+                alertTimeout = setTimeout(showOneMinuteAlert, 60000);
+            } 
+            else {
+                timerRunning = false;
+                button.textContent = "Запустити годинник";
+                clearTimeout(alertTimeout);
+                document.getElementById('time_display').value = ""; 
+            }
+        }
+    </script>
+</body>
+</html>
+

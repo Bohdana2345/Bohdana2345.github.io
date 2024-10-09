@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ефект друкарської машинки</title>
+    <style>
+        #output {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre; /* зберігає пробіли та переходи рядків - ЦЕ НЕ КОМЕНТАР ЧАТА-ДЖПТ*/
+            margin-top: 10px;
+            border: 1px solid #bfbcbc;
+            padding: 10px;
+            width: 89%;
+            height: 100px;
+            overflow-y: auto; /* додає прокрутку, якщо текст виходить за межі поля - ЦЕ НЕ КОМЕНТАР ЧАТА-ДЖПТ*/
+        }
+        #input-text {
+            width: 90%;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="input-text" rows="5" placeholder="Введіть текст"></textarea>
+    <button onclick="startTyping()">Друкувати текст</button>
+    <div id="output"></div>
+    <audio id="sound" src="typer_sound.mp3" preload="auto"></audio> 
+
+    <script>
+        function startTyping() {
+            let input = document.getElementById('input-text').value; 
+
+            if (!input) {
+                 input = "Це ефект друкарської машинки!\nСпробуйте ввести власний текст у верхнє поле!"; 
+            }
+           
+            let index = 0;
+            let output = document.getElementById('output');
+            output.textContent = ''; 
+            const sound = document.getElementById('sound');
+            sound.pause();
+            sound.currentTime = 0; 
+
+            setTimeout(() => {
+                let typingInterval = setInterval(() => {
+                    if (index < input.length) {
+                        output.textContent += input[index]; 
+                        sound.play();
+                        index++; 
+                    } else {
+                        clearInterval(typingInterval); 
+                        sound.pause(); 
+                        sound.currentTime = 0;
+                    }
+                }, 100); 
+            }, 500); 
+        }
+    </script>
+</body>
+</html>

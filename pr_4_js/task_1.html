@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="time_display" size="10">
+    <script>
+        function time(){
+            let time = new Date()
+            let hours = time.getHours(); 
+            let minutes = time.getMinutes(); 
+            let seconds = time.getSeconds(); 
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            time_display.value = hours + ":" + minutes + ":" + seconds;
+
+            setTimeout('time()', 1000)
+        }
+        time()
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="Gambling()">
+    <script>
+        function Gambling() {
+        let answer;
+        do {
+            answer = prompt("Введіть ставку на результат боксерського змагання(додатнє, відмінне від 0 число)");
+            answer = parseFloat(answer); 
+        } 
+        while (isNaN(answer) || answer <= 0);
+
+        let number = Math.floor(Math.random() * 11) - 5;
+        console.log(number)
+
+        setTimeout(() => {
+            if (number <= 0) {
+                alert("На жаль, ви не виграли!");
+            } else {
+                alert(`Вітаємо! Ви виграли ${answer * number} грн`);
+            }
+        }, 1000);
+        
+    }
+    </script>
+</body>
+</html>
