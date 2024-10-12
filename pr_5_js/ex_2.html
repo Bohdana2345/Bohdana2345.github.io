@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let options = {
+            // era: 'long',
+            year: '2-digit', // year: 'numeric',
+            month: 'short',// month: 'long',
+            day: '2-digit',// day: 'numeric',
+            weekday: 'short',// weekday: 'long',
+            // timezone: 'UTC',
+            hour: '2-digit',// hour: 'numeric',
+            minute: '2-digit',// minute: 'numeric',
+            second: '2-digit',// second: 'numeric',
+        }
+            
+        document.write(`<p>${today.toLocaleString('ar-EG')}</p>`);
+        document.write(`<p>${today.toLocaleString('ar-EG', options)}</p>`);
+        document.write(`<p>${today.toLocaleString('en-EN')}</p>`);
+        document.write(`<p>${today.toLocaleString('en-GB')}</p>`);
+        document.write(`<p>${today.toLocaleString('en-GB', options)}</p>`);
+        document.write(`<p>${today.toLocaleString('uk-UK', options)}</p>`);
+
+    
+    </script>
+</body>
+</html>

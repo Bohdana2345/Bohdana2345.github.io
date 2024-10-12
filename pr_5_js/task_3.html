@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let options = {
+            month: 'long',
+        }
+        function getLastDayOfMonth(year, month){
+        let monthName = new Date(year, month).toLocaleString('uk-UK', options);
+        let day = new Date(year, month+1, 0)
+        document.write(`<p> Останній день місяця "${monthName}" ${year} року: ${day.getDate()} </p>`);
+        }
+
+        function getSecondsToTomorrow(){
+        let today = new Date()
+        let tomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate()+1)
+        document.write('<p> Секунд до завтра: '+ Math.floor((tomorrow.getTime() - today.getTime()) / 1000) + '</p>');
+        }
+
+        document.write('<h2>Завдання 3</h2>');
+        getLastDayOfMonth(2020, 1)
+        getSecondsToTomorrow()
+    </script>
+</body>
+</html>

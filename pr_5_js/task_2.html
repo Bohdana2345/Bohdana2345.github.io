@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let options = {
+            weekday: 'short',
+        }
+        function getWeekDay(date){
+        return date.toLocaleString('uk-UK', options).toUpperCase();
+        }
+
+        let date = new Date(2024,9,11);
+        document.write('<h2>Завдання 2</h2>');
+        document.write(getWeekDay(date));
+    </script>
+</body>
+</html>

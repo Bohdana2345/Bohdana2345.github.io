@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let optionsDate = {
+            day: '2-digit',
+            month: '2-digit',
+            year: '2-digit',
+        }
+
+        let optionsTime = {
+           hour: '2-digit',
+           minute: '2-digit',
+        };
+
+        function formatDate(date) {
+            let now = new Date();
+            let difference = Math.floor((now.getTime() - date.getTime()))
+
+            if (difference/1000< 1) {
+                 document.write('<p>Прямо зараз!</p>');  
+            }
+            else if (difference/60000 < 1) {
+                document.write(`<p>${Math.floor(difference/1000)} секунд тому</p>`);  
+            }
+            else if (difference/3600000 < 1) {
+                document.write(`<p>${Math.floor(difference/60000)} хвилин тому</p>`);
+            }   
+            else{
+                let formattedDate = date.toLocaleDateString('uk-UK', optionsDate);
+                let formattedTime = date.toLocaleTimeString('uk-UK', optionsTime);
+                document.write(`<p>${formattedDate}&nbsp;&nbsp;${formattedTime}. </p>`);
+            }
+        }
+        
+        let date = new Date();
+        let date1 = new Date(Date.now() - 20 * 1000);
+        let date2 = new Date(Date.now() - 5 * 60000);
+        let date3 = new Date(2024, 9, 8, 10, 30); 
+
+        document.write('<h2>Завдання 4</h2>');
+        formatDate(date)
+        formatDate(date1)
+        formatDate(date2)
+        formatDate(date3)
+    </script>
+</body>
+</html>
