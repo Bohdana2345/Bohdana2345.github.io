@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="initPhotoRotator(photoblock, imagesArray, 0)">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .container{
+            border: 1px black solid;
+            height: 550px;
+            width: 60%;
+            display: flex;
+        }
+        .next-block, .previous-block{
+            border: 1px black solid;
+            height: 550px;  
+            width: 8%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5px;
+        }
+        .photo-num-block{
+            border: 1px black solid;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
+        .photo-block{
+            border: 1px black solid;
+            height: 430px;   
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-section{
+            display: flex;
+            flex-direction: column;
+            height: 550px;
+            width: 100%;
+        }
+        .description-block{
+            width: 100%;
+            height: 70px;
+            border: 1px black solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        img{
+            width: 90%;
+            height: 95%;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="previous-block" id="previous-block"><button id="prev" onclick="prevPhoto()">Назад</button></div>
+        <div class="main-section">
+        <div class="photo-num-block" id="photo-num-block"></div>
+        <div class="photo-block" id="photo-block">
+            
+        </div>
+        <div class="description-block" id="description-block"></div>
+        </div>
+        <div class="next-block" id="next-block"><button id="next" onclick="nextPhoto()">Вперед</button></div>
+    </div>
+    <script src="script1.js">
+
+    </script> 
+</body>
+</html>
