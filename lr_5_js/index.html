@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabs">
+        <div class="tab whiteborder">border-radius</div>
+        <div class="tab">text-align</div>
+        <div class="tab">text-decoration</div>
+        <div class="tabContent">
+            <div class="wrapper">
+                <div class="input-container">
+            <div>Верхній лівий радіус:
+                <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+                <input type="text" id="ttl" value="0">
+            </div>
+        
+            <div>Верхній правий радіус:
+                <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+                <input type="text" id="ttr" value="0">
+            </div>
+        
+            <div>Нижній правий радіус:
+                <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+                <input type="text" id="tbr" value="0">
+            </div>
+        
+            <div>Нижній лівий радіус:
+                <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+                <input type="text" id="tbl" value="0">
+            </div>
+        </div>
+        
+            <div id="block"></div>
+        </div>
+            <textarea id="textarea" placeholder="Тут генерується CSS-код"></textarea>
+        </div>
+        <div class="tabContent">
+            <div class="align-wrapper">
+            <div class="align-options">
+            <div class="align" id="initial"><span class="blue-text">text-align</span>: <span class="green-text">initial</span>;</div>
+            <div class="align" id="left"><span class="blue-text">text-align</span>: <span class="green-text">left</span>;</div>
+            <div class="align" id="right"><span class="blue-text">text-align</span>: <span class="green-text">right</span>;</div>
+            <div class="align" id="start"><span class="blue-text">text-align</span>: <span class="green-text">start</span>;</div>
+            <div class="align" id="end"><span class="blue-text">text-align</span>: <span class="green-text">end</span>;</div>
+            <div class="align" id="center"><span class="blue-text">text-align</span>: <span class="green-text">center</span>;</div>
+            <div class="align" id="justify"><span class="blue-text">text-align</span>: <span class="green-text">justify</span>;</div>
+            </div>
+
+            <div class="result"><p id="text-align"> 
+                Ut enim ad minim veniam, quis nostrud 
+                laboris nisi ut aliquip ex ea 
+                irure dolor in reprehenderit in 
+                dolore eu fugiat nulla pariatur fugiat nulla.
+                Ut enim ad minim venia 
+                laboris nisi ut aliquip ex ea commodo 
+                irure dolor in reprehenderit in voluptate 
+                dolore eu fugiat nulla pariatur fugiat nulla 
+                Ut enim ad minim veniam, quis nostrud 
+                laboris nisi ut aliquip ex ea
+                irure dolor in reprehenderit in voluptate 
+                dolore eu fugiat nulla
+                Ut enim ad minim veniam, quis 
+                laboris nisi ut aliquip ex ea commodo 
+                irure dolor in repr
+                dolore eu fugiat nulla pariatur 
+                Ut enim ad minim veniam, quis nostrud 
+                laboris nisi ut 
+                irure dolor in 
+                dolore eu fugiat nulla pariatur fugiat nulla.
+        </p>
+            </div>
+        </div>
+    </div>
+        <div class="tabContent">
+            <div class="decoration-wrapper">
+                <div class="decoration-options">
+                <div class="decoration" id="none"><span class="blue-text">text-decoration</span>: <span class="green-text">none</span>;</div>
+                <div class="decoration" id="underline"><span class="blue-text">text-decoration</span>: <span class="green-text">underline</span>;</div>
+                <div class="decoration" id="underline overline"><span class="blue-text">text-decoration</span>: <span class="green-text">underline overline</span>;</div>
+                <div class="decoration" id="line-through"><span class="blue-text">text-decoration</span>: <span class="green-text">line-through</span>;</div>
+                <div class="decoration" id="underline dotted red  2px"><span class="blue-text">text-decoration</span>: <span class="green-text">underline dotted red  2px</span>;</div>
+                <div class="decoration" id="underline wavy green 1px"><span class="blue-text">text-decoration</span>: <span class="green-text">underline wavy green 5px</span>;</div>
+                
+                </div>
+    
+                <div class="result"><p id="text-decoration">Code is like humor. When you have to explain it, it’s bad.</div>
+            </div>
+        </div>  
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
