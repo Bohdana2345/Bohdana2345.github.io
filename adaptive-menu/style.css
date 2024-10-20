@@ -1,0 +1,12 @@
+body {
+    background: url('img/bg.gif') no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
