@@ -1,0 +1,51 @@
+.todo-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+}
+
+.sort-buttons button {
+    margin: 0;
+}
+
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 0;
+    height: 40px;
+    gap: 45px;
+    box-sizing: border-box;
+}
