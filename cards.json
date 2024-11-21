@@ -1,0 +1,53 @@
+{
+    "title": "Магазин дронів",
+    "products": [
+      {
+        "id": 1,
+        "name": "LIDIRC L15FW",
+        "category": "Для риболовлі",
+        "price": "Незабаром у продажу",
+        "description": "Дрон для риболовлі з базовими функціями",
+        "image": "url_to_image_L15FW"
+      },
+      {
+        "id": 2,
+        "name": "C-FLY 2T",
+        "category": "Для військових",
+        "price": 89000,
+        "description": "Професійний дрон з високою стабільністю",
+        "image": "url_to_image_CFLY_2T"
+      },
+      {
+        "id": 3,
+        "name": "ZLRC SG907 PRO MAX",
+        "category": "Для аерофотозйомки",
+        "price": 7595,
+        "description": "Дрон для зйомки з високою якістю",
+        "image": "url_to_image_SG907_PRO_MAX"
+      },
+      {
+        "id": 4,
+        "name": "XMRC M10 ULTRA S+",
+        "category": "Для домогосподарства",
+        "price": 13500,
+        "description": "Універсальний дрон для домашнього використання",
+        "image": "url_to_image_M10_ULTRA_S_PLUS"
+      },
+      {
+        "id": 5,
+        "name": "Hubsan H501S",
+        "category": "Для риболовлі",
+        "price": "Незабаром у продажу",
+        "description": "Компактний дрон для риболовлі",
+        "image": "url_to_image_H501S"
+      },
+      {
+        "id": 6,
+        "name": "DJI Mini 3",
+        "category": "Для аерофотозйомки",
+        "price": 21000,
+        "description": "Легкий та портативний дрон з чудовою камерою",
+        "image": "url_to_image_Mini_3"
+      }
+    ]
+  }
