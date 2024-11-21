@@ -7,7 +7,7 @@
       "category": "Для риболовлі",
       "price": "Незабаром у продажу",
       "description": "Дрон для риболовлі з базовими функціями",
-      "image": "photos/for_agriculture.png",
+      "image": "photos/for_fishing.jpg",
       "ishit": false
     },
     {
@@ -16,7 +16,7 @@
       "category": "Для військових",
       "price": 89000,
       "description": "Професійний дрон з високою стабільністю",
-      "image": "url_to_image_CFLY_2T",
+      "image": "photos/for_military.png",
       "ishit": true
     },
     {
@@ -25,7 +25,7 @@
       "category": "Для аерофотозйомки",
       "price": 7595,
       "description": "Дрон для зйомки з високою якістю",
-      "image": "url_to_image_SG907_PRO_MAX",
+      "image": "photos/for_air_shooting.png",
       "ishit": true
     },
     {
@@ -34,25 +34,25 @@
       "category": "Для домогосподарства",
       "price": 13500,
       "description": "Універсальний дрон для домашнього використання",
-      "image": "pr_8_js/photos/for_agriculture.png",
+      "image": "photos/for_agriculture.png",
       "ishit": false
     },
     {
       "id": 5,
-      "name": "Hubsan H501S",
+      "name": "V168 Pro Max",
       "category": "Для риболовлі",
       "price": "Незабаром у продажу",
       "description": "Компактний дрон для риболовлі",
-      "image": "url_to_image_H501S",
+      "image": "photos/for_fishing_2.png",
       "ishit": false
     },
     {
       "id": 6,
-      "name": "DJI Mini 3",
+      "name": "4DRC F9",
       "category": "Для аерофотозйомки",
-      "price": 21000,
+      "price": 4695,
       "description": "Легкий та портативний дрон з чудовою камерою",
-      "image": "url_to_image_Mini_3",
+      "image": "photos/for_air_shooting_2.png",
       "ishit": false
     }
   ]
