@@ -37,11 +37,6 @@ function initializeSwipeFunctions() {
     const swipeLeft = document.querySelector(".swipe-left");
     const swipeRight = document.querySelector(".swipe-right");
 
-    if (!swipeLeft || !swipeRight) {
-        console.error("Кнопки свайпу не знайдено");
-        return;
-    }
-
     const cardsToShow = 4;
     let currentIndex = 1; 
 
