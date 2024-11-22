@@ -37,6 +37,11 @@ function initializeSwipeFunctions() {
     const swipeLeft = document.querySelector(".swipe-left");
     const swipeRight = document.querySelector(".swipe-right");
 
+    if (!swipeLeft || !swipeRight) {
+        console.error("Кнопки свайпу не знайдено");
+        return;
+    }
+
     const cardsToShow = 4;
     let currentIndex = 1; 
 
@@ -92,8 +97,8 @@ function createProductCard(product) {
     title.classList.add("title");
     const categoryLink = document.createElement("a");
 
-    if (product["category-link"]) {
-        categoryLink.href = product["category-link"];
+    if (product.categoryLink!= false)  {
+        categoryLink.href = product["categoryLink"];
     } else {
         categoryLink.href = "#"; 
     }
@@ -115,9 +120,9 @@ function createProductCard(product) {
     photoBlock.appendChild(photoLink);
 
     const nameLink = document.createElement("a");
-    if (product["name-link"]) {
-        photoLink.href = product["name-link"];
-        nameLink.href = product["name-link"];
+    if (product.nameLink != false) {
+        photoLink.href = product["nameLink"];
+        nameLink.href = product["nameLink"];
 
     } else {
         photoLink.href = "#"; 
@@ -128,7 +133,7 @@ function createProductCard(product) {
     nameLink.textContent = product.name;
 
     const priceDiv = document.createElement("div");
-    if (product.price === "Незабаром у продажу") {
+    if (product.isNovelty === true) {
         const newLabel = document.createElement("div");
         newLabel.classList.add("label", "new");
         newLabel.innerHTML = "новинка";
@@ -143,10 +148,10 @@ function createProductCard(product) {
             return new Intl.NumberFormat('uk-UA').format(price);
         };
     
-        if (product.old_price) {
+        if (product.oldPrice!= false) {
             // console.log(product.old_price);
             priceDiv.innerHTML = `
-                <span class="old-price">${formatPrice(product.old_price)} грн</span> 
+                <span class="old-price">${formatPrice(product.oldPrice)} грн</span> 
                 <span class="price">${formatPrice(product.price)} грн</span>`;
         } else {
             priceDiv.innerHTML = `<span class="price">${formatPrice(product.price)} грн</span>`;
@@ -154,7 +159,7 @@ function createProductCard(product) {
         
     }
 
-    if (product.ishit === true) {
+    if (product.isHit === true) {
         const topSaleLabel = document.createElement("div");
         topSaleLabel.classList.add("label", "top-sale");
         topSaleLabel.innerHTML = "хіт<br>продажів";
@@ -170,7 +175,7 @@ function createProductCard(product) {
     card.appendChild(nameLink);
     card.appendChild(priceDiv);
     
-    if (product.price !== "Незабаром у продажу") card.appendChild(button);
+    if (product.price != false) card.appendChild(button);
 
     return card;
 }
