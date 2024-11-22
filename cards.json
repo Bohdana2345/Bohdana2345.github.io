@@ -7,9 +7,9 @@
       "nameLink": "false",
       "category": "Для риболовлі",
       "categoryLink": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[56]",
-      "price": "false",
+      "price": false,
       "oldPrice": false,
-      "isNovelty" : "true",
+      "isNovelty" : true,
       "image": "photos/for_fishing.jpg",
       "isHit": false
     },
@@ -21,7 +21,7 @@
       "categoryLink": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[192]",
       "price": 89000,
       "oldPrice": 200000,
-      "isNovelty" : "false", 
+      "isNovelty" : false, 
       "image": "photos/for_military.png",
       "isHit": true
     },
@@ -33,7 +33,7 @@
       "categoryLink": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[55]",
       "price": 7595,
       "oldPrice": false,
-      "isNovelty" : "false",
+      "isNovelty" : false,
       "image": "photos/for_air_shooting.png",
       "isHit": true
     },
@@ -45,19 +45,19 @@
       "categoryLink": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[59]",
       "price": 13500,
       "oldPrice": false,
-      "isNovelty" : "false",
+      "isNovelty" : false,
       "image": "photos/for_agriculture.png",
       "isHit": false
     },
     {
       "id": 5,
       "name": "V168 Pro Max",
-      "nameLink": "false",
+      "nameLink": false,
       "category": "Для риболовлі",
       "categoryLink": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[56]",
-      "price": "false",
+      "price": false,
       "oldPrice": false,
-      "isNovelty" : "true",
+      "isNovelty" : true,
       "image": "photos/for_fishing_2.png",
       "isHit": false
     },
