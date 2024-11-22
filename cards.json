@@ -16,7 +16,8 @@
       "name-link": "https://dron-shop.com.ua/quadcopters/cfly/c-fly-2t",
       "category": "Для військових",
       "category-link": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[192]",
-      "price": 89000,
+      "price": 89 000,
+      "old-price": 200 000,
       "description": "Професійний дрон з високою стабільністю",
       "image": "photos/for_military.png",
       "ishit": true
@@ -27,7 +28,7 @@
       "name-link": "https://dron-shop.com.ua/quadcopters/zlrc/sg907-pro-max",
       "category": "Для аерофотозйомки",
        "category-link": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[55]",
-      "price": 7595,
+      "price": 7 595,
       "description": "Дрон для зйомки з високою якістю",
       "image": "photos/for_air_shooting.png",
       "ishit": true
@@ -38,7 +39,7 @@
       "name-link": "https://dron-shop.com.ua/quadcopters/zlrc/xmrc-m10-ultra-splus",
       "category": "Для домогосподарства",
       "category-link": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[59]",
-      "price": 13500,
+      "price": 13 500,
       "description": "Універсальний дрон для домашнього використання",
       "image": "photos/for_agriculture.png",
       "ishit": false
@@ -59,7 +60,8 @@
       "name-link": "https://dron-shop.com.ua/quadcopters/4drc/4drc-f9",
       "category": "Для аерофотозйомки",
        "category-link": "https://dron-shop.com.ua/quadcopters/?sort=rating&order=DESC&mfp=13f-zastosuvannya[55]",
-      "price": 4695,
+      "price": 4 695,
+      "old-price": 5 500,
       "description": "Легкий та портативний дрон з чудовою камерою",
       "image": "photos/for_air_shooting_2.png",
       "ishit": false
