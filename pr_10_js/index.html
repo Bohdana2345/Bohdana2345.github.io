@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal-success" class="hidden">
+        <p id="modal-message"></p>
+        <button id="go-to-cart">Перейти у корзину</button>
+        <button id="continue-shopping">Повернутись до покупок</button>
+    </div>
+
+    <div id="modal-quantity" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <p id="modal-content-text">Введіть кількість товару:</p>
+            <input type="number" id="quantity-input" min="1" />
+            <button id="add-to-cart-confirm">Додати до корзини</button>
+        </div>
+    </div>
+
+    <div id="empty-cart-modal" class="hidden">
+        <p id="empty-cart-modal-text">Корзина пуста</p>
+        <button id="close-empty-cart-modal">Закрити</button>
+    </div>
+
+    <div class="language-selector-wrap">
+    <select id="language-selector">
+        <option value="en">English</option>
+        <option value="uk">Українська</option>
+    </select>
+</div>
+    
+    <div class="cart-wrapper">
+        <div class="content">
+            <button class="cart-button" id="cart-button">
+                <span class="shopping-cart-icon"></span>
+            </button>
+            <div class="cart-count-wrapper"><span id="cart-count"></span></div>
+        </div>
+    </div>
+
+    <div class="wrap" id="product-container"></div>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>

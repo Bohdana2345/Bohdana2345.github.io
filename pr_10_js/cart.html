@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+    <link rel="stylesheet" href="style-cart.css">
+</head>
+<body>
+    <select id="language-selector">
+        <option value="en">English</option>
+        <option value="uk">Українська</option>
+    </select>
+    
+    <div id="cart-items-container">
+        <h1 id="title">Ви обрали:</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th id="item-name">Назва товару</th>
+                    <th id="price-per-pc">Ціна за одиницю</th>
+                    <th id="amount">Кількість</th>
+                    <th id="sum">Сума</th>
+                    <th id="actions">Дії</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table-body">
+            </tbody>
+        </table>
+        <p id="total-price">Разом до оплати: 0 грн</p>
+
+
+        <button onclick="window.location.href='payment.html'" id="payment-button">Оплатити</button>
+        <button onclick="window.location.href='index.html'" id="go-back-button">Повернутись до покупок</button>
+    </div>
+    <script src="script/script-cart.js"></script>
+</body>
+</html>

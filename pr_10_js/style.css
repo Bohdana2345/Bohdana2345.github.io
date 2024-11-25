@@ -1,0 +1,513 @@
+* {
+    font-family: "Adrianna", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.language-selector-wrap {
+    margin-top: 35px;
+}
+
+.category, 
+.name, 
+.on-sale-soon-text, 
+.sale-button-text, 
+.price {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.category {
+    color: rgb(116, 115, 115);
+}
+
+.name {
+    color: #009de1;
+    font-weight: bold;
+}
+
+.on-sale-soon-text {
+    color: white;
+    text-align: center;
+}
+
+.sale-button-text, 
+.price {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.photo {
+    width: 100%;
+    height: 200px;
+}
+
+.card {
+    border: 1px solid rgb(186, 183, 183);
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.photo-block {
+    background-color: brown;
+    width: 70%;
+    height: 300px;
+    background: #000;
+    margin-bottom: 15px;
+}
+
+.wrap {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.on-sale-soon {
+    width: 60%;
+    padding: 12px 60px;
+    background: #cc349c;
+    text-align: center;
+    margin-top: 65px;
+}
+
+input.error::placeholder {
+    color: red;
+    font-style: italic;
+}
+
+input.error {
+    border-color: red;
+}
+
+.photo-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-button {
+    width: 70%;
+    height: 70px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #f0e524;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price-on-sale-soon {
+    color: transparent;
+}
+
+.photo-on-sale-soon, 
+.name-on-sale-soon {
+    cursor: text;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 128, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.message-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.swipe {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(186, 183, 183);
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    top: 118px;
+    color: rgb(186, 183, 183);
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.swipe-left {
+    left: -25px;
+}
+
+.swipe-right {
+    right: -25px;
+}
+
+.label {
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.new {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: #85b425;
+    top: -50px;
+    padding: 40px 6px;
+    right: 5%;
+    width: 90px;
+    height: 15px;
+}
+
+.top-sale {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: #009de1;
+    padding: 25px 3px;
+    top: -50px;
+    right: 5%;
+    width: 100px;
+    height: 47px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(186, 183, 183);
+    width: 100%;
+    height: 140px;
+}
+
+.cart-button {
+    display: block;
+    height: 60px;
+    width: 68px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.shopping-cart-icon {
+    background: url('photos/shopping-cart-icon.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal-quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.cart-count-wrapper {
+    background-color: #f0e524;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    position: absolute;
+    bottom: 8px;
+    right: -5px;
+}
+
+.cart-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    position: relative;
+}
+
+.content {
+    display: inline-flex;
+    background-color: #009de1;
+    align-items: end;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+#modal-success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#modal-success button {
+    margin: 5px;
+}
+
+#empty-cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 50px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+#empty-cart-modal button {
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.quantity-input {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 1353px) {
+    .on-sale-soon-text {
+        font-size: 18px;
+    }
+
+    .on-sale-soon {
+        width: 60%;
+        padding: 10px 45px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .price {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 14px;
+        height: 15px;
+        width: 65px;
+    }
+
+    .on-sale-soon-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .photo-block {
+        width: 100%;
+        height: 200px
+    }
+
+    .category, .name, .on-sale-soon-text, .sale-button-text, .price {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .photo {
+        height: 150px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .on-sale-soon {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .sale-button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .swipe {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .old-price {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .photo-block {
+        width: 100%;
+        height: 180px;
+    }
+
+    .category, .name, .on-sale-soon-text, .sale-button-text, .price {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .photo {
+        height: 120px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .on-sale-soon {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 16px;
+    }
+
+    .sale-button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .swipe {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .old-price {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
