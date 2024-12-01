@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-game-detail.css">
+
+</head>
+<body>
+   
+<div class="menu-section">
+    <img src="assets/img/logo.png" alt="logo" class="logo" id="logo">
+
+    <nav class="regular-menu">
+        <ul>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        </nav>
+
+        <div class="lang-locatizator">
+            <span>EN</span>
+        </div>
+
+
+    <div class="burger-menu">
+        <div class="burger-icon" id="burgerIcon" onclick="toggleMenu()">
+            <span class="line line-top"></span>
+            <span class="line line-bottom"></span>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-section">
+            </div>
+            <div class="menu-content">
+                
+                <div class="burger-menu-section">
+                    <hr>
+                    <h2>Games</h2>
+                </div>
+                <div class="burger-menu-section">
+                    <h2>Explore</h2>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Social Impact</li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="burger-menu-section">
+                    <h2>Careers</h2>
+                    <ul>
+                        <li>Working with Us</li>
+                        <li>Open Position</li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="burger-menu-section">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>Help</li>
+                        <li>Creators</li>
+                        <li>Press Media</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="header">
+    <div class="header-text-wrapper">
+        <div class="header-headline-wrapper">
+            <h1>Stories World™ Urban City</h1>
+        </div>
+
+        <div class="header-main-text-wrapper">
+            <h2>Experience the freedom to play in your very own city, with lots of places to explore and neighbors to meet.</h2>
+        </div>
+    </div>  
+
+    <div class="header-character-wrapper">
+    <img src="assets/img/game-detail-header-character-urban-city.png" alt="" class="header-character">
+    </div>
+
+
+    <div class="store-wrapper">
+    <div class="store">
+
+        <div class="content-character-icon"></div>
+        <div class="store-buttons">
+            <div class="store-headline-container">
+                <span class="store-headline">Available on</span>
+            </div>
+            <div class="store-buttons-container">
+        <a href="#" class="app-store-button">
+            <span class="app-store-logo"></span>
+            <div class="app-store-text">
+                <span>Download on the</span>
+                <strong>App Store</strong>
+            </div>
+        </a>
+            <a href="#" class="google-play-button">
+                <span class="google-play-logo"></span>
+                <div class="google-play-text">
+                    <span class="google-play-download-text">Get in on</span>
+                    <strong>Google Play</strong>
+                </div>
+            </a>
+            <a href="#" class="amazone-button">
+                <span class="amazone-logo"></span>
+                <div class="amazone-text">
+                    <span>Available at</span>
+                    <strong>Amazone</strong>
+                </div>
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="content">
+
+    <div class="video-wrapper">
+        <video 
+        class="game-detail-urban-city-video" 
+        id="game-detail-urban-city-video" 
+        poster="assets/img/game-detail-urban-city-poster.png" 
+        controls>
+        <source src="media\Urban-City-Stories.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео-тег.
+    </video>
+    <div id="play-button" class="play-button">
+        <i class="fas fa-play"></i>
+    </div>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="footer">
+    <div class="footer-top">
+        <img src="assets/svg/Logo.svg" alt="footer-logo" class="footer-logo">
+        <div class="footer-store">
+            <a href="#" class="footer-app-store-button">
+                <span class="app-store-logo"></span>
+                <div class="app-store-text">
+                    <span>SUBARA on the</span>
+                    <strong>App Store</strong>
+                </div>
+            </a>
+                <a href="#" class="footer-google-play-button">
+                    <span class="google-play-logo"></span>
+                    <div class="google-play-text">
+                        <span class="google-play-download-text">SUBARA on</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="footer-amazone-button">
+                    <span class="amazone-logo"></span>
+                    <div class="amazone-text">
+                        <span>SUBARA on</span>
+                        <strong>Amazone</strong>
+                    </div>
+                </a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-wrapper">
+            <div class="footer-section">
+                <div class="link-wrapper">
+                    <a href="#">Games</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <div class="link-wrapper">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="#">Social Impact</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Careers</h4>
+                <div class="link-wrapper">
+                    <a href="#">Working at Subara</a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="#">Open Position</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 data-text="Support">Support</h4>
+                <div class="link-wrapper">
+                    <a href="#" data-text="Help">Help</a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="#" data-text="Creators">Creators</a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="#" data-text="Press Media">Press Media</a>
+                </div>
+            </div>
+
+        <div class="social_media">
+            <a href="https://www.instagram.com/" class="icon icon-inst"></a>
+            <a href="https://www.youtube.com/" class="icon icon-yt"></a>
+            <a href="https://www.linkedin.com/" class="icon icon-lin"></a>
+            <a href="https://www.twitter.com/" class="icon icon-tw"></a>
+    </div>
+    
+    </div>
+
+    <div class="footer-legal">
+        <div class="footer-legal-text">
+            <span class="footer-legal-year">©2024 SUBARA SG Ltd.</span>
+            <div class="link-wrapper">
+                <a href="#" data-text="Terms and Privacy">Terms and Privacy</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<script>
+function toggleMenu() {
+const menu = document.getElementById('menuOverlay');
+const burgerIcon = document.getElementById('burgerIcon');
+const burgerMenu = document.querySelector('.burger-menu');
+const logo = document.getElementById('logo'); 
+const contentWrapper = document.getElementById('contentWrapper'); 
+menu.classList.toggle('active');
+burgerIcon.classList.toggle('active');
+burgerMenu.classList.toggle('active');
+logo.classList.toggle('active');
+contentWrapper.classList.toggle('blurred'); 
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+document.querySelectorAll('.menu-content > ul > li').forEach(item => {
+item.addEventListener('click', function (event) {
+    const submenu = this.querySelector('.submenu');
+    if (submenu) {
+        submenu.classList.toggle('active');
+        event.stopPropagation();
+    }
+});
+});
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('game-detail-urban-city-video');
+    const playButton = document.getElementById('play-button');
+
+    // Початково приховуємо стандартні контролери
+    video.removeAttribute('controls');
+    
+    // Відображаємо кнопку Play при завантаженні сторінки
+    playButton.style.display = 'flex';
+
+    // Клік на кнопку "Play"
+    playButton.addEventListener('click', () => {
+        video.play(); // Починаємо відтворення
+        playButton.style.display = 'none'; // Ховаємо кнопку Play
+        video.setAttribute('controls', 'true'); // Додаємо стандартні контролери
+    });
+
+    // Зупинка відео або пауза
+    video.addEventListener('pause', () => {
+        playButton.style.display = 'flex'; // Показуємо кнопку Play
+        video.removeAttribute('controls'); // Видаляємо стандартні контролери
+    });
+
+    // Після завершення відео
+    video.addEventListener('ended', () => {
+        playButton.style.display = 'flex'; // Показуємо кнопку Play
+        video.removeAttribute('controls'); // Видаляємо стандартні контролери
+    });
+});
+
+
+</script>
+</body>
+</html>
