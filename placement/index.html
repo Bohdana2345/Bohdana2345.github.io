@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBARA</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header class="menu-section" id="menuSection">
+        <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.webp" alt="Abstract black logo featuring a geometric parallelogram design." class="logo" id="logo">
+        </a>
+
+        <nav class="regular-menu">
+            <ul>
+                <li><a href="#" class="extended-menu-inactive-button">Games</a></li>
+                <li>
+                    <a href="#" class="extended-menu-button" id="first-extended-menu-button">Explore</a>
+                </li>
+                <li><a href="#" class="extended-menu-button" id="second-extended-menu-button">Careers</a></li>
+                <li><a href="#" class="extended-menu-button" id="third-extended-menu-button">Support</a></li>
+            </ul>
+        </nav>
+
+        <select class="lang-locatizator" id="lang-locatizator">
+            <option value="EN">EN</option>
+            <option value="UA">UA</option>
+        </select>
+
+        <div class="mobile-menu">
+            <div class="mobileMenuIcon" id="mobileMenuIcon">
+                <span class="line line-top"></span>
+                <span class="line line-bottom"></span>
+            </div>
+
+            <div class="mobile-menu-overlay closed" id="mobileMenuOverlay">
+                <div class="mobile-menu-bg" id="mobileMenuBg"></div>
+                <div class="mobile-menu-content" id="menuContent">
+                    <section class="mobile-menu-section">
+                        <hr>
+                        <h2>Games</h2>
+                        <hr>
+                    </section>
+                    <section class="mobile-menu-section">
+                        <h2 class="dropdown-toggle">Explore <span class="arrow"></span></h2>
+                        <ul class="dropdown-content">
+                            <li>About Us</li>
+                            <li>Social Impact</li>
+                        </ul>
+                        <hr>
+                    </section>
+                    <section class="mobile-menu-section">
+                        <h2 class="dropdown-toggle">Careers <span class="arrow"></span></h2>
+                        <ul class="dropdown-content">
+                            <li>Working with Us</li>
+                            <li>Open Position</li>
+                        </ul>
+                        <hr>
+                    </section>
+                    <section class="mobile-menu-section">
+                        <h2 class="dropdown-toggle">Support <span class="arrow"></span></h2>
+                        <ul class="dropdown-content">
+                            <li>Help</li>
+                            <li>Creators</li>
+                            <li>Press Media</li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <div class="mobile-lang-selector">
+                        <span class="lang-option" data-lang="EN">EN</span>
+                        <span class="lang-option" data-lang="UA">UA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="expandable-menu-block" id="expandableBlock">
+        <div class="extanded-regular-menu-section" id="fisrt-extanded-regular-menu-section">
+            <a href="#">About us</a>
+            <a href="#">Explore</a>
+        </div>
+
+        <div class="extanded-regular-menu-section" id="second-extanded-regular-menu-section">
+            <a href="#">Working with Us</a>
+            <a href="#">Open Position</a>
+        </div>
+
+        <div class="extanded-regular-menu-section" id="third-extanded-regular-menu-section">
+            <a href="#">Help</a>
+            <a href="#">Creators</a>
+            <a href="#">Press Media</a>
+        </div>
+    </div>
+
+    <main class="content-wrapper" id="contentWrapper">
+        <div class="home-bg-section section" id="homeSection">
+
+            <div class="home-bg-section-logo">
+                <img src="assets/img/home-bg-logo.webp" alt="Brand logo of the homepage">
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="main-info-section section" id="mainInfoSection">
+                <img src="assets/img/content-character.webp" alt="Smiling boy character from a video game, with a cheerful expression and vibrant colors. " class="content-character">
+                <div class="main-info-section-wrapper">
+                    <div class="main-info-section-text-wrapper">
+                        <div class="main-info-section-new-marker">new</div>
+                        <h1 class="main-info-section-headline-first-line">Stories World™</h1>
+                        <h2 class="main-info-section-headline-second-line">Travels</h2>
+                        <p class="main-info-section-text">Travel around the world and build vacation life stories.</p>
+                        <button>Explore</button>
+                    </div>
+
+                    <div class="platforms">
+                        <div class="content-character-icon"></div>
+                        <div class="platforms-buttons">
+                            <div class="platforms-headline-container">
+                                <span class="platforms-headline">Available on</span>
+                            </div>
+                            <div class="platforms-buttons-container">
+                                <a href="#" class="app-store-button">
+                                    <span class="app-store-logo"></span>
+                                    <div class="app-store-text">
+                                        <span>Download on the</span>
+                                        <strong>App store</strong>
+                                    </div>
+                                </a>
+                                <a href="#" class="google-play-button">
+                                    <span class="google-play-logo"></span>
+                                    <div class="google-play-text">
+                                        <span class="google-play-download-text">Get it on</span>
+                                        <strong>Google Play</strong>
+                                    </div>
+                                </a>
+                                <a href="#" class="amazone-button">
+                                    <span class="amazone-logo"></span>
+                                    <div class="amazone-text">
+                                        <span>Available at</span>
+                                        <strong>Amazone</strong>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-cards section" id="productCardsSection">
+                <h2 class="product-cards-headline">Explore more games</h2>
+
+                <div class="game-cards-wrapper">
+                    <div class="game-card" data-game-name="Urban City">
+                        <span class="game-card-headline">Stories World™
+                            <span class="break-line">Urban City</span></span>
+                        </div>
+
+                    <div class="game-card" data-game-name="Sunny School">
+                        <span class="game-card-headline">Stories Land™<span class="break-line">Sunny School</span></span>
+                    </div>
+
+                    <div class="game-card" data-game-name="Central Hospital">
+                        <span class="game-card-headline">Stories Land™<span class="break-line">Central Hospital</span></span>
+                    </div>
+                </div>
+
+                <button class="product-cards-button">All games</button>
+            </section>
+
+            <div class="environment-section section" id="environmentSection">
+                <div class="environment-section-wrapper">
+                    <div class="environment-section-headline">
+                        <span class="environment-section-headline-text">You play,</span>
+                        <span class="environment-section-headline-decorated-text">we plant.</span>
+                    </div>
+
+                    <div class="environment-section-statistic">
+                        <span class="environment-section-statistic-number" id="stat-number">270 000</span>
+                        <span class="environment-section-statistic-text">Planted trees and counting</span>
+                    </div>
+                    <button class="environment-section-button">Learn more</button>
+                </div>
+
+                <img src="assets/img/pine.webp" alt="Pine tree" class="environment-section-pine">
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <img src="/assets/svg/Logo.svg" alt="Abstract black logo featuring a geometric parallelogram design." class="footer-logo">
+                <div class="footer-platforms">
+                    <a href="#" class="footer-app-store-button">
+                        <span class="app-store-logo"></span>
+                        <div class="app-store-text">
+                            <span>SUBARA on the</span>
+                            <strong>App store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-google-play-button">
+                        <span class="google-play-logo"></span>
+                        <div class="google-play-text">
+                            <span class="google-play-download-text">SUBARA on</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+
+                    <a href="#" class="footer-amazone-button">
+                        <span class="amazone-logo"></span>
+                        <div class="amazone-text">
+                            <span>SUBARA on</span>
+                            <strong>Amazone</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-section">
+                        <div class="link-wrapper">
+                            <a href="#">Games</a>
+                        </div>
+                    </div>
+
+                    <section class="footer-section">
+                        <h4>Explore</h4>
+                        <div class="link-wrapper">
+                            <a href="#">About Us</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#">Social Impact</a>
+                        </div>
+                    </section>
+
+                    <section class="footer-section">
+                        <h4>Careers</h4>
+                        <div class="link-wrapper">
+                            <a href="#">Working at Subara</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#">Open Position</a>
+                        </div>
+                    </section>
+
+                    <section class="footer-section">
+                        <h4 data-text="Support">Support</h4>
+                        <div class="link-wrapper">
+                            <a href="#" data-text="Help">Help</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#" data-text="Creators">Creators</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#" data-text="Press Media">Press Media</a>
+                        </div>
+                    </section>
+
+                    <div class="social_media">
+                        <a href="https://www.instagram.com/" class="icon icon-inst"></a>
+                        <a href="https://www.youtube.com/" class="icon icon-yt"></a>
+                        <a href="https://www.linkedin.com/" class="icon icon-lin"></a>
+                        <a href="https://www.twitter.com/" class="icon icon-tw"></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-legal">
+                    <div class="footer-legal-text">
+                        <span class="footer-legal-year">©2024 SUBARA SG Ltd.</span>
+                        <div class="link-wrapper">
+                            <a href="#" data-text="Terms and Privacy">Terms and Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
