@@ -561,9 +561,10 @@ body {
 .main-info-section {
     width: 100%;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     align-items: center;
     height: 450px;
+    padding-bottom: 50px;
 }
 
 .main-info-section-wrapper {
