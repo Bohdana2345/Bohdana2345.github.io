@@ -11,6 +11,7 @@ function homeSectionScrollEffect() {
     const scrollY = window.scrollY;
     const homeHeight = window.innerHeight;
     const screenWidth = window.innerWidth;
+    const content = document.getElementById('content');
     
     const startTop = 40;
     const newTop = Math.max(startTop - scrollY * 0.3, -150);
