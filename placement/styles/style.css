@@ -185,7 +185,7 @@ body {
     position: fixed;
     background: 
         linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
-        url('/assets/img/home-bg.webp');
+        url('../assets/img/home-bg.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ body {
 
 .mobile-menu-content {
     position: relative;
-    padding: 95px 30px;
+    padding: 95px 40px 95px 30px;
     z-index: 2; 
     opacity: 0; 
     visibility: hidden; 
@@ -451,7 +451,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 91%;
+    height: 94%;
     background-color: rgba(0, 0, 0, 0.95);
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     transform: translateY(-100%);
@@ -1099,8 +1099,7 @@ body {
 
 .mobile-lang-selector {
     position: absolute; 
-    bottom: 95px;
-    left: 8%; 
+    bottom: 65px;
     display: flex; 
     gap: 10px; 
     z-index: 10; 
