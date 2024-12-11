@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Maax';
-    src: url('/fonts/Maax.woff') format('woff');
+    src: url('../fonts/Maax.woff') format('woff');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Maax-Medium';
-    src: url('/fonts/Maax-Medium.woff2') format('woff2'),
-         url('/fonts/Maax-Medium.woff') format('woff'),
-         url('/fonts/Maax-Medium.ttf') format('truetype');
+    src: url('../fonts/Maax-Medium.woff2') format('woff2'),
+         url('../fonts/Maax-Medium.woff') format('woff'),
+         url('../fonts/Maax-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -185,7 +185,7 @@ body {
     position: fixed;
     background: 
         linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
-        url('/assets/img/home-bg.webp');
+        url('../assets/img/home-bg.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -648,7 +648,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 23px;
-    background: url('/assets/img/platforms-character-icon.webp');
+    background: url('../assets/img/platforms-character-icon.webp');
     background-size: cover;
     background-position: center;
     display: none;
@@ -716,15 +716,15 @@ body {
 }
 
 .app-store-logo {
-    background: url('/assets/img/apple-icon.webp') no-repeat center;
+    background: url('../assets/img/apple-icon.webp') no-repeat center;
 }
 
 .google-play-logo {
-    background: url('/assets/img/google-play-icon.webp') no-repeat center;
+    background: url('../assets/img/google-play-icon.webp') no-repeat center;
 }
 
 .amazone-logo {
-    background: url('/assets/img/amazon-icon.webp') no-repeat center; 
+    background: url('../assets/img/amazon-icon.webp') no-repeat center; 
 }
 
 .app-store-logo, .google-play-logo, .amazone-logo {
@@ -794,7 +794,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 70px 10px 20px 10px;
-    background: url(/assets/img/environment-section-bg.webp) no-repeat center;
+    background: url(../assets/img/environment-section-bg.webp) no-repeat center;
     background-size: cover;  
     position: relative;
     margin-top: 0;  
@@ -950,7 +950,7 @@ body {
 .game-card[data-game-name="Urban City"] {
     background: 
     linear-gradient(180deg, rgba(86, 57, 255, 0) 54.69%, #5639FF 92.71%),
-    url(/assets/img/game-cover-1.webp) no-repeat center;
+    url(../assets/img/game-cover-1.webp) no-repeat center;
     background-size: cover;  
 }
 
@@ -966,14 +966,14 @@ body {
 .game-card[data-game-name="Sunny School"] {
     background: 
     linear-gradient(180deg, rgba(1, 183, 236, 0) 54.69%, #01B7EC 92.71%),
-    url(/assets/img/game-cover-2.webp) no-repeat center;
+    url(../assets/img/game-cover-2.webp) no-repeat center;
     background-size: cover;  
 }
 
 .game-card[data-game-name="Central Hospital"] {
     background: 
     linear-gradient(180deg, rgba(1, 183, 236, 0) 54.69%, #01B7EC 92.71%),
-    url(/assets/img/game-cover-3.webp) no-repeat center;
+    url(../assets/img/game-cover-3.webp) no-repeat center;
     background-size: cover; 
 }
 
@@ -1149,7 +1149,7 @@ body {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url('/assets/img/css_sprites.webp'); 
+    background-image: url('../assets/img/css_sprites.webp'); 
     margin-right: 30px;
 }
 
