@@ -35,9 +35,9 @@ function homeSectionScrollEffect() {
         }
     }
 
-    if (scrollY < homeHeight) {
-        content.style.transform = `translateY(${-scrollY / 3}px)`;
-    }
+    // if (scrollY < homeHeight) {
+    //     content.style.transform = `translateY(${-scrollY / 3}px)`;
+    // }
 }
 
 window.addEventListener('scroll', homeSectionScrollEffect);
