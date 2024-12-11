@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Maax-Medium';
-    src: url('../fonts/Maax-Medium.woff2') format('woff2'),
+    src: url('../fonts/Maax-Medium.woff') format('woff'),
          url('../fonts/Maax-Medium.woff') format('woff'),
          url('../fonts/Maax-Medium.ttf') format('truetype');
     font-weight: normal;
@@ -105,10 +105,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.regular-menu ul li a:link, 
-.regular-menu ul li a:visited {
+.regular-menu ul li a:link {
   color: black; 
-  text-decoration: none; 
 }
 
 .regular-menu ul li a:hover {
@@ -194,7 +192,6 @@ body {
     left: 0;
     position: fixed;
     background: 
-        linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
         url('../assets/img/home-bg.webp');
     background-size: cover;
     background-position: center center;
@@ -1416,6 +1413,16 @@ body {
     #expandableBlock {
         display: none;
     }
+
+    .home-bg-section {
+        background: 
+            linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
+            url('../assets/img/home-bg.webp');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
 }
 
 @media (min-width: 1000px) {
