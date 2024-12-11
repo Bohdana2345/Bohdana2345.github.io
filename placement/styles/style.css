@@ -1023,7 +1023,7 @@ body {
 .footer-platforms {
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
     width: 100%;
 }
 
