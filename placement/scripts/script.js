@@ -6,6 +6,7 @@ const contentWrapper = document.getElementById('contentWrapper');
 const homeLogo = document.getElementById('homeBdSectionLogo'); 
 const content = document.querySelector('.content'); 
 
+document.addEventListener('DOMContentLoaded', function() {
 function homeSectionScrollEffect() {
     const scrollY = window.scrollY;
     const homeHeight = window.innerHeight;
@@ -37,7 +38,7 @@ function homeSectionScrollEffect() {
         content.style.transform = `translateY(${-scrollY / 3}px)`;
     }
 }
-
+});
 window.addEventListener('scroll', homeSectionScrollEffect);
 window.addEventListener('load', homeSectionScrollEffect);
 window.addEventListener('resize', homeSectionScrollEffect);
