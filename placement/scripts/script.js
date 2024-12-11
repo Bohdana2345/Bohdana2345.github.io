@@ -25,7 +25,7 @@ function homeSectionScrollEffect() {
         homeSection.style.background = `linear-gradient(180deg, rgba(0, 0, 0, ${opacity * 1.2}) 100%, rgba(0, 0, 0, 1) 100%), url('../assets/img/home-bg-logo.webp')`;
     } else {
         if (screenWidth < 1000) {
-            homeSection.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('../assets/img/home-logo-bg-logo.webp')`;
+            homeSection.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('../assets/img/home-bg-logo.webp')`;
         } else {
             homeSection.style.background = `url('../assets/img/home-bg-logo.webp')`;
         }
