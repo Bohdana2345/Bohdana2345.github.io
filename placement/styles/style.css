@@ -205,6 +205,14 @@ body {
     z-index: -1;
 }
 
+.home-section.scrolled {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 100%, rgba(0, 0, 0, 1) 100%), url('../assets/img/home-bg.webp');
+}
+
+.home-section.mobile-background {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('../assets/img/home-bg.webp');
+}
+
 .home-bg-section-logo {
     position: absolute;
     top: 45px;
