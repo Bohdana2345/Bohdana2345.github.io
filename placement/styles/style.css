@@ -105,8 +105,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.regular-menu ul li a:link, 
-.regular-menu ul li a:visited {
+.regular-menu ul li a:link {
   color: black; 
 }
 
