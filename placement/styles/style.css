@@ -190,7 +190,6 @@ body {
     left: 0;
     position: fixed;
     background: 
-        linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
         url('../assets/img/home-bg.webp');
     background-size: cover;
     background-position: center center;
@@ -1412,7 +1411,14 @@ body {
     #expandableBlock {
         display: none;
     }
-}
+
+    .home-bg-section {
+        background: 
+            linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
+            url('../assets/img/home-bg.webp');
+        background-size: cover;
+        background-position: center center;
+    }
 
 @media (min-width: 1000px) {
 
