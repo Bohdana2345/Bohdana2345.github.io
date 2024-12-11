@@ -6,41 +6,49 @@ const homeSection = document.getElementById('homeSection');
 const contentWrapper = document.getElementById('contentWrapper');
 const content = document.getElementById('content');
 
-function homeSectionScrollEffect() {
-    const scrollY = window.scrollY;
-    const homeHeight = window.innerHeight;
-    const screenWidth = window.innerWidth;
+window.addEventListener('DOMContentLoaded', () => {
+    const homeLogo = document.getElementById('homeBdSectionLogo'); 
+    const homeSection = document.getElementById('homeSection'); 
+    const content = document.querySelector('.content'); 
 
-    const startTop = 40;
-    const newTop = Math.max(startTop - scrollY * 0.3, -150);
-    homeLogo.style.top = `${newTop}px`;
-    const maxOpacity = 1.2;
-    const opacity = Math.min(scrollY / homeHeight, maxOpacity);
-    homeSection.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
-    const minBrightness = 0.3;
-    const brightness = Math.max(1 - (scrollY / homeHeight) * 1.2, minBrightness);
-    homeLogo.style.filter = `brightness(${brightness})`;
+    function homeSectionScrollEffect() {
+        const scrollY = window.scrollY;
+        const homeHeight = window.innerHeight;
+        const screenWidth = window.innerWidth;
+        
+        const startTop = 40;
+        const newTop = Math.max(startTop - scrollY * 0.3, -150);
+        homeLogo.style.top = `${newTop}px`;
 
-    if (scrollY > 0) {
-        homeSection.style.background = `linear-gradient(180deg, rgba(0, 0, 0, ${opacity * 1.2}) 100%, rgba(0, 0, 0, 1) 100%), url('./assets/img/home-bg.webp')`;
-    } else {
-        if (screenWidth < 1000) {
-            homeSection.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('./assets/img/home-bg.webp')`;
+        const maxOpacity = 1.2;
+        const opacity = Math.min(scrollY / homeHeight, maxOpacity);
+        homeSection.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+
+        const minBrightness = 0.3;
+        const brightness = Math.max(1 - (scrollY / homeHeight) * 1.2, minBrightness);
+        homeLogo.style.filter = `brightness(${brightness})`;
+
+        if (scrollY > 0) {
+            homeSection.style.background = `linear-gradient(180deg, rgba(0, 0, 0, ${opacity * 1.2}) 100%, rgba(0, 0, 0, 1) 100%), url('/assets/img/home-bg.webp')`;
         } else {
-            homeSection.style.background = `url('./assets/img/home-bg.webp')`;
+            if (screenWidth < 1000) {
+                homeSection.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('/assets/img/home-bg.webp')`;
+            } else {
+                homeSection.style.background = `url('/assets/img/home-bg.webp')`;
+            }
+        }
+        homeSection.style.backgroundSize = 'cover';
+        homeSection.style.backgroundPosition = 'center center';
+
+        if (scrollY < homeHeight) {
+            content.style.transform = `translateY(${-scrollY / 3}px)`;
         }
     }
-    homeSection.style.backgroundSize = 'cover';
-    homeSection.style.backgroundPosition = 'center center';
 
-    if (scrollY < homeHeight) {
-        content.style.transform = `translateY(${-scrollY / 3}px)`;
-    }
-}
-
-window.addEventListener('scroll', homeSectionScrollEffect);
-window.addEventListener('load', homeSectionScrollEffect);
-window.addEventListener('resize', homeSectionScrollEffect);
+    window.addEventListener('scroll', homeSectionScrollEffect);
+    window.addEventListener('load', homeSectionScrollEffect);
+    window.addEventListener('resize', homeSectionScrollEffect);
+});
 
 const initialValue = 270000;
 const maxDigits = 6;
