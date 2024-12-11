@@ -1,14 +1,11 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 const body = document.body;
 const mobileBtn = document.getElementById('mobileMenuIcon');
-const homeLogo = document.querySelector('.home-bg-section-logo');
 const homeSection = document.getElementById('homeSection');
 const contentWrapper = document.getElementById('contentWrapper');
 const content = document.getElementById('content');
-
 const homeLogo = document.getElementById('homeBdSectionLogo'); 
-const homeSection = document.getElementById('homeSection'); 
-const content = document.querySelector('.content'); 
+
 
 function homeSectionScrollEffect() {
     const scrollY = window.scrollY;
