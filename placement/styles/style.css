@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Maax-Medium';
-    src: url('../fonts/Maax-Medium.woff') format('woff'),
+    src: url('../fonts/Maax-Medium.woff2') format('woff2'),
          url('../fonts/Maax-Medium.woff') format('woff'),
          url('../fonts/Maax-Medium.ttf') format('truetype');
     font-weight: normal;
@@ -103,12 +103,6 @@ body {
     width: 100%;
     padding: 40px;
     transition: background-color 0.3s ease;
-    color: #000;
-    text-decoration: none;
-}
-
-.regular-menu ul li a:visited {
-    color: #000;
 }
 
 .extended-menu-button:hover {
@@ -190,12 +184,13 @@ body {
     left: 0;
     position: fixed;
     background: 
-        url('../assets/img/home-bg.webp');
+        linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
+        url('/assets/img/home-bg.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 480px;
+    height: 530px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -216,6 +211,7 @@ body {
     position: absolute;
     top: 45px;
 }
+
 
 .content {
     position: relative;
@@ -389,7 +385,7 @@ body {
 
 .mobile-menu-content {
     position: relative;
-    padding: 95px 40px 95px 30px;
+    padding: 95px 30px;
     z-index: 2; 
     opacity: 0; 
     visibility: hidden; 
@@ -455,7 +451,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 94%;
+    height: 91%;
     background-color: rgba(0, 0, 0, 0.95);
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     transform: translateY(-100%);
@@ -568,10 +564,9 @@ body {
 .main-info-section {
     width: 100%;
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
     align-items: center;
     height: 450px;
-    padding-bottom: 50px;
 }
 
 .main-info-section-wrapper {
@@ -779,13 +774,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;   
-    padding: 60px 0px 60px 0px;
+    padding: 0px 0px 60px 0px;
 }
 
 .game-cards-wrapper {
     width: 100%;
     height: 100vh;
-    margin-bottom: 50px;
 }
 
 .game-cards-wrapper .game-card:nth-of-type(3) {
@@ -899,6 +893,7 @@ body {
 }
 
 .product-cards-headline {
+    font-family: 'Maax-Medium';
     text-transform: uppercase;
     font-size: 21px;
     font-weight: 600;
@@ -1030,7 +1025,7 @@ body {
 .footer-platforms {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
     width: 100%;
 }
 
@@ -1104,7 +1099,8 @@ body {
 
 .mobile-lang-selector {
     position: absolute; 
-    bottom: 65px;
+    bottom: 95px;
+    left: 8%; 
     display: flex; 
     gap: 10px; 
     z-index: 10; 
@@ -1411,14 +1407,7 @@ body {
     #expandableBlock {
         display: none;
     }
-
-    .home-bg-section {
-        background: 
-            linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
-            url('../assets/img/home-bg.webp');
-        background-size: cover;
-        background-position: center center;
-    }
+}
 
 @media (min-width: 1000px) {
 
@@ -1726,6 +1715,8 @@ body {
     }
 
 } 
+
+
 
 
 
