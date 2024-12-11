@@ -191,8 +191,7 @@ body {
     position: fixed;
     background: 
         linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
-        url('
-https://bohdana2345.github.io/placement/assets/img/home-bg.webp');
+        url('../assets/img/home-bg.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
