@@ -1,0 +1,21 @@
+[
+    {
+      "type": "environment",
+      "headlineText": "You play,",
+      "headlineDecoratedText": "we plant.",
+      "buttonText": "Learn more",
+      "link": "#"
+    },
+    {
+      "type": "position",
+      "headlineText": "Jobs for game changers.",
+      "buttonText": "Positions",
+      "link": "#"
+    },
+    {
+      "type": "job",
+      "headlineText": "Become a content creator.",
+      "buttonText": "Apply",
+      "link": "#"
+    }
+  ]
