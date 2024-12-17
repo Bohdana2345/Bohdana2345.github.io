@@ -4052,7 +4052,7 @@ margin-bottom: 0px;
     padding: 100px 30px 40px 30px;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 55px;
 }
 
 .creators-main-info-section-text-wrapper, .apply-main-info-section-text-wrapper {
@@ -4092,7 +4092,7 @@ margin-bottom: 0px;
 }
 
 .creators-content .main-info-section {
-    height: 220px;
+    height: 290px;
 
 }
 
@@ -4516,10 +4516,10 @@ height: 20vh;
     .creators-content {
         width: 100%;
         background: #F1F3F4;
-        padding: 100px 30px 80px 30px;
+        padding: 100px 30px 170px 100px;
         display: flex;
         flex-direction: column;
-        gap: 95px;
+        gap: 145px;
     }
 
 }
@@ -4572,7 +4572,7 @@ height: 20vh;
 
     
         .creators-content {
-            padding: 300px 30px 170px 30px;
+            padding: 300px 60px 170px 60px;
         }
 
         .creators-content .main-info-section {
