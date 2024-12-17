@@ -3363,7 +3363,7 @@ border-top: none;
 }
 
 .game-detail-product-cards .game-cards-wrapper {
-    height: 110vh;
+    height: 120vh;
 
 }
 
@@ -3384,7 +3384,7 @@ border-top: none;
 
 .game-detail-section-cards-wrapper {
     width: 100%;
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 .game-detail-urban-city-video {
@@ -3520,7 +3520,7 @@ margin-bottom: 0px;
 
 @media (min-width: 400px) { 
     .game-detail-product-cards .game-cards-wrapper {
-        height: 150vh;
+        height: 155vh;
     
     }
 }
