@@ -218,5 +218,31 @@ function formatNumber(number) {
 
 updateStatNumber();
 
+document.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll(".section");
+    const menu = document.querySelector(".menu-section");
+    let isInAnySection = false;
 
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const sectionHeight = rect.height;
+        const sectionTop = rect.top;
+        const sectionBottom = rect.bottom;
+
+        if (sectionTop < window.innerHeight / 2 && sectionBottom > window.innerHeight / 2) {
+            const sectionId = section.getAttribute("id");
+            menu.classList.add(sectionId);
+            isInAnySection = true;
+        } else {
+            const sectionId = section.getAttribute("id");
+            menu.classList.remove(sectionId);
+        }
+    });
+
+    if (!isInAnySection) {
+        menu.classList.forEach(className => menu.classList.remove(className));
+        menu.classList.add('menu-section');
+    }
+    
+});
 
