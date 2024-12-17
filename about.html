@@ -7,7 +7,6 @@
     <title>SUBARA</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="style-about.css">
 </head>
 
 <body>
@@ -19,7 +18,7 @@
 
         <nav class="regular-menu">
             <ul>
-                <li><a href="#" class="extended-menu-inactive-button">Games</a></li>
+                <li><a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk" class="extended-menu-inactive-button" id="menu-games">Games</a></li>
                 <li>
                     <a href="#" class="extended-menu-button" id="first-extended-menu-button">Explore</a>
                 </li>
@@ -44,38 +43,38 @@
                 <div class="mobile-menu-content" id="menuContent">
                     <section class="mobile-menu-section">
                         <hr>
-                        <h2>Games</h2>
+                        <a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk"> <h2 class="mobile-menu-games">Games</h2></a>
                         <hr>
                     </section>
                     <section class="mobile-menu-section">
-                        <h2 class="dropdown-toggle">Explore <span class="arrow"></span></h2>
+                        <div class="mobile-menu-section-headline-wrapper"><h2 class="dropdown-toggle mobile-menu-explore">Explore</h2><span class="arrow"></span></div>
                         <ul class="dropdown-content">
-                            <li>About Us</li>
-                            <li>Social Impact</li>
+                            <a href="about.html"><li class="mobile-menu-about-us">About Us</li></a>
+                            <a href="https://www.cbinsights.com/company/subara"><li class="mobile-menu-social-impact">Social Impact</li></a>
                         </ul>
                         <hr>
                     </section>
                     <section class="mobile-menu-section">
-                        <h2 class="dropdown-toggle">Careers <span class="arrow"></span></h2>
+                        <div class="mobile-menu-section-headline-wrapper"><h2 class="dropdown-toggle mobile-menu-careers">Careers</h2><span class="arrow"></span></div>
                         <ul class="dropdown-content">
-                            <li>Working with Us</li>
-                            <li>Open Position</li>
+                            <a href="https://ie.linkedin.com/company/subara"><li class="mobile-menu-working-with-us">Working with Us</li></a>
+                            <a href="https://ie.linkedin.com/jobs/view/3d-2d-game-artist-at-subara-2754738983"><li class="mobile-menu-open-position">Open Position</li></a>
                         </ul>
                         <hr>
                     </section>
                     <section class="mobile-menu-section">
-                        <h2 class="dropdown-toggle">Support <span class="arrow"></span></h2>
+                        <div class="mobile-menu-section-headline-wrapper"><h2 class="dropdown-toggle mobile-menu-support">Support</h2><span class="arrow"></span></div>
                         <ul class="dropdown-content">
-                            <li>Help</li>
-                            <li>Creators</li>
-                            <li>Press Media</li>
+                            <li class="mobile-menu-help link-wrapper-help">Help</li>
+                            <a href="creators.html"><li class="mobile-menu-creators">Creators</li></a>
+                            <a href="https://www.media-press.tv/"><li class="mobile-menu-press-media">Press Media</li></a>
                         </ul>
                         <hr>
                     </section>
 
                     <div class="mobile-lang-selector">
                         <span class="lang-option" data-lang="EN">EN</span>
-                        <span class="lang-option" data-lang="UA">UK</span>
+                        <span class="lang-option" data-lang="UK">UA</span>
                     </div>
                 </div>
             </div>
@@ -85,22 +84,40 @@
 
     <div class="expandable-menu-block" id="expandableBlock">
         <div class="extanded-regular-menu-section" id="fisrt-extanded-regular-menu-section">
-            <a href="#">About us</a>
-            <a href="#">Explore</a>
+            <a href="about.html" class="fisrt-extanded-regular-menu-section-about">About us</a>
+            <a href="https://ie.linkedin.com/company/subara" class="fisrt-extanded-regular-menu-section-explore">Explore</a>
         </div>
 
         <div class="extanded-regular-menu-section" id="second-extanded-regular-menu-section">
-            <a href="#">Working with Us</a>
-            <a href="#">Open Position</a>
+            <a href="https://ie.linkedin.com/company/subara" class="fisrt-extanded-regular-menu-section-working">Working with Us</a>
+            <a href="https://ie.linkedin.com/jobs/view/3d-2d-game-artist-at-subara-2754738983" class="fisrt-extanded-regular-menu-section-positions">Open Position</a>
         </div>
 
         <div class="extanded-regular-menu-section" id="third-extanded-regular-menu-section">
-            <a href="#">Help</a>
-            <a href="#">Creators</a>
-            <a href="#">Press Media</a>
+            <a href="#" class="fisrt-extanded-regular-menu-section-help link-wrapper-help">Help</a>
+            <a href="creators.html" class="fisrt-extanded-regular-menu-section-creators">Creators</a>
+            <a href="https://www.media-press.tv/" class="fisrt-extanded-regular-menu-section-media">Press Media</a>
         </div>
     </div>
 
+    <main class="about-content-wrapper" id="contentWrapper">
+    <div class="expandable-menu-block" id="expandableBlock">
+        <div class="extanded-regular-menu-section" id="fisrt-extanded-regular-menu-section">
+            <a href="#" class="fisrt-extanded-regular-menu-section-about">About us</a>
+            <a href="#" class="fisrt-extanded-regular-menu-section-explore">Explore</a>
+        </div>
+
+        <div class="extanded-regular-menu-section" id="second-extanded-regular-menu-section">
+            <a href="#" class="fisrt-extanded-regular-menu-section-working">Working with Us</a>
+            <a href="#" class="fisrt-extanded-regular-menu-section-positions">Open Position</a>
+        </div>
+
+        <div class="extanded-regular-menu-section" id="third-extanded-regular-menu-section">
+            <a href="#" class="fisrt-extanded-regular-menu-section-help link-wrapper-help">Help</a>
+            <a href="#" class="fisrt-extanded-regular-menu-section-creators">Creators</a>
+            <a href="#" class="fisrt-extanded-regular-menu-section-media">Press Media</a>
+        </div>
+    </div>
 
     <div class="about-bg-section"> 
         <div class="about-bg-section-text">
@@ -111,9 +128,7 @@
         </div>
     </div>
 
-
     <div class="branding-section"> 
-        
     </div>
 
 
@@ -171,8 +186,6 @@
                 </div>
 
                 <div class="accordion-content">
-                     <!-- Accordion Item 1 -->
-                     
                      <button class="accordion"><span class="accordion-text">Enjoyment</span></button>
                      <div class="panel">
                         <h4>Fun and play come first</h4>
@@ -185,7 +198,6 @@
                         <p>We embrace growth as a journey of continuous improvement, curiosity, and exploration. Every challenge is an opportunity to learn, innovate, and expand our horizons. Together, we nurture potential, foster resilience, and thrive in a world of endless possibilities. Let’s keep climbing higher!</p>
                     </div>
 
-                     
                     <button class="accordion"><span class="accordion-text">Creativity</span></button>
                     <div class="panel">
                         <h4>Imagination ignites innovation</h4>
@@ -203,65 +215,25 @@
                         <h4>Making a difference, together</h4>
                         <p>We strive to leave a meaningful mark on the world through our actions, ideas, and solutions. Every step we take is driven by purpose, empowering others and creating lasting value. Together, we can shape a brighter future, one impactful decision at a time.</p>
                     </div>
-
                 </div>
-
             </div>
-       
         </div>
     </div>
 
-    <!-- <div class="cards-section">
-        <div class="environment-section-wrapper cards-section-wrapper">
-            <div class="environment-section-headline">
-                <span class="environment-section-headline-text"></span>
-                <span class="environment-section-headline-decorated-text"></span>
-            </div>
-
-            <button class="environment-button cards-section-button"></button>
-        </div>
-
-        
-        <div class="position-wrapper cards-section-wrapper">
-            <span class="about-positions-card-bg"></span>
-            <div class="position-headline-text-wrapper">
-                <h5 class="position-headline-text"></h5>
-            </div>
-                
-            <a href="#" class="position-button cards-section-button"></a>
-        </div>
-
-        
-
-
-        <div class="job-wrapper cards-section-wrapper">
-            <div class="job-headline-text-wrapper">
-                <h5 class="job-headline-text"></h5>
-            </div>
-                
-                <span class="about-job-card-bg"></span>
-                
-            <a href="#" class="job-button cards-section-button"></a>
-        </div>
-
-               
-    </div> -->
     <div class="cards-section" id="cardsSection"></div>
-
-
 
     <footer class="footer">
         <div class="footer-top">
             <img src="/assets/svg/Logo.svg" alt="Abstract black logo featuring a geometric parallelogram design." class="footer-logo">
             <div class="footer-platforms">
-                <a href="#" class="footer-app-store-button">
+                <a href="https://apps.apple.com/ua/developer/subara/id1735332479" class="footer-app-store-button">
                     <span class="app-store-logo"></span>
                     <div class="app-store-text">
                         <span>SUBARA on the</span>
                         <strong>App store</strong>
                     </div>
                 </a>
-                <a href="#" class="footer-google-play-button">
+                <a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk" class="footer-google-play-button">
                     <span class="google-play-logo"></span>
                     <div class="google-play-text">
                         <span class="google-play-download-text">SUBARA on</span>
@@ -269,7 +241,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="footer-amazone-button">
+                <a href="https://www.amazon.com/SUBARA-SG-Ltd-Urban-Stories/dp/B09S18Q67F" class="footer-amazone-button">
                     <span class="amazone-logo"></span>
                     <div class="amazone-text">
                         <span>SUBARA on</span>
@@ -283,27 +255,27 @@
             <div class="footer-bottom-wrapper">
                 <div class="footer-section">
                     <div class="link-wrapper">
-                        <a href="#" class="link-wrapper-games">Games</a>
+                        <a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk" class="link-wrapper-games">Games</a>
                     </div>
                 </div>
 
                 <section class="footer-section">
                     <h4 class="footer-section-explore">Explore</h4>
                     <div class="link-wrapper">
-                        <a href="#" class="link-wrapper-about-us">About Us</a>
+                        <a href="about.html" class="link-wrapper-about-us">About Us</a>
                     </div>
                     <div class="link-wrapper">
-                        <a href="#" class="link-wrapper-social-impact">Social Impact</a>
+                        <a href="https://www.cbinsights.com/company/subara" class="link-wrapper-social-impact">Social Impact</a>
                     </div>
                 </section>
 
                 <section class="footer-section">
                     <h4 class="footer-section-careers">Careers</h4>
                     <div class="link-wrapper">
-                        <a href="#" class="link-wrapper-working-at-subara">Working at Subara</a>
+                        <a href="https://ie.linkedin.com/company/subara" class="link-wrapper-working-at-subara">Working at Subara</a>
                     </div>
                     <div class="link-wrapper">
-                        <a href="#" class="link-wrapper-open-position">Open Position</a>
+                        <a href="https://ie.linkedin.com/jobs/view/3d-2d-game-artist-at-subara-2754738983?" class="link-wrapper-open-position">Open Position</a>
                     </div>
                 </section>
 
@@ -313,10 +285,10 @@
                         <a href="#" data-text="Help" class="link-wrapper-help">Help</a>
                     </div>
                     <div class="link-wrapper">
-                        <a href="#" data-text="Creators" class="link-wrapper-creators">Creators</a>
+                        <a href="creators.html" data-text="Creators" class="link-wrapper-creators">Creators</a>
                     </div>
                     <div class="link-wrapper">
-                        <a href="#" data-text="Press Media" class="link-wrapper-media">Press Media</a>
+                        <a href="https://www.media-press.tv/" data-text="Press Media" class="link-wrapper-media">Press Media</a>
                     </div>
                 </section>
 
@@ -331,746 +303,37 @@
 
             <div class="footer-legal">
                 <div class="footer-legal-text">
-                    <span class="footer-legal-year">©2024 SUBARA SG Ltd.</span>
+                    <a href=""><span class="footer-legal-year">©2024 SUBARA SG Ltd.</span></a>
                     <div class="link-wrapper">
-                        <a href="#" data-text="Terms and Privacy" class="link-wrapper-terms">Terms and Privacy</a>
+                        <a href="https://policies.google.com/" data-text="Terms and Privacy" class="link-wrapper-terms">Terms and Privacy</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-</div>
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeHelpModalBtn">&times;</span>
+          <h2 class="helpFormHeadline title">Do you need help?</h2>
+          <form id="helpForm" class="helpForm"  method="POST">
+            <label for="help-name" class="label">Full name:</label>
+            <input type="text" id="help-name" name="help-name" required><br>
+      
+            <label for="help-email" class="label">Email:</label>
+            <input type="email" id="help-email" name="help-email" required><br>
+      
+            <label for="help-message" class="label">Describe your issue:</label>
+            <textarea id="help-message" name="help-message" rows="4" class="textarea" required></textarea><br>
+      
+            <button type="submit" class="submit-btn">Submit Request</button>
+          </form>
+        </div>
+      </div>
+</main>
 
 <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
-<script>
-
-const resources = {
-    en: {
-        translation: {
-            "menu-games": "Games",
-            "menu-explore": "Explore",
-            "menu-careers": "Careers",
-            "menu-support": "Support",
-            "mobile-menu-games": "Games",
-            "mobile-menu-explore": `Explore`,
-            "mobile-menu-careers": "Careers",
-            "mobile-menu-support": "Support",
-            "mobile-menu-about-us": "About Us",
-            "mobile-menu-social-impact": "Social Impact",
-            "mobile-menu-working-with-us": "Working with Us",
-            "mobile-menu-open-position": "Open Position",
-            "mobile-menu-help": "Help",
-            "mobile-menu-creators": "Creators",
-            "mobile-menu-press-media": "Press Media",
-            "main-info-new": "new",
-            "main-info-description": "Travel around the world and build vacation life stories.",
-            "main-info-button": "Explore",
-            "platforms-available": "Available on",
-            "platforms-download-on": "Download on the",
-            "platforms-get-it-on": "Get it on",
-            "platforms-available-at": "Available at",
-            "product-cards-headline": "Explore more games",
-            "product-cards-button": "All games",
-            "environment-section-headline-you-play": "You play,",
-            "environment-section-headline-we-plant": "we plant.",
-            "environment-section-statistic-text": "Planted trees and counting",
-            "environment-section-button": "Learn more",
-            "footer-legal-text": "© 2024 SUBARA SG Ltd.",
-            "footer-terms-and-privacy": "Terms and Privacy",
-            "footer-section-explore": "Explore",
-            "footer-section-careers": "Careers",
-            "footer-section-support": "Support",
-            "footer-section-about-us": "About Us",
-            "footer-section-social-impact": "Social Impact",
-            "footer-section-working-at-subara": "Working at Subara",
-            "footer-section-open-position": "Open Position",
-            "footer-section-help": "Help",
-            "footer-section-creators": "Creators",
-            "footer-section-press-media": "Press Media",
-
-            
-
-
-
-
-            "about-heading": "We are SUBARA",
-            "about-description": "We build digital experiences that are filled with fun and creativity that sparks the imagination of millions of any age and from any corner of the world, like you.",
-            "story-part1": "Subara captures the idea of being 'best-in-class'. As both individuals and as a collective, it is in the Subara nature to seek excellence in everything we do; from how we design our games to how we design the world around us. We build digital experiences that are filled with fun and creativity that sparks the imagination of millions of players of any age and from any corner of the world.",
-            "story-part2": "Our ethos is underpinned by this quest to be the best humans and company we can be, whether this is through planting trees to help rebuild the world or producing great games to entertain, educate, and enlighten players, inspiring them to be the best version of themselves.",
-            "wwh-heading": "why we do it",
-            "wwh-paragraph": "To harness the power of play so that together we can change the world for the better.",
-            "values-header": "What we believe in",
-            "values-description": "Our values guide every decision we make and are the backbone of our success.",
-            "enjoyment": "Enjoyment",
-            "growth": "Growth",
-            "creativity": "Creativity",
-            "integrity": "Integrity",
-            "impact": "Impact",
-            "enjoyment-heading": "Fun and play come first",
-            "growth-heading": "Always learning, always evolving",
-            "creativity-heading": "Imagination ignites innovation",
-            "integrity-heading": "True to our word, true to ourselves",
-            "impact-heading": "Making a difference, together",
-            "enjoyment-text": "We are serious about fun and the magical power of play and the spellbinding joy it creates to educate, inspire, thrill, empower and solve problems. There’s an excitable side to all of us – we are always ready for our next adventure! Ready set go!",
-            "growth-text": "We embrace growth as a journey of continuous improvement, curiosity, and exploration. Every challenge is an opportunity to learn, innovate, and expand our horizons. Together, we nurture potential, foster resilience, and thrive in a world of endless possibilities. Let’s keep climbing higher!",
-            "creativity-text": "We celebrate creativity as the spark that fuels innovation and bold ideas. By thinking differently, we open new doors, inspire unique solutions, and create experiences that captivate and delight. The power of imagination is boundless – let’s dream big and make it happen!",
-            "integrity-text": "Integrity is the foundation of everything we do. We value honesty, accountability, and doing what’s right – even when no one is watching. By staying true to our values, we build trust, foster respect, and create connections that stand the test of time.",
-            "impact-text": "We strive to leave a meaningful mark on the world through our actions, ideas, and solutions. Every step we take is driven by purpose, empowering others and creating lasting value. Together, we can shape a brighter future, one impactful decision at a time.",
-            "wwh-what": "what",
-            "wwh-how": "how",
-            "wwh-why": "why",
-            "learn-more": "Learn more",
-            "jobs-for-game-changers": "Jobs for game changers.",
-            "positions": "Positions",
-            "become-content-creator": "Become a content creator.",
-            "apply": "Apply"
-        }
-    },
-    uk: {
-        translation: {
-            "menu-games": "Ігри",
-            "menu-explore": "Дослідити",
-            "menu-careers": "Кар'єра",
-            "menu-support": "Підтримка",
-            "mobile-menu-games": "Ігри",
-            "mobile-menu-explore": "Дослідити",
-            "mobile-menu-careers": "Кар'єра",
-            "mobile-menu-support": "Підтримка",
-            "mobile-menu-about-us": "Про нас",
-            "mobile-menu-social-impact": "Соціальний вплив",
-            "mobile-menu-working-with-us": "Співпраця з нами",
-            "mobile-menu-open-position": "Вакансії",
-            "mobile-menu-help": "Допомога",
-            "mobile-menu-creators": "Творці",
-            "mobile-menu-press-media": "Преса та ЗМІ",
-            "main-info-new": "нове",
-            "main-info-description": "Подорожуйте світом та створюйте історії відпусток.",
-            "main-info-button": "Дослідити",
-            "platforms-available": "Доступно на",
-            "platforms-download-on": "Завантажити y",
-            "platforms-get-it-on": "Завантажити у",
-            "platforms-available-at": "Доступно на",
-            "product-cards-headline": "Більше ігор",
-            "product-cards-button": "Всі ігри",
-            "environment-section-headline-you-play": "Ти граєш,",
-            "environment-section-headline-we-plant": "ми садимо.",
-            "environment-section-statistic-text": "дерев, і ми продовжуємо",
-            "environment-section-button": "Більше",
-            "footer-legal-text": "© 2024 SUBARA СГ ТОВ.",
-            "footer-terms-and-privacy": "Умови і Політика",
-            "footer-section-explore": "Дослідити",
-            "footer-section-careers": "Кар'єра",
-            "footer-section-support": "Підтримка",
-            "footer-section-about-us": "Про нас",
-            "footer-section-social-impact": "Соціальний вплив",
-            "footer-section-working-at-subara": "Робота з Subara",
-            "footer-section-open-position": "Вакансії",
-            "footer-section-help": "Допомога",
-            "footer-section-creators": "Творці",
-            "footer-section-press-media": "Преса та ЗМІ",
-          
-
-
-        
-
-
-
-            "about-heading": "Ми — SUBARA",
-            "about-description": "Ми створюємо цифрові пригоди, що розпалюють уяву і наповнені веселощами й творчістю для мільйонів людей будь-якого віку, з будь-якого куточка світу, зокрема й для вас.",
-            "story-part1": "Subara втілює ідею бути 'найкращими в своїй галузі'. Кожен працівник та вся команда Subara завжди прагнуть досконалості в усьому, що роблять: від того, як розробляються наші ігри, до того, як ми формуємо світ навколо нас. Ми створюємо цифрові пригоди, які наповнені розвагами та творчістю, що розпалюють уяву мільйонів геймерів будь-якого віку та з будь-якого куточка світу.",
-            "story-part2": "Наша етика підкріплена прагненням бути найкращими людьми та компанією, якими ми можемо бути, чи то через висаджування дерев для відновлення світу, чи то створення чудових ігор для розваги та навчання користувачів, надихаючи їх ставати найкращою версією себе.",
-            "wwh-heading": "чому ми це робимо",
-            "wwh-paragraph": "Щоб використовувати силу гри для того, щоб разом змінити світ на краще.",
-            "values-header": "У що ми віримо",
-            "values-description": "Наші цінності керують кожним нашим рішенням і є основою нашого успіху.",
-            "enjoyment": "Розваги",
-            "growth": "Зростання",
-            "creativity": "Творчість",
-            "integrity": "Цілісність",
-            "impact": "Вплив",
-            "enjoyment-heading": "Розваги та ігри на першому місці",
-            "growth-heading": "Завжди навчаємось, завжди розвиваємось",
-            "creativity-heading": "Уява запалює інновації",
-            "integrity-heading": "Відповідати за свої слова, бути чесними до себе",
-            "impact-heading": "Залишати слід, разом",
-            "enjoyment-text": "Ми серйозно ставимося до розваг і магічної сили гри та захоплюючої радості, яку вона створює для того, щоб навчати, надихати, надавати силу та вирішувати проблеми. У нас є запал – ми завжди готові до наступної пригоди! На старт, увага, руш!",
-            "growth-text": "Ми приймаємо зростання як подорож безперервного вдосконалення, цікавості та дослідження. Кожен виклик — це можливість навчитися, розвинути та розширювати наші горизонти. Разом ми виховуємо потенціал, сприяємо стійкості та процвітаємо у світі безмежних можливостей. Давайте підніматися вище!",
-            "creativity-text": "Ми славимо творчість як іскру, що живить інновації та сміливі ідеї. Думаючи по-новому, ми відкриваємо нові двері, надихаємо на унікальні рішення та створюємо пригоди, які захоплюють та радують. Сила уяви безмежна – давайте мріяти по-крупному і втілювати це!",
-            "integrity-text": "Цілісність є основою всього, що ми робимо. Ми цінуємо чесність, відповідальність і вчинки, які є правильними. Залишаючись вірними нашим цінностям, ми будуємо довіру, повагу та створюємо зв’язки, які витримують випробування часом.",
-            "impact-text": "Ми прагнемо залишити значущий слід у світі нашими діями, ідеями та рішеннями. Кожен крок ми робимо, керуючись нашою ціллю, надаючи іншим силу та створюючи цінності. Разом ми можемо створити світле майбутнє, приймаючи значущі рішення кожного разу.",
-            "wwh-what": "що",
-            "wwh-how": "як",
-            "wwh-why": "чому",
-            "learn-more": "Дізнатися більше",
-            "jobs-for-game-changers": "Робота для творців змін.",
-            "positions": "Вакансії",
-            "become-content-creator": "Стань творцем контенту.",
-            "apply": "Подати заявку"
-          
-
-        }
-    }
-};
-
-
-function updateContent() {
-
-    document.querySelector('.fisrt-extanded-regular-menu-section-about').textContent = i18next.t('mobile-menu-about-us');
-    document.querySelector('.fisrt-extanded-regular-menu-section-explore').textContent = i18next.t('mobile-menu-explore');
-    document.querySelector('.fisrt-extanded-regular-menu-section-working').textContent = i18next.t('mobile-menu-working-with-us');
-    document.querySelector('.fisrt-extanded-regular-menu-section-positions').textContent = i18next.t('footer-section-open-position');
-    document.querySelector('.fisrt-extanded-regular-menu-section-help').textContent = i18next.t('mobile-menu-help');
-    document.querySelector('.fisrt-extanded-regular-menu-section-creators').textContent = i18next.t('mobile-menu-creators');
-    document.querySelector('.fisrt-extanded-regular-menu-section-media').textContent = i18next.t('mobile-menu-press-media');
-
-
-
-    document.querySelectorAll('.extended-menu-inactive-button').forEach(el => el.textContent = i18next.t('menu-games'));
-    document.querySelectorAll('#first-extended-menu-button').forEach(el => el.textContent = i18next.t('menu-explore'));
-    document.querySelectorAll('#second-extended-menu-button').forEach(el => el.textContent = i18next.t('menu-careers'));
-    document.querySelectorAll('#third-extended-menu-button').forEach(el => el.textContent = i18next.t('menu-support'));
-    document.querySelectorAll('.mobile-menu-section h2').forEach((el, index) => {
-        const keys = ['mobile-menu-games', 'mobile-menu-explore', 'mobile-menu-careers', 'mobile-menu-support'];
-        if (keys[index]) el.textContent = i18next.t(keys[index]);
-    });
-    document.querySelectorAll('.dropdown-content li').forEach((el, index) => {
-        const keys = ['mobile-menu-about-us', 'mobile-menu-social-impact', 'mobile-menu-working-with-us', 'mobile-menu-open-position', 'mobile-menu-help', 'mobile-menu-creators', 'mobile-menu-press-media'];
-        if (keys[index]) el.textContent = i18next.t(keys[index]);
-    });
-    document.querySelectorAll('.main-info-section-new-marker').forEach(el => el.textContent = i18next.t('main-info-new'));
-    document.querySelectorAll('.main-info-section-text').forEach(el => el.textContent = i18next.t('main-info-description'));
-    document.querySelectorAll('.main-info-section-wrapper button').forEach(el => el.textContent = i18next.t('main-info-button'));
-    document.querySelectorAll('.platforms-headline').forEach(el => el.textContent = i18next.t('platforms-available'));
-    document.querySelectorAll('.app-store-text span').forEach(el => el.textContent = i18next.t('platforms-download-on'));
-    document.querySelectorAll('.google-play-text span').forEach(el => el.textContent = i18next.t('platforms-get-it-on'));
-    document.querySelectorAll('.amazone-text span').forEach(el => el.textContent = i18next.t('platforms-available-at'));
-    document.querySelectorAll('.product-cards-headline').forEach(el => el.textContent = i18next.t('product-cards-headline'));
-
-
-    document.querySelectorAll('.product-cards-button').forEach(el => el.textContent = i18next.t('product-cards-button'));
-    document.querySelectorAll('.environment-section-headline-text').forEach(el => el.textContent = i18next.t('environment-section-headline-you-play'));
-    document.querySelectorAll('.environment-section-headline-decorated-text').forEach(el => el.textContent = i18next.t('environment-section-headline-we-plant'));
-    document.querySelectorAll('.environment-section-statistic-text').forEach(el => el.textContent = i18next.t('environment-section-statistic-text'));
-    document.querySelectorAll('.environment-section-button').forEach(el => el.textContent = i18next.t('environment-section-button'));
-
-
-    document.querySelectorAll('.link-wrapper-games').forEach(el => el.textContent = i18next.t('menu-games'));
-    document.querySelectorAll('.link-wrapper-about-us').forEach(el => el.textContent = i18next.t('mobile-menu-about-us'));
-    document.querySelectorAll('.link-wrapper-social-impact').forEach(el => el.textContent = i18next.t('footer-section-social-impact'));
-    document.querySelectorAll('.link-wrapper-working-at-subara').forEach(el => el.textContent = i18next.t('footer-section-working-at-subara'));
-    document.querySelectorAll('.link-wrapper-open-position').forEach(el => el.textContent = i18next.t('footer-section-open-position'));
-
-
-    document.querySelectorAll('.footer-section-support').forEach(el => el.textContent = i18next.t('menu-support'));
-    document.querySelectorAll('.footer-section-explore').forEach(el => el.textContent = i18next.t('footer-section-explore'));
-    document.querySelectorAll('.footer-section-careers').forEach(el => el.textContent = i18next.t('footer-section-careers'));
-    document.querySelectorAll('.link-wrapper-help').forEach(el => el.textContent = i18next.t('footer-section-help'));
-    document.querySelectorAll('.link-wrapper-creators').forEach(el => el.textContent = i18next.t('footer-section-creators'));
-    document.querySelectorAll('.link-wrapper-media').forEach(el => el.textContent = i18next.t('footer-section-press-media'));
-    document.querySelectorAll('.footer-legal-year').forEach(el => el.textContent = i18next.t('footer-legal-text'));
-    document.querySelectorAll('.link-wrapper-terms').forEach(el => el.textContent = i18next.t('footer-terms-and-privacy'));
-
-
-
-
-
-    document.querySelector('h1').textContent = i18next.t('about-heading');
-    document.querySelector('.about-bg-section-main-text-wrapper p').textContent = i18next.t('about-description');
-
-    // Оновлення тексту для секції "Story"
-    document.querySelectorAll('.story-section-text-wrapper p span').forEach((el, index) => {
-        if (index === 0) {
-            el.textContent = i18next.t('story-part1');
-        } else {
-            el.textContent = i18next.t('story-part2');
-        }
-    });
-
-    // Оновлення тексту для секції "WWH"
-    document.querySelector('#wwh-heading').textContent = i18next.t('wwh-heading');
-    document.querySelector('#wwh-paragraph').textContent = i18next.t('wwh-paragraph');
-
-    document.querySelector('#circle-1').textContent = i18next.t('wwh-what');
-    document.querySelector('#circle-2').textContent = i18next.t('wwh-how');
-    document.querySelector('#circle-3').textContent = i18next.t('wwh-why');
-
-
-
-    // Оновлення тексту для секції "Values"
-    document.querySelector('.values-header h3').textContent = i18next.t('values-header');
-    document.querySelector('.values-header p').textContent = i18next.t('values-description');
-
-    // Оновлення тексту для акордеону
-    document.querySelectorAll('.accordion span.accordion-text').forEach((el, index) => {
-        const accordionTitles = ['enjoyment', 'growth', 'creativity', 'integrity', 'impact'];
-        el.textContent = i18next.t(accordionTitles[index]);
-    });
-
-    // Оновлення тексту для панелей акордеону
-    document.querySelectorAll('.panel h4').forEach((el, index) => {
-        const accordionHeadings = ['enjoyment-heading', 'growth-heading', 'creativity-heading', 'integrity-heading', 'impact-heading'];
-        el.textContent = i18next.t(accordionHeadings[index]);
-    });
-
-    document.querySelectorAll('.panel p').forEach((el, index) => {
-        const accordionTexts = ['enjoyment-text', 'growth-text', 'creativity-text', 'integrity-text', 'impact-text'];
-        el.textContent = i18next.t(accordionTexts[index]);
-    });
-
-    document.querySelector('.environment-button').textContent = i18next.t('learn-more');
-    document.querySelector('.position-headline-text').textContent = i18next.t('jobs-for-game-changers');
-    console.log(document.querySelector('.position-headline-text-wrapper').classList);
-    document.querySelector('.position-button').textContent = i18next.t('positions');
-    document.querySelector('.job-headline-text').textContent = i18next.t('become-content-creator');
-    document.querySelector('.job-button').textContent = i18next.t('apply');
-}
-
-i18next.init({
-    lng: 'en', 
-    debug: true,
-    resources
-}, function (err, t) {
-    if (err) return console.error(err);
-    loadCardsData();
-});
-
-document.getElementById('lang-locatizator').addEventListener('change', (event) => {
-    i18next.changeLanguage(event.target.value.toLowerCase(), (err, t) => {
-        if (err) return console.error(err);
-        updateContent();
-    });
-});
-
-document.querySelectorAll('.mobile-lang-selector .lang-option').forEach(el => {
-    el.addEventListener('click', () => {
-        const lang = el.dataset.lang.toLowerCase();
-        i18next.changeLanguage(lang, (err, t) => {
-            if (err) return console.error(err);
-            updateContent();
-        });
-    });
-});
-
-window.onload = function() {
-  loadCardsData(); // Спочатку завантаження динамічних даних
-};
-
-const url = 'https://raw.githubusercontent.com/Bohdana2345/Bohdana2345.github.io/main/about-page-info-cards.json';
-// Функція для створення картки "environment"
-function createEnvironmentCard(data) {
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('environment-section-wrapper', 'cards-section-wrapper');
-
-  const headline = document.createElement('div');
-  headline.classList.add('environment-section-headline');
-
-  const headlineText = document.createElement('span');
-  headlineText.classList.add('environment-section-headline-text');
-  headlineText.textContent = i18next.t(data.headlineText); // Переклад тексту заголовка
-
-  const headlineDecoratedText = document.createElement('span');
-  headlineDecoratedText.classList.add('environment-section-headline-decorated-text');
-  headlineDecoratedText.textContent = i18next.t(data.headlineDecoratedText); // Переклад декоративного тексту
-
-  headline.appendChild(headlineText);
-  headline.appendChild(headlineDecoratedText);
-
-  const button = document.createElement('button');
-  button.classList.add('environment-button', 'cards-section-button');
-  button.textContent = i18next.t(data.buttonText); // Переклад тексту кнопки
-
-  wrapper.appendChild(headline);
-  wrapper.appendChild(button);
-
-  return wrapper;
-  updateContent(); 
-}
-
-// Функція для створення картки "position"
-
-function createPositionCard(data) {
-  // Створюємо обгортку для всієї картки
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('position-wrapper', 'cards-section-wrapper');
-
-  // Фонова картка
-  const bgSpan = document.createElement('span');
-  bgSpan.classList.add('about-positions-card-bg');
-
-  // Обгортка для заголовка
-  const headlineTextWrapper = document.createElement('div');
-  headlineTextWrapper.classList.add('position-headline-text-wrapper');
-
-  // Заголовок (h5)
-  const headlineText = document.createElement('h5');
-  headlineText.classList.add('position-headline-text');
-
-  // Додаємо текст у заголовок
-  if (data.headlineText) {
-    headlineText.textContent = data.headlineText; // Встановлюємо текст
-    console.log('headlineText:', headlineText.textContent); // Лог для перевірки
-  } else {
-    console.warn('headlineText is undefined or empty');
-  }
-
-  // Додаємо заголовок до обгортки headlineTextWrapper
-  headlineTextWrapper.appendChild(headlineText);
-
-  // Створюємо кнопку
-  const button = document.createElement('a');
-  button.classList.add('position-button', 'cards-section-button');
-
-  // Встановлюємо текст кнопки
-  if (data.buttonText) {
-    button.textContent = data.buttonText;
-    console.log('buttonText:', button.textContent); // Лог для перевірки
-  } else {
-    console.warn('buttonText is undefined or empty');
-  }
-
-  // Встановлюємо посилання для кнопки
-  if (data.link) {
-    button.href = data.link;
-  } else {
-    console.warn('link is undefined');
-  }
-
-  // Додаємо елементи у обгортку wrapper
-  wrapper.appendChild(bgSpan);
-  wrapper.appendChild(headlineTextWrapper); // headlineTextWrapper вже містить headlineText
-  wrapper.appendChild(button);
-
-  console.log('wrapper.innerHTML:', wrapper.innerHTML); // Лог для перевірки всієї структури
-
-  return wrapper;
-}
-
-// Функція для створення картки "job"
-function createJobCard(data) {
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('job-wrapper', 'cards-section-wrapper');
-
-  const bgSpan = document.createElement('span');
-  bgSpan.classList.add('about-job-card-bg');
-
-  const headlineTextWrapper1 = document.createElement('div');
-  headlineTextWrapper1.classList.add('job-headline-text-wrapper');
-
-  const headlineText = document.createElement('h5');
-  headlineText.classList.add('job-headline-text');
-  headlineText.textContent = i18next.t(data.headlineText); // Переклад заголовка
-
-  headlineTextWrapper1.appendChild(headlineText);
-
-  const button = document.createElement('a');
-  button.classList.add('job-button', 'cards-section-button');
-  button.textContent = i18next.t(data.buttonText); // Переклад кнопки
-  button.href = data.link;
-
-  wrapper.appendChild(headlineTextWrapper1);
-  wrapper.appendChild(bgSpan);
-  wrapper.appendChild(button);
-
-  return wrapper;
-}
-
-// Основна функція для створення картки за типом
-function createCard(data) {
-  switch (data.type) {
-    case 'environment':
-      return createEnvironmentCard(data);
-    case 'position':
-      return createPositionCard(data);
-    case 'job':
-      return createJobCard(data);
-    default:
-      console.warn('Unknown card type:', data.type);
-      return null;
-  }
-}
-
-// Завантаження карток із JSON-файлу
-function loadCardsData() {
-    const url = 'https://raw.githubusercontent.com/Bohdana2345/Bohdana2345.github.io/main/about-page-info-cards.json';
-  fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(cardsData => {
-      cardsData.forEach(cardData => {
-        const card = createCard(cardData);
-        if (card) {
-          cardsSection.appendChild(card);
-        }
-      });
-
-      // Викликаємо оновлення перекладу після завантаження карток
-      updateContent();
-    })
-    .catch(error => {
-      console.error('Помилка завантаження JSON:', error);
-    });
-}
-// Викликаємо функцію для завантаження карток
-
-
-
-
-window.onload = function() {
-    // Отримуємо посилання на всі кола та елементи h2 і p, які потрібно змінити
-    const circles = document.querySelectorAll('.radial-navigation1, .radial-navigation2, .radial-navigation3');
-    const h2Element = document.getElementById('wwh-heading');
-    const pElement = document.getElementById('wwh-paragraph');
-
-    // Функція для зміни тексту в h2 та p залежно від натиснутого кола
-    let currentActiveCircle = null; // Для збереження поточного активного кола
-
-    // Об'єкт з текстами для кожної секції
-    const defaultText = {
-        'radial-navigation1': {
-            en: { h2: 'What we do', p: 'We create innovative solutions to bring people together through play.' },
-            uk: { h2: 'Що ми робимо', p: 'Ми створюємо інноваційні рішення, щоб об\'єднувати людей через гру.' }
-        },
-        'radial-navigation2': {
-            en: { h2: 'How we do it', p: 'By combining creativity, technology, and collaboration.' },
-            uk: { h2: 'Як ми це робимо', p: 'Поєднуючи креативність, технології та співпрацю.' }
-        },
-        'radial-navigation3': {
-            en: { h2: 'Why we do it', p: 'To harness the power of play so that together we can change the world for the better.' },
-            uk: { h2: 'Чому ми це робимо', p: 'Щоб використати силу гри і разом змінити світ на краще.' }
-        }
-    };
-
-    // Функція для оновлення тексту активного кола
-    function updateText() {
-        const currentLanguage = i18next.language;
-        console.log('Current active circle:', currentActiveCircle); // Для перевірки, який елемент активний
-
-        // Оновлюємо текст тільки для активного кола
-        if (currentActiveCircle) {
-            const className = Array.from(currentActiveCircle.classList).find(cls => cls.includes('radial-navigation'));
-            if (className && defaultText[className]) {
-                const texts = defaultText[className][currentLanguage];
-                h2Element.textContent = texts.h2;
-                pElement.textContent = texts.p;
-            }
-        }
-    }
-
-    // Обробка кліків по колах
-    circles.forEach(circle => {
-        circle.addEventListener('click', () => {
-            // Якщо поточне коло вже активне, нічого не робимо
-            if (currentActiveCircle === circle) return;
-
-            // Оновлюємо клас активного кола
-            circles.forEach(c => c.classList.remove('active')); // Видаляємо клас "active" у всіх колах
-            circle.classList.add('active'); // Додаємо клас "active" до поточного кола
-            currentActiveCircle = circle; // Зберігаємо поточне активне коло
-
-            // Оновлюємо текст для нового активного кола
-            updateText();
-        });
-    });
-
-    // Оновлюємо текст при зміні мови
-    i18next.on('languageChanged', () => {
-    console.log('Language changed, updating text...');
-
-    // Встановлюємо перше коло як активне
-    circles.forEach(c => c.classList.remove('active')); // Видаляємо клас "active" у всіх колах
-    const firstCircle = circles[2]; // Вибираємо перше коло
-    firstCircle.classList.add('active'); // Додаємо клас "active" до першого кола
-    currentActiveCircle = firstCircle; // Зберігаємо перше коло як активне
-
-    updateText(); // Оновлюємо текст після зміни мови
-});
-
-
-    // Початкове налаштування: встановлюємо третє коло як активне
-    const thirdCircle = circles[2]; // Вибираємо третє коло (індекс 2)
-    thirdCircle.classList.add('active');
-    currentActiveCircle = thirdCircle; // Зберігаємо третє коло як активне
-    console.log('Initial active circle set to:', currentActiveCircle); // Для перевірки
-    updateText(); // Оновлюємо текст для третього кола
-}
-
-
-
-
-
-const menu = document.getElementById('mobileMenuOverlay');
-const menuSection = document.getElementById('menuSection');
-const menuContent = document.querySelector('.mobile-menu-content');
-const logo = document.getElementById('logo');
-const homeBgSection = document.querySelector('.home-bg-section');
-const homeBgLogo = document.querySelector('.home-bg-section-logo');
-const mobileBtn = document.getElementById('mobileMenuIcon');
-
-mobileBtn.addEventListener('click', () => {
-    const isMenuActive = menu.classList.contains('active');
-    menu.classList.toggle('active');
-    menuContent.classList.toggle('active');
-    menuSection.classList.toggle('active');
-    mobileBtn.classList.toggle('active');
-    logo.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-
-    if (isMenuActive) {
-        contentWrapper.classList.remove('blurred');
-        homeBgSection.style.transition = 'none';
-        homeBgLogo.style.transition = 'none';
-        menuSection.classList.remove('active');
-    } else {
-        contentWrapper.classList.add('blurred');
-        homeBgSection.style.transition = 'none';
-        homeBgLogo.style.transition = 'none';
-    }
-});
-
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && menu.classList.contains('active')) {
-        toggleMenu();
-    }
-});
-
-const langSelect = document.getElementById('lang-locatizator');
-const langOptions = document.querySelectorAll('.lang-option');
-function updateActiveLanguage(selectedLang) {
-    langOptions.forEach(option => {
-        option.classList.remove('active');
-        if (option.dataset.lang === selectedLang) {
-            option.classList.add('active');
-        }
-    });
-    langSelect.value = selectedLang;
-}
-
-langSelect.addEventListener('change', (event) => {
-    const selectedLang = event.target.value;
-    updateActiveLanguage(selectedLang);
-});
-
-langOptions.forEach(option => {
-    option.addEventListener('click', () => {
-        const selectedLang = option.dataset.lang;
-        updateActiveLanguage(selectedLang);
-    });
-});
-
-updateActiveLanguage(langSelect.value);
-
-
-
-
-function toggleBlur() {
-    const menu = document.getElementById('mobileMenuOverlay');
-    const menuSection = document.getElementById('menuSection');
-    const mobileMenuIcon = document.getElementById('mobileMenuIcon');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const logo = document.getElementById('logo');
-    const contentWrapper = document.getElementById('contentWrapper');
-
-    if (window.matchMedia('(min-width: 1000px)').matches) {
-        menu.classList.remove('active');
-        menuSection.classList.remove('active');
-        mobileMenuIcon.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        logo.classList.remove('active');
-        contentWrapper.classList.remove('blurred');
-    }
-}
-
-toggleBlur();
-window.addEventListener('resize', toggleBlur);
-
-
-
-
-const acc = document.getElementsByClassName("accordion");
-const imageContainer = document.querySelector(".image-container-values");
-const images = document.querySelectorAll(".image-container-values img");
-
-// Функція для активації кнопки
-function activateAccordion(button) {
-  const textElement = button.querySelector('.accordion-text');
-  button.classList.add("active");
-  button.style.fontSize = "35px";
-  button.style.borderBottom = "none";
-
-  // Застосовуємо градієнтний фон тільки до тексту активної кнопки
-  textElement.style.background = "linear-gradient(90deg, #00FFF0 0%, #FFF230 100%)";
-  textElement.style.webkitBackgroundClip = "text";
-  textElement.style.webkitTextFillColor = "transparent";
-
-  const panel = button.nextElementSibling;
-  panel.style.display = "block";
-
-  // Змінюємо положення контейнера зображень на основі індексу кнопки
-  const index = Array.prototype.indexOf.call(acc, button);
-  changeImage(index);
-}
-
-// Функція для плавного зміщення контейнера зображень
-function changeImage(index) {
-  const imageHeight = images[0].clientHeight; // Висота одного зображення
-  imageContainer.style.transition = "transform 0.5s ease";
-  imageContainer.style.transform = `translateY(-${index * imageHeight}px)`;
-}
-
-// Ініціалізація першої кнопки та зображення
-if (acc.length > 0) {
-  activateAccordion(acc[0]);
-}
-
-// Додавання обробників подій
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    // Якщо кнопка вже активна, зробити її неактивною
-    if (this.classList.contains("active")) {
-      this.classList.remove("active");
-      this.style.fontSize = "";
-      this.style.borderBottom = "";
-      const panel = this.nextElementSibling;
-      panel.style.maxHeight = null;
-      panel.style.display = "none";
-
-      // Видаляємо ефект градієнту з тексту кнопки
-      const textElement = this.querySelector('.accordion-text');
-      textElement.style.background = "";
-      textElement.style.webkitBackgroundClip = "";
-      textElement.style.webkitTextFillColor = "";
-    } else {
-      // Скидаємо всі інші кнопки та панелі
-      for (let j = 0; j < acc.length; j++) {
-        acc[j].classList.remove("active");
-        acc[j].style.fontSize = "";
-        acc[j].style.borderBottom = "";
-        const panel = acc[j].nextElementSibling;
-        panel.style.maxHeight = null;
-        panel.style.display = "none";
-
-        // Видаляємо ефект градієнту з тексту всіх кнопок
-        const textElement = acc[j].querySelector('.accordion-text');
-        textElement.style.background = "";
-        textElement.style.webkitBackgroundClip = "";
-        textElement.style.webkitTextFillColor = "";
-      }
-
-      // Робимо поточну кнопку активною
-      activateAccordion(this);
-    }
-  });
-}
-
-// Початкова ініціалізація позиції зображень
-imageContainer.style.transition = "none"; // Вимкнути анімацію при завантаженні
-imageContainer.style.transform = "translateY(0)";
-
-
-</script>
+<script src="scripts/common.js"></script>
+<script src="scripts/script-for-about-page.js"></script>
 </body>
 </html>

@@ -1,290 +1,297 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lr_2/zavd_resume/css/sit.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Resume</title>
+    <title>SUBARA</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <!--Main-->
-    <div class = "main">
-        <nav class="navbar">
-            <div class="navbar-menu">
-                <ul>
-                    <li><a href="#work">working experience</a></li>
-                    <li><a href="#education">education</a></li>
-                    <li><a href="#courses">courses</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#projects">portfolio</a></li>
-                </ul>
-             </div>
+    <header class="menu-section" id="menuSection">
+        <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.webp" alt="Abstract black logo featuring a geometric parallelogram design." class="logo" id="logo">
+        </a>
+
+        <nav class="regular-menu">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk" class="extended-menu-inactive-button" id="menu-games">Games</a></li>
+                <li>
+                    <a href="#" class="extended-menu-button" id="first-extended-menu-button">Explore</a>
+                </li>
+                <li><a href="#" class="extended-menu-button" id="second-extended-menu-button">Careers</a></li>
+                <li><a href="#" class="extended-menu-button" id="third-extended-menu-button">Support</a></li>
+            </ul>
         </nav>
-            <!--Main content-->
-            <div class ="maincontent">
-                <!--about user-->
-            <div class="about_user">
-                <h2 class="about_position">Front-End Developer</h2>
-                <h1 class="about_name">Bohdana Skochynska</h1>
-                <p class="about_discription">
-                    Dedicated to staying up-to-date with the latest technologies and trends in front-end development to deliver cutting-edge solutions.
-                </p>
+
+        <select class="lang-locatizator" id="lang-locatizator">
+            <option value="EN">EN</option>
+            <option value="UK">UA</option>
+        </select>
+
+        <div class="mobile-menu">
+            <div class="mobileMenuIcon" id="mobileMenuIcon">
+                <span class="line line-top"></span>
+                <span class="line line-bottom"></span>
             </div>
-                <div class="work" id="work">
-                    <hr>
-                     <section>  
-                    <h3 class="title">Working Experience</h3>
-                        <!--Company 1-->
-                        <div>
-                            <hr>
-                            <h4 class="position">Front-End Developer<span class="date">November 2020 - up to now</span></h4>
-                            <h3 class="orange1">Freelance</h3>
-                            <ul class="work_list">
-                                <li class="worklist_item">Website Development: Creating static and dynamic websites for clients based on their requirements and designs.</li>
-                                <li class="worklist_item">Web application development: Creation of interactive web applications and web services.</li>
-                                <li class="worklist_item">Creation of user interfaces (UI) and web design.</li>
-                                <li class="worklist_item">Providing advice to clients on web development.</li>
-                            </ul>
-                        </div>
-                        <!--Company 2-->
-                        <div>
-                            <h4 class="position">Manager<span class="date">March 2015 - October 2019</span></h4>
-                            <h3 class="orange1">EPAM, Toronto</h3>
-                            <ul class="work_list">
-                                <li class="worklist_item">Team Leadership: Providing leadership and guidance to teams of software developers, engineers, designers, and other IT professionals.</li>
-                                <li class="worklist_item">Project Management: Planning, organizing, and overseeing projects from initiation to completion. </li>
-                                <li class="worklist_item">Client Communication: Acting as a liaison between the company and its clients or stakeholders. </li>
-                            </ul>
-                        </div>
-                        <!--Company 3-->
-                        <div>
-                            <h4 class="position">Full-Stack Developer<span class="date">June 2014 - February 2015</span></h4>
-                            <h3 class="orange1">SoftServe, Lviv</h3>
-                            <ul class="work_list">
-                                <li class="worklist_item">Database Management: Designing database schemas to meet the requirements of web applications.</li>
-                                <li class="worklist_item">Problem Solving and Optimization:Optimizing code and improving application performance.</li>
-                                <li class="worklist_item">Develop user-facing features using HTML, CSS, and JavaScript.</li>
-                            </ul>
-                        </div>
-                     </section>  
-                </div>
-                <!--Education-->
-                <div class="education" id="education">
-                    <section> 
-                    <h3 class="title">Education and qualifications</h3>
-                    <hr>
-                    <h4 class="position">Junior bachelor<span class="date">September 2011 - June 2015</span></h4>
-                    <h3 class="orange1">A separate structural division of the Vocational College of <br> Electronic Devices of the Ivano-Frankivsk University of Oil and Gas.</h3>
-                    <h2 class="specialization">Software Engineering</h2>    
+
+            <div class="mobile-menu-overlay closed" id="mobileMenuOverlay">
+                <div class="mobile-menu-bg" id="mobileMenuBg"></div>
+                <div class="mobile-menu-content" id="menuContent">
+                    <section class="mobile-menu-section">
+                        <hr>
+                        <a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk"> <h2 class="mobile-menu-games">Games</h2></a>
+                        <hr>
                     </section>
-                </div>
-                <!--Courses-->
-                <div class="courses" id="courses">
-                    <section> 
-                    <h3 class="title">Courses</h3>
-                    <hr>
-                    <h4 class="position">English for IT<span class="date">April 2017 - October 2018</span></h4>
-                    <h3 class="orange1">Language School "Speak Up" (Kyiv)</h3>
-                    <h4 class="position">Cisco: Building Distributed Networks<span class="date">May 2016 - December 2016</span></h4>
-                    <h3 class="orange1">Training Center "Network Technologies" (Kyiv)</h3>
-                    <h4 class="position">Java Programming<span class="date">June 2014 - February 2015</span></h4>
-                    <h3 class="orange1">JavaRush(online)</h3>  
-                    <h4 class="position">C++ Programming<span class="date">January 2013 - August 2013</span></h4>
-                    <h3 class="orange1">Regional IT Center (Ivano-Frankivsk)</h3>  
+                    <section class="mobile-menu-section">
+                        <div class="mobile-menu-section-headline-wrapper"><h2 class="dropdown-toggle mobile-menu-explore">Explore</h2><span class="arrow"></span></div>
+                        <ul class="dropdown-content">
+                            <a href="about.html"><li class="mobile-menu-about-us">About Us</li></a>
+                            <a href="https://www.cbinsights.com/company/subara"><li class="mobile-menu-social-impact">Social Impact</li></a>
+                        </ul>
+                        <hr>
                     </section>
-                </div>
-                <!--Skills-->
-                <div class="skills" id="skills">
-                    <section> 
-                    <h3 class="title">Skills</h3>
-                    <hr>
-                    <h3 class="skills_title">Tech Skills</h3>
-                    <ul class="list">
-                        <li class="skills-item"><span class="skills_text1">HTML5</span></li>
-                        <li class="skills-item"><span class="skills_text1">CSS3</span></li>
-                        <li class="skills-item"><span class="skills_text1">GIT</span></li>
-                        <li class="skills-item"><span class="skills_text1">WebPack</span></li>
-                        <li class="skills-item"><span class="skills_text1">JavaScript</span></li>
-                        <!-- Вкладений список -->
-                        <li class="skills-item">
-                            <span class="skills_text1">Frameworks</span>
-                            <ul class="nested_list">
-                                <li class = "nested_list_item"><span class="skills_text2">React.js</span></li>
-                                <li class = "nested_list_item"><span class="skills_text2">Angular</span></li>
-                                <li class = "nested_list_item"><span class="skills_text2">Node.js</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h3 class="skills_title">Soft Skills</h3>
-                    <ul class="list">
-                        <li class="skills-item"><span class="skills_text1">Scrum</span></li>
-                        <li class="skills-item"><span class="skills_text1">Agile</span></li>
-                        <li class="skills-item"><span class="skills_text1">GTD</span></li>
-                        <li class="skills-item"><span class="skills_text1">Teamwork</span></li>
-                        <!-- Вкладений список -->
-                        <li class="skills-item">
-                            <span class="skills_text1">Communication</span>
-                            <ul class="nested_list">
-                                <li class = "nested_list_item"><span class="skills_text2">Verbal</span></li>
-                                <li class = "nested_list_item"><span class="skills_text2">Written</span></li>
-                                <li class = "nested_list_item"><span class="skills_text2">Interpersonal</span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <section class="mobile-menu-section">
+                        <div class="mobile-menu-section-headline-wrapper"><h2 class="dropdown-toggle mobile-menu-careers">Careers</h2><span class="arrow"></span></div>
+                        <ul class="dropdown-content">
+                            <a href="https://ie.linkedin.com/company/subara"><li class="mobile-menu-working-with-us">Working with Us</li></a>
+                            <a href="https://ie.linkedin.com/jobs/view/3d-2d-game-artist-at-subara-2754738983"><li class="mobile-menu-open-position">Open Position</li></a>
+                        </ul>
+                        <hr>
                     </section>
-                </div>
-                <!--Projects-->
-                <div class="projects" id="projects">
-                    <section> 
-                    <h3 class="title">Projects</h3>
-                    <hr>
-                    <ol class="project_list">
-                        <li class="project_item">
-                            <span class="project"><a href="https://i-love-financing-carss.webflow.io/" class="project_link">https://i-love-financing-carss.webflow.io/</a>
-                            .........................
-                            <span class="project_bracket">[</span> HTML5, CSS3 <span class="project_bracket">]</span></span>
-                        </li>
-                        <li class="project_item">
-                            <span class="project"><a href="https://www.partytrick.com/how-it-works" class="project_link">https://www.partytrick.com</a>
-                            ........................................................
-                            <span class="project_bracket">[</span> JavaScript <span class="project_bracket">]</span></span>
-                        </li>
-                        <li class="project_item">
-                            <span class="project"><a href="https://reformalliance.com/successes/#" class="project_link">https://reformalliance.com</a>
-                            ..........................................................
-                            <span class="project_bracket">[</span> React.js, Node.js <span class="project_bracket">]</span></span>
-                        </li>
-                    </ol>
+                    <section class="mobile-menu-section">
+                        <div class="mobile-menu-section-headline-wrapper"><h2 class="dropdown-toggle mobile-menu-support">Support</h2><span class="arrow"></span></div>
+                        <ul class="dropdown-content">
+                            <li class="mobile-menu-help link-wrapper-help">Help</li>
+                            <a href="creators.html"><li class="mobile-menu-creators">Creators</li></a>
+                            <a href="https://www.media-press.tv/"><li class="mobile-menu-press-media">Press Media</li></a>
+                        </ul>
+                        <hr>
                     </section>
+
+                    <div class="mobile-lang-selector">
+                        <span class="lang-option" data-lang="EN">EN</span>
+                        <span class="lang-option" data-lang="UK">UA</span>
+                    </div>
                 </div>
-            <!--Portfolio-->
-            <div class="portfolio" id="portfolio">
-                <section> 
-                <h3 class="title">Portfolio</h3>
-                <hr>
-                   <a href="lr_1/index.html" class="portfolio_link">Lr_1/index.html</a>
-                    <a href="lr_2/base_structure_html/index3.html" class="portfolio_link">Lr_2/base_structure_html/index3.html</a>
-                    <a href="lr_3/index.html" class="portfolio_link">Lr_3/index.html</a>
-                    <a href="pr_2/index.html" class="portfolio_link">Pr_2/index.html</a>
-                    <a href="lr_4/index.html" class="portfolio_link">Lr_4/index.html</a>
-                    <a href="pr_3/index.html" class="portfolio_link">Pr_3/index.html</a>
-                    <a href="lr_5/index.html" class="portfolio_link">Lr_5/index.html</a>
-                    <a href="lr_6/task_5/index.html" class="portfolio_link">Lr_6/index.html</a>
-                    <a href="lr_7/index.html" class="portfolio_link">Lr_7/index.html</a>
-                    <a href="pr_4/index.html" class="portfolio_link">Pr_4/index.html</a>
-                    <a href="lr_8/task_2/index.html" class="portfolio_link">Lr_8/index.html</a>
-                    <a href="lr_9/index.html" class="portfolio_link">Lr_9/index.html</a>
-                    <a href="pr_6/index.html" class="portfolio_link">Pr_6/index.html</a>
-                    <a href="pr_forms/index.html" class="portfolio_link">Pr_forms/index.html</a>
-                    <a href="js_lab1/index.html" class="portfolio_link">Lr_js/index.html</a>
-                    <a href="book-effect/index.html" class="portfolio_link">Book-effect/index.html</a>
-                    <a href="parallax-effect/index.html" class="portfolio_link">Parallax-effect/index.html</a>
-                    <a href="lr_2_js/index.html" class="portfolio_link">Lr_2_js/index.html</a>
-                    <a href="lr3_js/index.html" class="portfolio_link">Lr_3_js/index.html</a>
-                    <a href="questionnaire/index.html" class="portfolio_link">Questionnaire</a>
-                    <a href="maket/index.html" class="portfolio_link">Maket</a>
-                    <a href="pr_2_js/index.html" class="portfolio_link">Pr_2_js</a>
-                    <a href="lr_4_js/index.html" class="portfolio_link">Lr_4_js</a>
-                    <a href="pr_4_js/index.html" class="portfolio_link">Pr_4_js</a>
-                    <a href="pr_5_js/index.html" class="portfolio_link">Pr_5_js</a>
-                    <a href="lr_5_js/index.html" class="portfolio_link">Lr_5_js</a>
-                    <a href="adaptive-menu/index.html" class="portfolio_link">Adaptive-menu</a>
-                    <a href="pr_6_js/index.html" class="portfolio_link">Pr_6_js</a>
-                    <a href="pr_7_js/index.html" class="portfolio_link">Pr_7_js</a>
-                    <a href="lr_promises/index.html" class="portfolio_link">Lr_6_js</a>
-                    <a href="pr_8_js/index.html" class="portfolio_link">Pr_8_js</a>
-                    <a href="lr_7_js/heroes.html" class="portfolio_link">Lr_7_js</a>
-                     <a href="pr_9_js/index.html" class="portfolio_link">Pr_9_js</a>
-                     <a href="pr_10_js/index.html" class="portfolio_link">Pr_10_js</a>
-                     <a href="pr_12_js/index.html" class="portfolio_link">Pr_12_js</a>
-                    <a href="kp/index.html" class="portfolio_link">Nedokp</a>
-                     <a href="placement/index.html" class="portfolio_link">Placement</a>
-                     <a href="exam/index.html" class="portfolio_link">Exam</a>
-                </section>
-            </div>
-            <div class="social_media">
-                <a href="https://www.instagram.com/" class="icon icon-inst"></a>
-                <a href="https://www.facebook.com/" class="icon icon-fb"></a>
-                <a href="https://www.twitter.com/" class="icon icon-tw"></a>
-                <a href="https://www.youtube.com/" class="icon icon-yt"></a>
-                <a href="https://www.messenger.com/" class="icon icon-mes"></a>
-               
-        </div>
-        </div>
-        <!--Sidebar-->
-        <div class = "sidebar">
-            <div class="avatar"><img src="lr_2/zavd_resume/photos/photo.jpg" alt="user photo" class="photo"></div>
-            <!--Personal info-->
-            <div class="personal_info">
-                <section> 
-                <h3 class="sidebar_title">Personal information</h3>
-                <hr>
-                <div>
-                    <p>
-                        <span class="personal_info-type">Name</span><br>
-                        <span class="personal_info_t">Bohdana Skochynska</span>
-                    </p>
-                     <address><span class="personal_info-type">Adress</span><br>
-                        <span class="personal_info_t">Khreshchatyk, 5</span>
-                    </address> 
-                    <p>
-                        <span class="personal_info-type">Phone number</span><br>
-                        <a href="tel:+0505212067"  class="personal_info_link">+0505212067</a>
-                    </p>
-                    <p>
-                        <span class="personal_info-type">Email</span><br>
-                        <a href="mailto:bohdanaskochynska@gmail.com" class="personal_info_link">bohdanaskochynska@gmail.com</a>
-                    </p>
-                    <p>
-                        <span class="personal_info-type">Date of birth</span><br>
-                        <span class="personal_info_t">28.02.2006</span>
-                    </p>
-                </div>
-                <br>
-                <h3 class="sidebar_title">Hobbies</h3>
-                <hr>
-                <div>
-                    <p>
-                        <span class="personal_info-type">English learning</span>
-                    </p>
-                    <p>
-                        <span class="personal_info-type">Psyhology</span>
-                    </p>
-                    <p>
-                        <span class="personal_info-type">Reading</span>
-                    </p>
-                    <p>
-                        <span class="personal_info-type">Drawing</span>
-                    </p>
-                    <p>
-                        <span class="personal_info-type">Baking</span>
-                    <p>
-                    <p>
-                        <span class="personal_info-type">Gym</span>
-                    </p>
-                </div>
-                <br>
-                <h3 class="sidebar_title">Languages</h3>
-                <hr>
-                <div>
-                    <p class = "personal_info-p">
-                        <span class="personal_info-type">Ukrainian</span><span class="personal_info_lang">Native language</span>
-                    <p>
-                        <p class = "personal_info-p">
-                            <span class="personal_info-type">English</span><span class="personal_info_lang">Upper-Intermediate</span>
-                        </p>
-                        <p class = "personal_info-p">
-                            <span class="personal_info-type">German</span><span class="personal_info_lang">Pre-intermediate</span>
-                        </p>
-                 </div>
-                </section>
             </div>
         </div>
+
+    </header>
+
+    <div class="expandable-menu-block" id="expandableBlock">
+        <div class="extanded-regular-menu-section" id="fisrt-extanded-regular-menu-section">
+            <a href="about.html" class="fisrt-extanded-regular-menu-section-about">About us</a>
+            <a href="https://ie.linkedin.com/company/subara" class="fisrt-extanded-regular-menu-section-explore">Explore</a>
         </div>
+
+        <div class="extanded-regular-menu-section" id="second-extanded-regular-menu-section">
+            <a href="https://ie.linkedin.com/company/subara" class="fisrt-extanded-regular-menu-section-working">Working with Us</a>
+            <a href="https://ie.linkedin.com/jobs/view/3d-2d-game-artist-at-subara-2754738983" class="fisrt-extanded-regular-menu-section-positions">Open Position</a>
+        </div>
+
+        <div class="extanded-regular-menu-section" id="third-extanded-regular-menu-section">
+            <a href="#" class="fisrt-extanded-regular-menu-section-help link-wrapper-help">Help</a>
+            <a href="creators.html" class="fisrt-extanded-regular-menu-section-creators">Creators</a>
+            <a href="https://www.media-press.tv/" class="fisrt-extanded-regular-menu-section-media">Press Media</a>
+        </div>
+    </div>
+
+    <main class="content-wrapper" id="contentWrapper">
+        <div class="home-bg-section section" id="homeSection">
+
+            <div class="home-bg-section-logo" id="homeBdSectionLogo">
+                <img src="assets/img/home-bg-logo.webp" alt="Brand logo of the homepage">
+
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="main-info-section section" id="mainInfoSection">
+                <img src="assets/img/content-character.webp" alt="Smiling boy character from a video game, with a cheerful expression and vibrant colors. " class="content-character">
+                <div class="main-info-section-wrapper">
+                    <div class="main-info-section-text-wrapper">
+                        <div class="main-info-section-new-marker">new</div>
+                        <h1 class="main-info-section-headline-first-line">Stories World™</h1>
+                        <h2 class="main-info-section-headline-second-line">Travels</h2>
+                        <p class="main-info-section-text">Travel around the world and build vacation life stories.</p>
+                        <a class="button" href="https://play.google.com/store/apps/details?id=com.subara.stories.travels&hl=uk">Explore</a>
+                    </div>
+
+                    <div class="platforms">
+                        <div class="content-character-icon"></div>
+                        <div class="platforms-buttons">
+                            <div class="platforms-headline-container">
+                                <span class="platforms-headline">Available on</span>
+                            </div>
+                            <div class="platforms-buttons-container">
+                                <a href="https://apps.apple.com/ua/developer/subara/id1735332479" class="app-store-button">
+                                    <span class="app-store-logo"></span>
+                                    <div class="app-store-text">
+                                        <span>Download on the</span>
+                                        <strong>App store</strong>
+                                    </div>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.subara.stories.travels&hl=uk" class="google-play-button">
+                                    <span class="google-play-logo"></span>
+                                    <div class="google-play-text">
+                                        <span class="google-play-download-text">Get it on</span>
+                                        <strong>Google Play</strong>
+                                    </div>
+                                </a>
+                                <a href="https://www.amazon.com/SUBARA-SG-Ltd-Urban-Stories/dp/B09S18Q67F" class="amazone-button">
+                                    <span class="amazone-logo"></span>
+                                    <div class="amazone-text">
+                                        <span>Available at</span>
+                                        <strong>Amazone</strong>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+              
+                </div>
+            </section>
+
+                <section class="product-cards section" id="productCardsSection">
+                    <h2 class="product-cards-headline">Explore more games</h2>
+                    <div class="game-cards-wrapper" id="gameCardsWrapper"></div>
+                    <a class="product-cards-button" href="https://play.google.com/store/apps/dev?id=5461979616382274584">All games</a>
+                  </section>
+                
+            <div class="environment-section section" id="environmentSection">
+                <div class="environment-section-wrapper">
+                    <div class="environment-section-headline">
+                        <span class="environment-section-headline-text">You play,</span>
+                        <span class="environment-section-headline-decorated-text">we plant.</span>
+                    </div>
+
+                    <div class="environment-section-statistic">
+                        <span class="environment-section-statistic-number" id="stat-number">270 000</span>
+                        <span class="environment-section-statistic-text">Planted trees and counting</span>
+                    </div>
+                    <a class="environment-section-button" href="https://www.treesaregood.org/treeowner/plantingatree">Learn more</a>
+                </div>
+                <img src="assets/img/pine.webp" alt="Pine tree" class="environment-section-pine">
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <img src="/assets/svg/Logo.svg" alt="Abstract black logo featuring a geometric parallelogram design." class="footer-logo">
+                <div class="footer-platforms">
+                    <a href="https://apps.apple.com/ua/developer/subara/id1735332479" class="footer-app-store-button">
+                        <span class="app-store-logo"></span>
+                        <div class="app-store-text">
+                            <span>SUBARA on the</span>
+                            <strong>App store</strong>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk" class="footer-google-play-button">
+                        <span class="google-play-logo"></span>
+                        <div class="google-play-text">
+                            <span class="google-play-download-text">SUBARA on</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+
+                    <a href="https://www.amazon.com/SUBARA-SG-Ltd-Urban-Stories/dp/B09S18Q67F" class="footer-amazone-button">
+                        <span class="amazone-logo"></span>
+                        <div class="amazone-text">
+                            <span>SUBARA on</span>
+                            <strong>Amazone</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-section">
+                        <div class="link-wrapper">
+                            <a href="https://play.google.com/store/apps/dev?id=5461979616382274584&hl=uk" class="link-wrapper-games">Games</a>
+                        </div>
+                    </div>
+
+                    <section class="footer-section">
+                        <h4 class="footer-section-explore">Explore</h4>
+                        <div class="link-wrapper">
+                            <a href="about.html" class="link-wrapper-about-us">About Us</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="https://www.cbinsights.com/company/subara" class="link-wrapper-social-impact">Social Impact</a>
+                        </div>
+                    </section>
+
+                    <section class="footer-section">
+                        <h4 class="footer-section-careers">Careers</h4>
+                        <div class="link-wrapper">
+                            <a href="https://ie.linkedin.com/company/subara" class="link-wrapper-working-at-subara">Working at Subara</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="https://ie.linkedin.com/jobs/view/3d-2d-game-artist-at-subara-2754738983?" class="link-wrapper-open-position">Open Position</a>
+                        </div>
+                    </section>
+
+                    <section class="footer-section">
+                        <h4 data-text="Support" class="footer-section-support">Support</h4>
+                        <div class="link-wrapper">
+                            <a href="#" data-text="Help" class="link-wrapper-help">Help</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="creators.html" data-text="Creators" class="link-wrapper-creators">Creators</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="https://www.media-press.tv/" data-text="Press Media" class="link-wrapper-media">Press Media</a>
+                        </div>
+                    </section>
+
+                    <div class="social_media">
+                        <a href="https://www.instagram.com/" class="icon icon-inst"></a>
+                        <a href="https://www.youtube.com/" class="icon icon-yt"></a>
+                        <a href="https://www.linkedin.com/" class="icon icon-lin"></a>
+                        <a href="https://www.twitter.com/" class="icon icon-tw"></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-legal">
+                    <div class="footer-legal-text">
+                        <a href=""><span class="footer-legal-year">©2024 SUBARA SG Ltd.</span></a>
+                        <div class="link-wrapper">
+                            <a href="https://policies.google.com/" data-text="Terms and Privacy" class="link-wrapper-terms">Terms and Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <div id="helpModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeHelpModalBtn">&times;</span>
+              <h2 class="helpFormHeadline title">Do you need help?</h2>
+              <form id="helpForm" class="helpForm"  method="POST">
+                <label for="help-name" class="label">Full name:</label>
+                <input type="text" id="help-name" name="help-name" required><br>
+          
+                <label for="help-email" class="label">Email:</label>
+                <input type="email" id="help-email" name="help-email" required><br>
+          
+                <label for="help-message" class="label">Describe your issue:</label>
+                <textarea id="help-message" name="help-message" rows="4" class="textarea" required></textarea><br>
+          
+                <button type="submit" class="submit-btn">Submit Request</button>
+              </form>
+            </div>
+          </div>
+    </main>
+
+    <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>

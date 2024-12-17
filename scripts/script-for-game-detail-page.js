@@ -7,12 +7,22 @@ fetch('translations.json')
       resources: data
     }, function (err, t) {
       if (err) return console.error(err);
-      updateContent();
+      updateContent()
     });
   })
   .catch(err => console.error('Error loading translations:', err));
 
 function updateContent() {
+
+  document.querySelector('.header-main-text-wrapper h2').textContent = i18next.t('header-subtitle');
+  document.querySelectorAll('.content-text-block')[0].querySelector('h3').textContent = i18next.t('content-title-1');
+  document.querySelectorAll('.content-text-block')[0].querySelectorAll('p')[0].textContent = i18next.t('content-paragraph-1');
+  document.querySelectorAll('.content-text-block')[0].querySelectorAll('p')[1].textContent = i18next.t('content-paragraph-2');
+  
+  document.querySelectorAll('.content-text-block')[1].querySelector('h3').textContent = i18next.t('content-title-2');
+  document.querySelectorAll('.content-text-block')[1].querySelectorAll('p')[0].textContent = i18next.t('content-paragraph-3');
+  document.querySelectorAll('.content-text-block')[1].querySelectorAll('p')[1].textContent = i18next.t('content-paragraph-4');
+  document.querySelectorAll('.content-text-block')[1].querySelectorAll('p')[2].textContent = i18next.t('content-paragraph-5');
     document.querySelector('.fisrt-extanded-regular-menu-section-about').textContent = i18next.t('mobile-menu-about-us');
     document.querySelector('.fisrt-extanded-regular-menu-section-explore').textContent = i18next.t('mobile-menu-explore');
     document.querySelector('.fisrt-extanded-regular-menu-section-working').textContent = i18next.t('mobile-menu-working-with-us');
@@ -64,8 +74,8 @@ function updateContent() {
       el.textContent = i18next.t(keys[index]);
     });
     document.querySelector('.submit-btn').textContent = i18next.t('help-submit');
-
 }
+
 
 document.getElementById('lang-locatizator').addEventListener('change', (event) => {
     i18next.changeLanguage(event.target.value.toLowerCase(), (err, t) => {
@@ -84,139 +94,46 @@ document.querySelectorAll('.mobile-lang-selector .lang-option').forEach(el => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('game-detail-urban-city-video');
+    const playButton = document.getElementById('play-button');
+    video.removeAttribute('controls');
+    playButton.style.display = 'flex';
+
+    playButton.addEventListener('click', () => {
+        video.play(); 
+        playButton.style.display = 'none'; 
+        video.setAttribute('controls', 'true'); 
+    });
+
+    video.addEventListener('pause', () => {
+        playButton.style.display = 'flex'; 
+        video.removeAttribute('controls'); 
+    });
+
+    video.addEventListener('ended', () => {
+        playButton.style.display = 'flex'; 
+        video.removeAttribute('controls'); 
+    });
+});
 
 
-const url = 'https://raw.githubusercontent.com/Bohdana2345/Bohdana2345.github.io/main/product-cards.json';
+document.addEventListener("scroll", () => {
+    const scrollingSection = document.querySelector(".scrolling-section");
+    const firstLine = scrollingSection.querySelector(".scrolling-section-first-line");
+    const secondLine = scrollingSection.querySelector(".scrolling-section-second-line");
+    const sectionRect = scrollingSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
 
-const gameCardsWrapper = document.getElementById('gameCardsWrapper');
-
-function createGameCard(game, index) {
-    const gameCard = document.createElement('div');
-    gameCard.classList.add('game-card');
-    gameCard.setAttribute('data-game-name', game.gameName);
-    const gameLink = document.createElement('a');
-    
-    let gameUrl;
-    if (index === 0) {
-      gameUrl = 'game-detail.html'; 
-    } else if (index === 1) {
-      gameUrl = 'https://play.google.com/store/apps/details?id=com.playtoddlers.sunnyschoolstories.free&hl=uk'; // друга картка
-    } else if (index === 2) {
-      gameUrl = 'game-detail.html?page=city'; 
+    if (sectionRect.top < windowHeight && sectionRect.bottom > 0) {
+        const scrollProgress = 1 - sectionRect.bottom / (sectionRect.height + windowHeight);
+        const translateAmount = scrollProgress * 30; 
+        const firstLineTranslateX = -17.7 + translateAmount; 
+        const secondLineTranslateX = -46.3722 - translateAmount; 
+        firstLine.style.transform = `translateX(${firstLineTranslateX}%)`;
+        secondLine.style.transform = `translateX(${secondLineTranslateX}%)`;
     }
-  
-    gameLink.setAttribute('href', gameUrl); 
-    gameLink.classList.add('game-card-link'); 
-    const headline = document.createElement('span');
-    headline.classList.add('game-card-headline');
-    headline.textContent = game.headline;
-    const breakLine = document.createElement('span');
-    breakLine.classList.add('break-line');
-    breakLine.textContent = game.subHeadline;
-    headline.appendChild(breakLine);
-    gameLink.appendChild(headline);
-    gameCard.appendChild(gameLink);
-  
-    return gameCard;
-}
-
-function loadGamesData() {
-    fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(gamesData => {
-        gamesData.forEach((game, index) => {
-          const gameCard = createGameCard(game, index); 
-          gameCardsWrapper.appendChild(gameCard);
-        });
-      })
-      .catch(error => {
-        console.error('Помилка завантаження JSON:', error);
-      });
-}
-
-loadGamesData();
-
-
-const body = document.body;
-const homeSection = document.getElementById('homeSection');
-const contentWrapper = document.getElementById('contentWrapper');
-const homeLogo = document.getElementById('homeBdSectionLogo');
-const content = document.querySelector('.content'); 
-
-function homeSectionScrollEffect() {
-    const scrollY = window.scrollY;
-    const homeHeight = window.innerHeight;
-    const screenWidth = window.innerWidth;
-
-    const startTop = 40;
-    const newTop = Math.max(startTop - scrollY * 0.3, -150);
-    homeLogo.style.top = `${newTop}px`;
-
-    const maxOpacity = 1.2;
-    const opacity = Math.min(scrollY / homeHeight, maxOpacity);
-
-    homeSection.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
-    const minBrightness = 0.3;
-    const brightness = Math.max(1 - (scrollY / homeHeight) * 1.2, minBrightness);
-    homeSection.style.filter = `brightness(${brightness})`;
-
-    if (scrollY > 0) {
-        homeSection.classList.add('scrolled');
-        homeSection.classList.remove('mobile-background');
-    } else {
-        if (screenWidth < 1000) {
-            homeSection.classList.add('mobile-background');
-            homeSection.classList.remove('scrolled');
-        } else {
-            homeSection.classList.remove('scrolled', 'mobile-background');
-        }
-    }
-
-}
-
-window.addEventListener('scroll', homeSectionScrollEffect);
-window.addEventListener('load', homeSectionScrollEffect);
-window.addEventListener('resize', homeSectionScrollEffect);
-
-const initialValue = 270000;
-const maxDigits = 6;
-const incrementInterval = 12 * 60 * 60 * 1000;
-let currentValue = localStorage.getItem('environment-sectionStat');
-let lastUpdateTime = localStorage.getItem('lastUpdateTime');
-
-if (!currentValue) {
-    currentValue = initialValue;
-    localStorage.setItem('environment-sectionStat', currentValue);
-    localStorage.setItem('lastUpdateTime', Date.now());
-}
-currentValue = parseInt(currentValue, 10);
-
-function updateStatNumber() {
-    const now = Date.now();
-    const timeDifference = now - parseInt(lastUpdateTime, 10);
-    const intervalsPassed = Math.floor(timeDifference / incrementInterval);
-
-    if (intervalsPassed > 0) {
-        currentValue += intervalsPassed;
-        if (currentValue > 999999) {
-            currentValue = 999999;
-        }
-        localStorage.setItem('environment-sectionStat', currentValue);
-        localStorage.setItem('lastUpdateTime', now);
-    }
-    document.getElementById('stat-number').textContent = formatNumber(currentValue);
-}
-
-function formatNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-}
-
-updateStatNumber();
+});
 
 
 
