@@ -138,15 +138,15 @@ function createEnvironmentCard(data) {
   headline.appendChild(headlineText);
   headline.appendChild(headlineDecoratedText);
 
-  const button = document.createElement('button');
+  const button = document.createElement('a');
   button.classList.add('environment-button', 'cards-section-button');
   button.textContent = i18next.t(data.buttonText); 
+  button.href = 'https://www.treesaregood.org/treeowner/plantingatree';
 
   wrapper.appendChild(headline);
   wrapper.appendChild(button);
 
   return wrapper;
-  updateContent(); 
 }
 
 function createPositionCard(data) {
@@ -172,7 +172,7 @@ function createPositionCard(data) {
     button.textContent = data.buttonText;
   } 
   if (data.link) {
-    button.href = data.link;
+    button.href = 'https://ie.linkedin.com/company/subara';
   } 
 
   wrapper.appendChild(bgSpan);
@@ -200,7 +200,7 @@ function createJobCard(data) {
   const button = document.createElement('a');
   button.classList.add('job-button', 'cards-section-button');
   button.textContent = i18next.t(data.buttonText); 
-  button.href = data.link;
+  button.href = 'creators.html';
 
   wrapper.appendChild(headlineTextWrapper1);
   wrapper.appendChild(bgSpan);
@@ -317,7 +317,7 @@ function activateAccordion(button) {
   textElement.style.webkitBackgroundClip = "text";
   textElement.style.webkitTextFillColor = "transparent";
   const panel = button.nextElementSibling;
-  panel.style.display = "block";
+  panel.style.display = "flex";
 
   const currentIndex = Array.prototype.indexOf.call(acc, button);
   changeImage(currentIndex);

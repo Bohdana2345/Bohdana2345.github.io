@@ -100,9 +100,9 @@ function createGameCard(game, index) {
     if (index === 0) {
       gameUrl = 'game-detail.html'; 
     } else if (index === 1) {
-      gameUrl = 'https://play.google.com/store/apps/details?id=com.playtoddlers.sunnyschoolstories.free&hl=uk'; // друга картка
+      gameUrl = 'https://play.google.com/store/apps/details?id=com.playtoddlers.sunnyschoolstories.free&hl=uk'; 
     } else if (index === 2) {
-      gameUrl = 'game-detail.html?page=city'; 
+      gameUrl = 'https://play.google.com/store/apps/details?id=com.playtoddlers.centralhospitalstories.free&hl=uk'; 
     }
   
     gameLink.setAttribute('href', gameUrl); 

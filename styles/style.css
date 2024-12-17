@@ -25,8 +25,6 @@
 
 
 html, body {
-    margin: 0;
-    padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
@@ -213,7 +211,7 @@ a {
     left: 0;
     position: fixed;
     background: 
-        url('/assets/img/home-bg.webp');
+        url('/assets/img/main/home-bg.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -228,11 +226,11 @@ a {
 }
 
 .home-section.scrolled {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 100%, rgba(0, 0, 0, 1) 100%), url('/assets/img/home-bg.webp');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 100%, rgba(0, 0, 0, 1) 100%), url('/assets/img/main/home-bg.webp');
 }
 
 .home-section.mobile-background {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('/assets/img/home-bg.webp');
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 200%), url('/assets/img/main/home-bg.webp');
 }
 
 .home-bg-section-logo {
@@ -617,6 +615,9 @@ a {
     text-align: center;    
     width: 100%;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-info-section-headline-first-line {
@@ -706,6 +707,12 @@ a {
     background-size: cover;
     background-position: center;
     display: none;
+}
+
+.game-detail.content-character-icon {
+    background: url('/assets/img/game-detail/store-character-urban-city.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .platforms-buttons {
@@ -848,7 +855,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 70px 10px 20px 10px;
-    background: url(/assets/img/environment-section-bg.webp) no-repeat center;
+    background: url('/assets/img/environment-section-bg.webp') no-repeat center;
     background-size: cover;  
     position: relative;
     margin-top: 0;  
@@ -1010,11 +1017,11 @@ a {
 .game-card[data-game-name="Urban City"] {
     background: 
     linear-gradient(180deg, rgba(86, 57, 255, 0) 54.69%, #5639FF 92.71%),
-    url(/assets/img/game-cover-1.webp) no-repeat center;
+    url('/assets/img/game-cover-1.webp') no-repeat center;
     background-size: cover;  
 }
 
-.game-card[data-game-name="Urban City"] .game-card-headline {
+.game-card[data-game-name="Urban City"] .game-card-headline, .game-card[data-game-name="Sunny School"] .game-card-headline, .game-card[data-game-name="Central Hospital"] .game-card-headline {
     margin-bottom: 40px;
 }
 
@@ -1026,14 +1033,14 @@ a {
 .game-card[data-game-name="Sunny School"] {
     background: 
     linear-gradient(180deg, rgba(1, 183, 236, 0) 54.69%, #01B7EC 92.71%),
-    url(/assets/img/game-cover-2.webp) no-repeat center;
+    url('/assets/img/game-cover-2.webp') no-repeat center;
     background-size: cover;  
 }
 
 .game-card[data-game-name="Central Hospital"] {
     background: 
     linear-gradient(180deg, rgba(1, 183, 236, 0) 54.69%, #01B7EC 92.71%),
-    url(/assets/img/game-cover-3.webp) no-repeat center;
+    url('/assets/img/game-cover-3.webp') no-repeat center;
     background-size: cover; 
 }
 
@@ -1365,7 +1372,7 @@ a {
 
 .about-bg-section {
     margin-top: 110px;
-    background-image: url('/assets/img/about-bg.png');
+    background-image: url('/assets/img/about/about-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -1400,7 +1407,7 @@ a {
 
 .branding-section {
     height: 40vh;
-    background-image: url('/assets/img/header-branding.jpg');
+    background-image: url('/assets/img/about/header-branding.webp');
     background-size: auto 60%;
     background-position: 0 center; 
     background-repeat: repeat-x;
@@ -1797,6 +1804,9 @@ border-top: none;
     display: none;
     background-color: white;
     overflow: hidden;
+    padding: 5px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .panel h4 {
@@ -1886,6 +1896,9 @@ border-top: none;
 }
 
 .environment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #fff;
     color: #fff;
 }
@@ -1921,10 +1934,10 @@ border-top: none;
     display: flex;
     padding: 10px 20px;
     color: #000; 
-    background: #fff; /* Білий фон кнопки */
-    border: none; /* Видаляємо стандартний бордер */
-    border-radius: 23.5px; /* Закруглені кути */
-    z-index: 1; /* Щоб текст був зверху */
+    background: #fff; 
+    border: none; 
+    border-radius: 23.5px;
+    z-index: 1; 
     margin-bottom: 30px;
 }
 
@@ -1939,8 +1952,8 @@ border-top: none;
     padding: 2.5px; 
     background: linear-gradient(90deg, #37E9B1 0.2%, #DDF6A4 99.78%);
     -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0); 
+    linear-gradient(0deg, #fff 0%, #fff 100%) content-box, 
+    linear-gradient(0deg, #fff 0%, #fff 100%);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     z-index: -1; 
@@ -1971,7 +1984,7 @@ border-top: none;
 
 
 .about-job-card-bg {
-    background-image: url('/assets/img/about-job-card-bg.png');
+    background-image: url('/assets/img/about/job-card-bg.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1982,7 +1995,7 @@ border-top: none;
 }
 
 .about-positions-card-bg {
-    background-image: url('/assets/img/about-positions-card-bg.png');
+    background-image: url('/assets/img/about/positions-card-bg.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2232,7 +2245,7 @@ border-top: none;
     .home-bg-section  {
         background: 
             linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%), 
-            url('/assets/img/home-bg.webp');
+            url('/assets/img/main/home-bg.webp');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -2269,6 +2282,7 @@ border-top: none;
         margin-bottom: 50px;
         margin-top: 30px;
         width: 85%;
+        align-items: start;
     }
     
     .main-info-section {
@@ -3026,7 +3040,7 @@ border-top: none;
 
 
 .story-section-img {
-    height: 745px;
+    height: 845px;
 }
 
 .about-bg-section-text h1 {
@@ -3325,7 +3339,7 @@ border-top: none;
     height: 580px;
   }
 
-  .store {
+  .game-detail .store {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(25px);
@@ -3337,7 +3351,7 @@ border-top: none;
     height: 240px;
     width: 90%;
     position: absolute;
-    bottom: 95px;
+    bottom: -180px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -3582,6 +3596,12 @@ margin-bottom: 0px;
     .game-detail-content {
         padding: 90px 35px 100px 35px;
     }
+
+    .game-detail .store {
+        width: 85%;
+        bottom: -150px;
+        height: 130px;
+      }
    
 }
 
@@ -3604,9 +3624,10 @@ margin-bottom: 0px;
         height: 78vh; 
       }
 
-      .store {
+      .game-detail .store {
         width: 85%;
-        bottom: 105px;
+        bottom: -150px;
+        
       }
 
 
@@ -3639,9 +3660,9 @@ margin-bottom: 0px;
 
 @media (min-width: 800px) { 
 
-      .store {
+      .game-detail .store {
         width: 75%;
-        bottom: 110px;
+        bottom: -150px;
       }
 
       .video-wrapper {
@@ -3694,8 +3715,7 @@ margin-bottom: 0px;
     
     .header-main-text-wrapper {
         margin: 0;
-        margin-top: 15px;
-       
+        margin-top: 25px;
     }
 
     .header-headline-wrapper{
@@ -3723,17 +3743,16 @@ margin-bottom: 0px;
       }
 
 
-      .store-wrapper {
+      .game-detail.store-wrapper {
         margin: 0 60px;
         position: absolute;
         width: 100%;
         left: 50%; 
         transform: translate(-50%, -50%);
-        bottom: -15px;
+        bottom: 65px;
       }
 
-      .store {
-        position: static;
+      .game-detail .store {
         left: 0%; 
         transform: translate(0%, 0%);
         width: 555px;
@@ -3741,6 +3760,7 @@ margin-bottom: 0px;
         display: flex;
         justify-content: center;
         padding: 30px;
+        bottom: 65px;
       }
 
       .header {
@@ -3826,14 +3846,15 @@ margin-bottom: 0px;
         height: 990px;
       }
 
-      .store-wrapper {
+      .game-detail.store-wrapper {
         position: absolute;
         height: 160px;
         width: 1080px;
         bottom: 10px;
       }
 
-      .store {
+      .game-detail .store {
+        position: static;
         display: flex;
         align-items: center;
         width: 650px;
@@ -3845,7 +3866,7 @@ margin-bottom: 0px;
         padding: 80px 90px 60px 90px;
     }
 
-    .store-wrapper {
+    .game-detail.store-wrapper {
         margin: 0 90px;
         position: absolute;
         width: 100%;
@@ -3881,7 +3902,7 @@ margin-bottom: 0px;
         padding: 80px 180px 60px 180px;
     }
 
-    .store-wrapper {
+    .game-detail.store-wrapper {
         margin: 0 180px;
       }
 
@@ -3893,7 +3914,7 @@ margin-bottom: 0px;
         width: 500px;
       }
 
-      .store-wrapper {
+      .game-detail.store-wrapper {
         width: 100%;
       }
 
