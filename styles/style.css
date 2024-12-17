@@ -1862,7 +1862,7 @@ border-top: none;
 .job-wrapper,  .position-wrapper{
     color: rgb(0, 0, 0);
     gap: 135px;
-    padding: 20px 30px 0px 30px;
+    padding: 120px 30px 0px 30px;
     position: relative;
     
 
@@ -2830,7 +2830,7 @@ border-top: none;
     }
 
     .job-wrapper{
-        gap: 194px;
+        gap: 193px;
        
     }
     .about-environment-section-wrapper{
