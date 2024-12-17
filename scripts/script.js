@@ -246,3 +246,8 @@ document.addEventListener("scroll", () => {
     
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    let bgElement = document.querySelector('.home-bg-section');
+    bgElement.style.backgroundImage = 'url("/assets/img/main/home-bg.webp")';
+});
+
