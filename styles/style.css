@@ -31,7 +31,6 @@ html, body {
 
 body {
     font-family: 'Maax', sans-serif;
-     font-display: swap;
 }
 
 .logo {
@@ -3455,7 +3454,7 @@ border-top: none;
 }
 
 .content-text-block p:first-of-type {
-    margin-bottom: 20px 0; 
+    margin: 20px 0; 
 }
 
 .scrolling-section {
